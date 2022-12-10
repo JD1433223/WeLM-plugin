@@ -1,39 +1,37 @@
 # 云崽自定义对话WELM
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+此为Yunzai-Bot云崽QQ机器人的插件，需要依赖云崽机器人来实现功能，可以模仿你机器人的人设对话(或许有其他问答功能) _可以去这里研究一下_ [WeLM](https://welm.weixin.qq.com/docs/api/)
 
-#### 软件架构
-软件架构说明
+# 安装教程
+### 第一步
+第一步需要在插件内改上你申请的token _去这个文档申请_ [WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)
+### 第二步
+第二步需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个dhdata.txt演示学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。
+#### 或者
+(如果你机器人也是纳西妲的话可以把"演示"两字直接删了放到/Yunzai-Bot/resources/下面开用(强烈建议自己研究下，我用的这个对话起来bug很多))
+然后就可以与开始对话了。
 
+## 使用说明
+第一次使用可能会缺少依赖，执行
 
-#### 安装教程
+```
+pnpm add axios -w
+```
+即可解决
+#### 如果装了@戏天的那个ai自定义的js的
+需要去那个ai插件里面的104行加上
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```
 
-#### 使用说明
+    //放行welm测试指令
+    if(e.msg.includes("welm")){
+	return false
+    }
+```
+这个100%触发指令可以到WeLM.js的第47行修改(42行有注释)
+![改@戏天ai](-43a1cc21ed0ab5ef.jpg)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+# 效果
+巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
+![特技](506f1a205423787.png)
