@@ -31,8 +31,8 @@ pnpm add axios -w
     }
 ```
 这个100%触发指令可以到WeLM.js的第47行修改(42行有注释)
-![改@戏天ai](-43a1cc21ed0ab5ef.jpg)
+![输入图片说明](%E4%BA%91%E5%B4%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AF%B9%E8%AF%9DWeLM-43a1cc21ed0ab5ef.jpg)
 
 # 效果
 巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
-![特技](506f1a205423787.png)
+![输入图片说明](%E4%BA%91%E5%B4%BD%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AF%B9%E8%AF%9DWeLM506f1a205423787.png)
