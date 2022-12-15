@@ -1,16 +1,17 @@
-    import plugin from '../../lib/plugins/plugin.js'
+import plugin from '../../lib/plugins/plugin.js'
 import { Console } from "console";
 import axios from 'axios'
 import fs from 'node:fs'
 //此插件由[书辞千楪(1700179844)]编写，JD瞎jb乱搞了一下上传的
 //模型的prompt文件请放到/Yunzai-Bot/resources/dhdata.txt
 //如果没有dhdata.txt文件，请自行在/Yunzai-Bot/resources/内创建"dhdata.txt文件"。
+//提问需要再resources里多放个那个wddata.txt，续写只需加个空的xxdata.txt就行了
 //有报错先看这里！！！！！！可能需要pnpm add axios -w后才能正常使用
 //有问题到渔火群里面问问渔火吧他包更新的（狗头
 
 
-let bot_name = "机器人名字如(纳西妲)" //你机器人角色昵称or自设之类的?
-let API_token = "token填这两个双引号之间" //你的API-token，没有自己上WeLM官网https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail申请。
+let bot_name = "纳西妲" //你机器人角色昵称or自设之类的?
+let API_token = "填这个双引号里面" //你的API-token，没有自己上WeLM官网https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail申请。
 //模型参数调试专区
 let model = "xl"           //要使用的模型名称，当前支持的模型名称有medium、 large 和 xl
 let max_tokens = "128" 
@@ -39,7 +40,6 @@ export class RGznbot extends plugin {
                 {
                     reg: '^续写.*',
                     fnc: 'Xuxie',
-                    log: false
                 },
                 {
                     reg: '(.*)',
@@ -119,7 +119,8 @@ export class RGznbot extends plugin {
 		    console.log(error);
         }
     )}
-    async Xuxie(e) {
+
+	async Xuxie(e) {
         e.msg = e.msg.replace(/续写/g, "")
         let sc_cs = fs.readFileSync('./resources/xxdata.txt', { encoding: 'utf-8' })
 		let sc_cs2 = sc_cs + e.msg
@@ -143,7 +144,7 @@ export class RGznbot extends plugin {
         })
 		.then(function (respone) {
 		    console.log(respone.data.choices[0]);
-		    e.reply("(welm提问)"+respone.data.choices[0].text, e.isGroup);
+		    e.reply("(welm续写)"+respone.data.choices[0].text, e.isGroup);
 		})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(welm提问)"+ | 这一部分
 		.catch(function (error) {
 		    console.log(error);
