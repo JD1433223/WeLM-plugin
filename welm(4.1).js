@@ -5,9 +5,10 @@ import fs from 'node:fs'
 //此插件由[书辞千楪(1700179844)]编写，JD瞎jb乱搞了一下上传的
 //模型的prompt文件请放到/Yunzai-Bot/resources/dhdata.txt
 //如果没有dhdata.txt文件，请自行在/Yunzai-Bot/resources/内创建"dhdata.txt文件"。
-//提问需要再resources里多放个那个wddata.txt，续写只需加个空的xxdata.txt就行了
+//提问需要再resources里多放个那个wddata.txt
+//续写只需加个空的xxdata.txt就行了
 //有报错先看这里！！！！！！可能需要pnpm add axios -w后才能正常使用
-//有问题到渔火群里面问问渔火吧他包更新的（狗头
+//有问题到渔火群（134086404)里面问问群傻逼吧
 
 
 let bot_name = "纳西妲" //你机器人角色昵称or自设之类的?
