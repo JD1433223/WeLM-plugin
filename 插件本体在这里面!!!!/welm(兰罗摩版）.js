@@ -11,8 +11,8 @@ import fs from 'node:fs'
 //有问题问JD(1461072722)在上学回复慢，但是一定会回复，也可以去火火的群(666345141)里面找JD
 
 
-let bot_name = "纳西妲" //你机器人角色昵称or自设之类的?
-let API_token = "填这个双引号里面" //你的API-token，没有自己上WeLM官网https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail申请。
+let bot_name = "机器人名字如(纳西妲)" //你机器人角色昵称or自设之类的?
+let API_token = "api填这个双引号里面" //你的API-token，没有自己上WeLM官网https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail申请。
 //模型参数调试专区
 let model = "xl"           //要使用的模型名称，当前支持的模型名称有medium、 large 和 xl
 let max_tokens = "128" 
