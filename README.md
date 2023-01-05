@@ -12,7 +12,7 @@
 #### 提问
 需要把wddata.txt放到/Yunzai-Bot/resources/里面才能正常使用
 ## 可能遇到的问题
-第一次使用可能会缺少依赖，执行
+第一次使用可能会缺少依赖，三选一执行
 
 ```
 pnpm add axios -w
