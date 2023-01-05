@@ -25,7 +25,7 @@ npm install axios
 这个可能连不上
 
 ```
-cnpm install axios -w
+cnpm install axios
 ```
 这个需要安装cnpm，命令是
 
