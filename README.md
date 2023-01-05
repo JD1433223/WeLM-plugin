@@ -37,7 +37,7 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
 个性回答默认在群内是2%触发，或者在对话前面加个welm的100%触发指令(可自行更改看43行的注释自行更改成你想要的比如机器人名字)然后就可以与开始激情对话了。
 ![输入图片说明](resources/gexinghuida.jpg)
 
-提问加个前缀"提问"就好了![输入图片说明](resources/tiwen.jpg)
+提问加个前缀"提问"就好了![输入图片说明](resources/tiwen.png)
 
 #### 如果装了@戏天的那个ai自定义的js的
 需要去那个ai插件里面的104行加上
