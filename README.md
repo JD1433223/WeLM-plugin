@@ -7,6 +7,13 @@
 ### 第一步
 第一步需要在插件目录内config.yaml(config里的)改上你申请的token _去这个文档申请_ [WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)
 ### 第二步
+在Yunzai-Bot根目录打开终端并输入
+
+```
+git clone https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./plugins/welm-plugin
+```
+回车
+### 第三步
 #### 个性问答
 需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个dhdata.txt演示学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把"(JD自用演示)"直接删了放到插件目data直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
 #### 提问
