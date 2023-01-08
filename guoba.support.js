@@ -10,7 +10,7 @@ export function supportGuoba() {
         name: 'WeLM-plugin',
         title: 'WeLM-plugin',
         author: '@书辞千楪',
-        authorlink: 'https://gitee.com/shuciqianye/',
+        authorlink: 'https://gitee.com/shuciqianye',
         link: 'https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm',
         isV3: true,
         isV2: false,
