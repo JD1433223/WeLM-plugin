@@ -12,13 +12,7 @@ import fs from 'node:fs'
 
 
 let bot_name = "纳西妲" //你机器人角色昵称or自设之类的?
-let API_token = "填这个双引号里面" //你的API-token，没有自己上WeLM官网https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail申请
-let dhcmdstart = "welm" //对话指令开头
-let wdcmdstart = "提问" //问答指令开头
-let xxcmdstart = "续写" //续写指令开头
-let dhreplystart = "(由WeLM回答)" //对话指令回复开头备注, 不用与其他ai区分时可留空
-let wdreplystart = "(由WeLM提问)" //问答指令回复开头备注, 不用与其他ai区分时可留空
-let xxreplystart = "(由WeLM续写)" //续写指令回复开头备注, 不用与其他ai区分时可留空
+let API_token = "填这个双引号里面" //你的API-token，没有自己上WeLM官网https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail申请。
 //模型参数调试专区
 let model = "xl"           //要使用的模型名称，当前支持的模型名称有medium、 large 和 xl
 let max_tokens = "128" 
@@ -65,8 +59,8 @@ export class RGznbot extends plugin {
 			return false;
 		}
         let random_ = parseInt(Math.random() * 99);
-        if (random_ >=98 || random_ <=0 || e.msg && e.msg?.indexOf("welm") >= 0 || !e.isGroup){
-        e.msg = e.msg.replace(dhcmdstart, "")
+        if (random_ >=98 || random_ <=0 || e.msg && e.msg?.indexOf("welm") >= 0){
+        e.msg = e.msg.replace(/welm/g, "")
 		let sc_cs = fs.readFileSync('./resources/dhdata.txt', { encoding: 'utf-8' })
 		let sc_cs2 = sc_cs + "\n我:" + e.msg + "\n" + bot_name + ":"
         axios({
@@ -89,7 +83,7 @@ export class RGznbot extends plugin {
         })
 		.then(function (response) {
 		    console.log(response.data.choices[0]);
-		    e.reply(dhreplystart+response.data.choices[0].text, e.isGroup);
+		    e.reply("(由welm回答)"+response.data.choices[0].text, e.isGroup);
 		})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(由welm回答)"+ | 这一部分
 		.catch(function (error) {
 		    console.log(error);
@@ -97,7 +91,7 @@ export class RGznbot extends plugin {
     }}
  
     async Wenti(e) {
-        e.msg = e.msg.replace(wdcmdstart, "")
+        e.msg = e.msg.replace(/提问/g, "")
         let sc_cs = fs.readFileSync('./resources/wddata.txt', { encoding: 'utf-8' })
 		let sc_cs2 = sc_cs + "\n问题:" + e.msg + "\n" + "回答" + ":"
         axios({
@@ -120,7 +114,7 @@ export class RGznbot extends plugin {
         })
 		.then(function (respone) {
 		    console.log(respone.data.choices[0]);
-		    e.reply(wdreplystart+respone.data.choices[0].text, e.isGroup);
+		    e.reply("(welm提问)"+respone.data.choices[0].text, e.isGroup);
 		})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(welm提问)"+ | 这一部分
 		.catch(function (error) {
 		    console.log(error);
@@ -128,7 +122,7 @@ export class RGznbot extends plugin {
     )}
 
 	async Xuxie(e) {
-        e.msg = e.msg.replace(xxcmdstart, "")
+        e.msg = e.msg.replace(/续写/g, "")
         let sc_cs = fs.readFileSync('./resources/xxdata.txt', { encoding: 'utf-8' })
 		let sc_cs2 = sc_cs + e.msg
         axios({
@@ -151,7 +145,7 @@ export class RGznbot extends plugin {
         })
 		.then(function (respone) {
 		    console.log(respone.data.choices[0]);
-		    e.reply(xxreplystart+respone.data.choices[0].text, e.isGroup);
+		    e.reply("(welm续写)"+respone.data.choices[0].text, e.isGroup);
 		})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(welm提问)"+ | 这一部分
 		.catch(function (error) {
 		    console.log(error);
