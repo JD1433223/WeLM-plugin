@@ -1,23 +1,23 @@
 bot_name: "NAME" # 里面填你机器人角色昵称or自设之类的?
 API_token: "API" # 你的API token，没有自己上WeLM官网https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail申请
-dhcmdstart: "welm" # 对话指令开头
-wdcmdstart: "提问" # 问答指令开头
-xxcmdstart: "续写" # 续写指令开头
-dhreplystart: "(由WeLM回答)" # 对话指令回复开头备注, 不用与其他ai区分时可留空
-wdreplystart: "(由WeLM提问)" # 问答指令回复开头备注, 不用与其他ai区分时可留空
-xxreplystart: "(由WeLM续写)" # 续写指令回复开头备注, 不用与其他ai区分时可留空
+dhcmdstart: "welm" # 对话指令开头。
+wdcmdstart: "提问" # 问答指令开头。
+xxcmdstart: "续写" # 续写指令开头。
+dhreplystart: "(由WeLM回答)" # 对话指令回复开头备注, 不用与其他ai区分时可留空。
+wdreplystart: "(由WeLM提问)" # 问答指令回复开头备注, 不用与其他ai区分时可留空。
+xxreplystart: "(由WeLM续写)" # 续写指令回复开头备注, 不用与其他ai区分时可留空。
 dhpriority: "60000" # 对话指令优先级, 默认值60000
 wdpriority: "5000" # 问答指令优先级, 默认值5000
-xxpriority: "5000" # 续写指令优先级, 默认值5000
+xxpriority: "5000" # 续写指令优先级, 默认值5000。
 
 
 # 模型参数调试专区(最好不碰,参数已由作者设定完成)
-model: "xl" # 要使用的模型名称，当前支持的模型名称有medium、 large 和 xl
-max_token: "128"  # 最多生成的token个数1, 默认值 128
-max_token_xx: "256" # 最多生成的token个数2，默认值 256
-temperature: "0.85" # 默认值 0.85，表示使用的
+model: "xl" # 要使用的模型名称，当前支持的模型名称有medium、 large 和 xl。
+max_token: "128"  # 最多生成的token个数1, 默认值 128。
+max_token_xx: "256" # 最多生成的token个数2，默认值 256。
+temperature: "0.85" # 默认值 0.85，更高的temperature意味着模型具备更多的可能性。对于更有创造性的应用，可以尝试0.85以上，而对于有明确答案的应用，可以尝试0（argmax采样）。 建议改变这个值或top_p，但不要同时改变。
 top_p: "0.95" # 默认值 0.95，来源于nucleus sampling，采用的是累计概率的方式。
 top_k: "50" # 默认值50，从概率分布中依据概率最大选择k个单词，建议不要过小导致模型能选择的词汇少。
-n: "2" # 默认值 1 返回的序列的个数
+n: "2" # 默认值 2, 大于0, 小于等于12 返回的序列的个数
 stop: "\n" # 默认值\n，停止符号1。当模型当前生成的字符为stop中的任何一个字符时，会停止生成。
 twstop: "。" # 默认值"。" ，停止符号2。当模型当前生成的字符为stop中的任何一个字符时，会停止生成。
