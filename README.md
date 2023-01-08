@@ -24,7 +24,7 @@ _PS:这一步内所有txt均在welm-plugin/data内_
 需要把在data(插件目录)里的xxdata.txt填写才能正常使用
 
 ## JS版(推荐(至少在重构未完成之前))
-请更改分支到JS版查看教程
+请到[JS版分支](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/tree/JS%E7%89%88%E6%9C%AC/)查看教程
 
 
 ## 可能遇到的问题
