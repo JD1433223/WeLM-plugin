@@ -32,7 +32,7 @@ let priority = settings.xxpriority
 export class RGznbot extends plugin {
     constructor() {
         super({
-            name: 'WeLM对话',
+            name: 'WeLM续写',
             event: 'message',
             priority: priority,
             rule: [
