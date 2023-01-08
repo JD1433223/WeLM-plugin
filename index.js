@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 
 logger.info('---------------')
-logger.info(`WelmAI插件初始化~`)
+logger.info(`WelmAI对话插件初始化~`)
 logger.info('---------------')
 
 const files = fs.readdirSync('./plugins/welm-plugin/apps').filter(file => file.endsWith('.js'))
