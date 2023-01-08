@@ -24,8 +24,24 @@ _PS:这一步内所有txt均在welm-plugin/data内_
 需要把在data(插件目录)里的xxdata.txt填写才能正常使用
 
 ## JS版(推荐(至少在重构未完成之前))
-请到[JS版分支](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/tree/JS%E7%89%88%E6%9C%AC/)查看教程
+### 第一步
+在任意目录打开终端并输入
 
+```
+git clone -b js-version https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./JS版本WeLM插件
+```
+### 第二步
+把拉取下来的内容里找到welm.js并将他移动到Yunzai-Bot根目录下的plugins/example
+### 第三步
+将所有拉去下来的txt文件移动到Yunzai-Bot根目录下的resources文件夹内
+### 第四步
+_PS:这一步的所有txt都是上一步移动的文件_
+#### 个性问答
+需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个dhdata.txt演示学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把"(JD自用演示)"直接删了放到插件目data直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
+#### 提问
+需要把data(插件目录)里的wddata.txt填写才能正常使用
+#### 续写
+需要把在data(插件目录)里的xxdata.txt填写才能正常使用
 
 ## 可能遇到的问题
 第一次使用可能会缺少依赖，三选一执行
