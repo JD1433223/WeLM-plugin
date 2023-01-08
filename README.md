@@ -31,7 +31,7 @@ _PS:这一步内所有txt均在welm-plugin/data内_
 git clone -b js-version https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./JS版本WeLM插件
 ```
 ### 第二步
-把拉取下来的内容里找到welm.js并将他移动到Yunzai-Bot根目录下的plugins/example
+在拉取下来的内容里找到welm.js并将他移动到Yunzai-Bot根目录下的plugins/example
 ### 第三步
 将所有拉去下来的txt文件移动到Yunzai-Bot根目录下的resources文件夹内
 ### 第四步
