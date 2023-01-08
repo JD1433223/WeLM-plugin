@@ -1,6 +1,6 @@
 # 云崽自定义对话WeLM
 #### 介绍
-此为Yunzai-Bot云崽QQ机器人的插件，需要依赖云崽机器人来实现功能，可以模仿你机器人的人设对话(或许有其他问答功能) _可以去这里研究一下_ [WeLM](https://welm.weixin.qq.com/docs/api/)
+此为Yunzai-Bot云崽QQ机器人的插件，需要依赖云崽机器人来实现功能，可以模仿你机器人的人设对话(或许有其他问答功能) _可以去这里研究一下[WeLM](https://welm.weixin.qq.com/docs/api/)_
 
 # 安装教程
 
@@ -13,7 +13,7 @@ git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./
 ```
 回车
 ### 第二步
-第一步需要在插件目录内config.yaml(config里的)改上你申请的token _去这个文档申请_ [WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)
+第一步需要在插件目录内config.yaml(config里的)改上你申请的token _去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
 ### 第三步
 _PS:这一步内所有txt均在welm-plugin/data内_
 #### 个性问答
