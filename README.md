@@ -9,7 +9,7 @@
 在Yunzai-Bot根目录打开终端并输入
 
 ```
-git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./plugins/welm-plugin
+git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./plugins/WeLM-plugin
 ```
 回车
 ### 第二步
