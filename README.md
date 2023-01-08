@@ -65,8 +65,8 @@ cnpm install axios
 npm install -g cnpm -registry=https://registry.npm.taobao.org
 ```
 
-## 开始
-个性回答默认在群内是2%触发，或者在对话前面加个welm的100%触发指令(可自行更改看43行的注释自行更改成你想要的比如机器人名字)然后就可以与开始激情对话了。
+# 使用说明
+个性回答默认在群内是2%触发，或者在对话前面加个welm的100%触发指令然后就可以与开始激情对话了。
 ![输入图片说明](resources/gexinghuida.jpg)
 
 提问加个前缀"提问"就好了![输入图片说明](resources/tiwen.png)
@@ -86,4 +86,4 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
 
 # 效果
 巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
-![输入图片说明](resources/biaoyangwelm.png)
+![](resources/biaoyangwelm.png)
