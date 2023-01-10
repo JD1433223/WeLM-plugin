@@ -15,13 +15,13 @@ git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./
 ### 第二步
 第一步需要在插件目录内config.yaml(config里的)改上你申请的token _去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
 ### 第三步
-_PS:这一步内所有txt均在welm-plugin/data内_
+_PS:这一步内所有txt均在WeLM-plugin/data内_
 #### 个性问答
 需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个dhdata.txt演示学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把"(JD自用演示)"直接删了放到插件目data直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
 #### 提问
-需要填写在data(插件目录)里的wddata.txt才能正常使用
+需要填写wddata.txt才能正常使用
 #### 续写
-需要填写在data(插件目录)里的xxdata.txt才能正常使用
+需要填写xxdata.txt才能正常使用
 
 ## JS版(推荐(至少在重构未完成之前))
 ### 第一步
