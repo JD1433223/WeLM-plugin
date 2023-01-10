@@ -88,3 +88,6 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
 # 效果
 巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
 ![](resources/biaoyangwelm.png)
+
+# 更新日志
+☞[点我前往查看](./UpdateLogs.md)
