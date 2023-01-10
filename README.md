@@ -6,7 +6,7 @@
 
 ## 插件包版
 ### 第一步
-在Yunzai-Bot根目录打开终端并输入
+在Yunzai-Bot根目录打开终端并输入  _PS:如果不使用给出的命令安装插件包版可能会无法载入插件_ 
 
 ```
 git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./plugins/WeLM-plugin
