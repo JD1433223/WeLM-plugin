@@ -4,7 +4,7 @@ logger.info('---------------------')
 logger.info('WeLM AI对话插件初始化~')
 logger.info('---------------------')
 
-const files = fs.readdirSync('./plugins/welm-plugin/apps').filter(file => file.endsWith('.js'))
+const files = fs.readdirSync('./plugins/WeLM-plugin/apps').filter(file => file.endsWith('.js'))
 
 let ret = []
 
