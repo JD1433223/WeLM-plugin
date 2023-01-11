@@ -25,7 +25,6 @@ let stop = settings.stop
 let twstop = settings.twstop
 let commandstart = settings.wdcmdstart
 let replystart = settings.wdreplystart
-let priority = settings.wdpriority
 //分割线_____________________________
 
 
@@ -34,7 +33,7 @@ export class RGznbot extends plugin {
         super({
             name: 'WeLM问答',
             event: 'message',
-            priority: priority,
+            priority: 5000,
             rule: [
                  {
                     reg: '^提问.*',
