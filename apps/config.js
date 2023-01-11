@@ -1,5 +1,5 @@
 import plugin from '../../../lib/plugins/plugin.js'
-import fs from "fs"
+import fs from 'fs'
 import YAML from 'yaml'
 const _path = process.cwd()
 export class example extends plugin {
