@@ -19,7 +19,7 @@ export class example extends plugin {
       rule: [
         {
           /** 命令正则匹配 */
-          reg: "^#开始填写token(.*)$",
+          reg: "^#填写token(.*)$",
           /** 执行方法 */
           fnc: 'atk'
 },{
@@ -47,7 +47,7 @@ fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
         return true
       }
 
-      let token = e.msg.replace(/#开始填写token/g, "").trim();
+      let token = e.msg.replace(/#填写token/g, "").trim();
       let token2 = `"${token}"`
       let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
       let str = `${res}`
