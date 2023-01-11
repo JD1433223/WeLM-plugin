@@ -43,8 +43,6 @@ export class RGznbot extends plugin {
         let commandstart = settings.xxcmdstart
         let replystart = settings.xxreplystart
         e.msg = e.msg.replace(commandstart, "")
-        let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/xxdata.txt', { encoding: 'utf-8' })
-		let sc_cs2 = sc_cs + e.msg
         axios({
 	        method: 'post',
 	        url: 'https://welm.weixin.qq.com/v1/completions',
@@ -53,7 +51,7 @@ export class RGznbot extends plugin {
 		        "Authorization": API_token
 	        },
 	        data: {
-		        "prompt": sc_cs2,
+		        "prompt": e.msg,
 		        "model": model,
 		        "max_tokens": max_tokens_xx,
 		        "temperature": temperature,
