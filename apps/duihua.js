@@ -10,21 +10,6 @@ import YAML from 'yaml'
 //续写只需加个空的xxdata.txt就行了
 //有报错先看这里！！！！！！可能需要npm add axios -w后才能正常使用，看看简介有其他方式
 //有问题问JD(1461072722)在上学回复慢，但是一定会回复，也可以去火火的群(666345141)里面找JD
-const settings = await YAML.parse(fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml','utf8'));
-//如需配置插件请到本插件文件夹内config的config.yaml进行编辑
-let bot_name =  settings.bot_name 
-let API_token = settings.API_token 
-let model = settings.model          
-let max_tokens = settings.max_tokens
-let max_tokens_xx = settings.max_tokens_xx    
-let temperature = settings.temperature   
-let top_p = settings.top_p         
-let top_k = settings.top_k            
-let n = settings.n                
-let stop = settings.stop            
-let twstop = settings.twstop
-let commandstart = settings.dhcmdstart
-let replystart = settings.dhreplystart
 //分割线_____________________________
 
 
@@ -51,6 +36,20 @@ export class RGznbot extends plugin {
 		if (e.xml || e.img) {
 			return false;
 		}
+        const _path = process.cwd()
+		const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+        //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
+        let bot_name =  settings.bot_name 
+        let API_token = settings.API_token 
+        let model = settings.model          
+        let max_tokens = settings.max_tokens
+        let temperature = settings.temperature   
+        let top_p = settings.top_p         
+        let top_k = settings.top_k            
+        let n = settings.n                
+        let stop = settings.stop            
+        let commandstart = settings.dhcmdstart
+        let replystart = settings.dhreplystart
         let random_ = parseInt(Math.random() * 99);
         if (random_ >=98 || random_ <=0 || e.msg && e.msg?.indexOf(commandstart) >= 0 || !e.isGroup){
         e.msg = e.msg.replace(commandstart, "")
