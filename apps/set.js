@@ -1,5 +1,5 @@
 import plugin from '../../../lib/plugins/plugin.js'
-import fs from "fs"
+import fs from 'fs'
 import YAML from 'yaml'
 import common from'../../../lib/common/common.js'
 import axios from 'axios'
@@ -77,13 +77,13 @@ fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
 	        }
         })
         .then(function (response) {
-        console.log(response.data.choices[0]);
+        logger.info('Token已更改为:',`"${token}"`);
         e.reply("token填写成功")
         return true
         })
         .catch(function (error) {
           console.log(error);
-          e.reply('token不可用或者无法访问welm，请检查token')
+          e.reply('token不可用或者无法访问welm，请检查token或网络')
         });
     }
 } 
