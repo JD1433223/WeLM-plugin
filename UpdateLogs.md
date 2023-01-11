@@ -1,8 +1,13 @@
 # 本插件的更新日志
 
+## v4.4
+* 添加了设置API-Token的指令(命令语法: #填写token xxxxxxxxxxxxxxxxxxx)并且拥有测试是否能使用的代码
+* 添加了设置机器人名字的指令(命令语法: #更改name xxx)
+
 ## v4.3.50 (测试版)
 * 添加了设置API-Token的指令(命令语法: #填写token xxxxxxxxxxxxxxxxxxx)
 * 添加了设置机器人名字的指令(命令语法: #更改name xxx)
+
 ## v4.3
 * 添加了配置文件
 * 分离了问答、续写与个性问答功能
