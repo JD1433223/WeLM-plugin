@@ -43,8 +43,7 @@ export class RGznbot extends plugin {
         let commandstart = settings.wdcmdstart
         let replystart = settings.wdreplystart
         e.msg = e.msg.replace(commandstart, "")
-        let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/wddata.txt', { encoding: 'utf-8' })
-		let sc_cs2 = sc_cs + "\n问题:" + e.msg + "\n" + "回答" + ":"
+		let sc_cs2 = "根据你所学知识回答" + "\n问题:" + e.msg + "\n" + "回答" + ":"
         axios({
 	        method: 'post',
 	        url: 'https://welm.weixin.qq.com/v1/completions',
