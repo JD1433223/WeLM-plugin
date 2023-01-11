@@ -1,9 +1,10 @@
 import fs from 'node:fs'
 import axios from 'axios'
+import YAML from 'yaml'
 logger.info('-----------------------')
 logger.info('WeLM AI对话插件初始化中~')
 logger.info('-----------------------')
-const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
       let API_token = settings.API_token
       axios({
 	        method: 'post',
@@ -25,7 +26,8 @@ const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/
         })
         .then(function (response) {
         logger.info('初始化成功~')
-        logger.info1('API-Token:',settings.API_token)
+        logger.info('API-Token:',settings.API_token)
+        logger.info('')
         return true
         })
         .catch(function (error) {
