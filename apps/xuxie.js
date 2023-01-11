@@ -10,7 +10,7 @@ import YAML from 'yaml'
 //续写只需加个空的xxdata.txt就行了
 //有报错先看这里！！！！！！可能需要npm add axios -w后才能正常使用，看看简介有其他方式
 //有问题问JD(1461072722)在上学回复慢，但是一定会回复，也可以去火火的群(666345141)里面找JD
-const settings = await YAML.parse(fs.readFileSync('./plugins/welm-plugin/config/config.yaml','utf8'));
+const settings = await YAML.parse(fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml','utf8'));
 //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
 let bot_name =  settings.bot_name 
 let API_token = settings.API_token 
@@ -45,7 +45,7 @@ export class RGznbot extends plugin {
 
 	async Xuxie(e) {
         e.msg = e.msg.replace(commandstart, "")
-        let sc_cs = fs.readFileSync('./plugins/welm-plugin/data/xxdata.txt', { encoding: 'utf-8' })
+        let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/xxdata.txt', { encoding: 'utf-8' })
 		let sc_cs2 = sc_cs + e.msg
         axios({
 	        method: 'post',

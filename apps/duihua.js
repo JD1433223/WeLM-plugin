@@ -10,7 +10,7 @@ import YAML from 'yaml'
 //续写只需加个空的xxdata.txt就行了
 //有报错先看这里！！！！！！可能需要npm add axios -w后才能正常使用，看看简介有其他方式
 //有问题问JD(1461072722)在上学回复慢，但是一定会回复，也可以去火火的群(666345141)里面找JD
-const settings = await YAML.parse(fs.readFileSync('./plugins/welm-plugin/config/config.yaml','utf8'));
+const settings = await YAML.parse(fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml','utf8'));
 //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
 let bot_name =  settings.bot_name 
 let API_token = settings.API_token 
@@ -47,14 +47,14 @@ export class RGznbot extends plugin {
     async Msg(e) {
         	//判断一下不是合并消息，不然会报错
         	//下面这个random是随机回复群友的消息，这里的概率是1%，如果不想要的话可以把98改成100
-        	//那个47行的welm是个人用来当做一个100%触发的命令前缀专门用来测试的，可以改成你喜欢的。记得把49行那两个/中间的welm改成你自己的前缀
+        	//那个47行的welm是个人用来当做一个100%触发的命令前缀专门用来测试的，可以改成你喜欢的。记得把49行那两个/中间的WeLM改成你自己的前缀
 		if (e.xml || e.img) {
 			return false;
 		}
         let random_ = parseInt(Math.random() * 99);
         if (random_ >=98 || random_ <=0 || e.msg && e.msg?.indexOf(commandstart) >= 0 || !e.isGroup){
         e.msg = e.msg.replace(commandstart, "")
-		let sc_cs = fs.readFileSync('./plugins/welm-plugin/data/dhdata.txt', { encoding: 'utf-8' })
+		let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/dhdata.txt', { encoding: 'utf-8' })
 		let sc_cs2 = sc_cs + "\n我:" + e.msg + "\n" + bot_name + ":"
         axios({
 	        method: 'post',
