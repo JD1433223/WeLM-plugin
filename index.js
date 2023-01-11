@@ -1,8 +1,39 @@
 import fs from 'node:fs'
-
-logger.info('---------------------')
-logger.info('WeLM AI对话插件初始化~')
-logger.info('---------------------')
+import axios from 'axios'
+logger.info('-----------------------')
+logger.info('WeLM AI对话插件初始化中~')
+logger.info('-----------------------')
+const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+      let API_token = settings.API_token
+      axios({
+	        method: 'post',
+	        url: 'https://welm.weixin.qq.com/v1/completions',
+	        headers: {
+		        "Content-Type": "application/json",
+		        "Authorization": API_token
+	        },
+	        data: {
+		        "prompt": "测试",
+		        "model": "xl",
+		        "max_tokens": "64",
+		        "temperature": "0.85",
+		        "top_p": "0.95",
+		        "top_k": "50",
+		        "n": "2",
+		        "stop": "\n",
+	        }
+        })
+        .then(function (response) {
+        logger.info('初始化成功~')
+        logger.info1('API-Token:',settings.API_token)
+        return true
+        })
+        .catch(function (error) {
+        logger.error('初始化失败(悲)')
+        logger.error('API-Token检测失败(API-Token未填写或网络错误)')
+        logger.info('-----------------------')  
+        }
+      )
 
 const files = fs.readdirSync('./plugins/WeLM-plugin/apps').filter(file => file.endsWith('.js'))
 
