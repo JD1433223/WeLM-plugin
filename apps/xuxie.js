@@ -25,7 +25,6 @@ let stop = settings.stop
 let twstop = settings.twstop
 let commandstart = settings.xxcmdstart
 let replystart = settings.xxreplystart
-let priority = settings.xxpriority
 //分割线_____________________________
 
 
@@ -34,7 +33,7 @@ export class RGznbot extends plugin {
         super({
             name: 'WeLM续写',
             event: 'message',
-            priority: priority,
+            priority: 5000,
             rule: [
                 {
                     reg: '^续写.*',
