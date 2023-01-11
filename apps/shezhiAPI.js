@@ -6,7 +6,7 @@ export class example extends plugin {
   constructor () {
     super({
       /** 功能名称 */
-      name: '填写API',
+      name: 'WeLM填写API',
       /** https://oicqjs.github.io/oicq/#events */
       event: 'message',
       /** 优先级，数字越小等级越高 */
@@ -17,11 +17,25 @@ export class example extends plugin {
           reg: "^#填写token(.*)$",
           /** 执行方法 */
           fnc: 'atk'
+},{
+          reg: "^#更改name(.*)$",
+          /** 执行方法 */
+          fnc: 'op'
 }
       ]
     })
   }
+async op(e) {
+let name = e.msg.replace(/#更改name/g, "").trim();
+let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
 
+let str = `${res}`
+var reg = new RegExp(`bot_name: "(.*?)"`); 
+var a = str.replace(reg,`bot_name: "${name}"`);
+fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
+       logger.info('机器人名字已更改为:',`'${name}'`)
+       e.reply(`名字已成功修改为${name}`)
+    }
 
     async atk(e) {
 let token = e.msg.replace(/#填写token/g, "").trim();
@@ -32,7 +46,8 @@ let str = `${res}`
 var reg = new RegExp(`"(.*?)"`); 
 var a = str.replace(reg,`"${token}"`);
 fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
-       e.reply('WeLM Token已填写成功')
+       logger.info('Token已更改为:',`'${token}'`)
+       e.reply('token已填写成功')
     }
 } 
 
