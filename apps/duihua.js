@@ -25,7 +25,6 @@ let stop = settings.stop
 let twstop = settings.twstop
 let commandstart = settings.dhcmdstart
 let replystart = settings.dhreplystart
-let priority = settings.dhpriority
 //分割线_____________________________
 
 
@@ -34,7 +33,7 @@ export class RGznbot extends plugin {
         super({
             name: 'WeLM对话',
             event: 'message',
-            priority: priority,
+            priority: 60000,
             rule: [
                 {
                     reg: '(.*)',
