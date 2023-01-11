@@ -47,17 +47,17 @@ _PS:这一步的所有txt都是上一步移动的文件_
 第一次使用可能会缺少依赖，三选一执行
 
 ```
-pnpm add axios console -w
+pnpm add axios console yaml -w
 ```
 这个可能会掉依赖，希望你不要中奖
 
 ```
-npm install axios console
+npm install axios console yaml
 ```
 这个可能连不上
 
 ```
-cnpm install axios console 
+cnpm install axios console yaml
 ```
 这个需要安装cnpm，命令是
 
