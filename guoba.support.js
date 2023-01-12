@@ -1,4 +1,4 @@
-import path from "path"
+import path from 'path'
 
 //支持锅巴
 export function supportGuoba() {
@@ -15,6 +15,6 @@ export function supportGuoba() {
         isV3: true,
         isV2: false,
         description: '提供个性ai问答和提问(chatgpt下下下位替代)功能'
-    }
+        }
     }
 }
