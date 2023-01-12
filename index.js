@@ -1,42 +1,47 @@
 import fs from 'node:fs'
-import axios from 'axios'
+import common from'../../lib/common/common.js'
 import YAML from 'yaml'
-logger.info('-----------------------')
-logger.info('WeLM AI对话插件初始化中~')
-logger.info('-----------------------')
-const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
-      let API_token = settings.API_token
-      axios({
-	        method: 'post',
-	        url: 'https://welm.weixin.qq.com/v1/completions',
-	        headers: {
-		        "Content-Type": "application/json",
-		        "Authorization": API_token
-	        },
-	        data: {
-		        "prompt": "测试",
-		        "model": "xl",
-		        "max_tokens": "64",
-		        "temperature": "0.85",
-		        "top_p": "0.95",
-		        "top_k": "50",
-		        "n": "2",
-		        "stop": "\n",
-	        }
-        })
-        .then(function (response) {
-        logger.info('初始化成功~')
-        logger.info1('API-Token:',settings.API_token)
-        return true
-        })
-        .catch(function (error) {
-        logger.error('初始化失败(悲)')
-        logger.error('API-Token检测失败(API-Token未填写或网络错误)')
-        logger.info('-----------------------')  
-        }
-      )
+import axios from 'axios'
+const _path = process.cwd()
 
-const files = fs.readdirSync('./apps').filter(file => file.endsWith('.js'))
+logger.info('----------------------------------')
+logger.info('WeLM AI对话测试API是否可用并加载插件中~')
+logger.info('----------------------------------')
+const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+let res = fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,"utf8")
+let token = settings.API_token
+let str = `${res}`
+var reg = new RegExp(`"(.*?)"`); 
+var a = str.replace(reg,`"${token}"`);
+fs.writeFileSync(`./plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
+let API_token = settings.API_token
+axios({
+    method: 'post',
+    url: 'https://welm.weixin.qq.com/v1/completions',
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": API_token
+    },
+    data: {
+      "prompt": "测试",
+      "model": "xl",
+      "max_tokens": "64",
+      "temperature": "0.85",
+      "top_p": "0.95",
+      "top_k": "50",
+      "n": "2",
+      "stop": "\n",
+    }
+  })
+  .then(function (response) {
+  logger.info('Token可用')
+  return true
+  })
+  .catch(function (error) {
+    logger.error('Token不可用或者无法访问welm，请检查token或网络')
+  });
+
+const files = fs.readdirSync('./plugins/WeLM-plugin/apps').filter(file => file.endsWith('.js'))
 
 let ret = []
 
