@@ -79,7 +79,7 @@ export class RGznbot extends plugin {
 		})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(由welm回答)"+ | 这一部分
 		.catch(function (error) {
 		    console.log(error);
-			let ys = fs.readFileSync('./plugins/WeLM-plugin/data/ysdata.txt', { encoding: 'utf-8' })
+			let ys = fs.readFileSync('./plugins/WeLM-plugin/data/lxdhdata.txt', { encoding: 'utf-8' })
 		    let xr_mb = ys	
 	    	fs.writeFileSync('./plugins/WeLM-plugin/data/gldata.txt', xr_mb, 'utf8')
 	    	e.reply("违反政策的内容或者对话字数已达到上限(2048)，已重置对话，请重新开始")
@@ -87,7 +87,7 @@ export class RGznbot extends plugin {
     }
 
 	async Cz(e) {
-		let ys = fs.readFileSync('./plugins/WeLM-plugin/data/ysdata.txt', { encoding: 'utf-8' })
+		let ys = fs.readFileSync('./plugins/WeLM-plugin/data/lxdhdata.txt', { encoding: 'utf-8' })
 		let xr_mb = ys	
 		fs.writeFileSync('./plugins/WeLM-plugin/data/gldata.txt', xr_mb, 'utf8')
 		e.reply("已清除对话啦")
