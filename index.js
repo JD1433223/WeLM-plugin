@@ -4,9 +4,9 @@ import YAML from 'yaml'
 import axios from 'axios'
 const _path = process.cwd()
 
-logger.info('-------------------------------------')
-logger.info('WeLM AI对话测试API是否可用并加载插件中~')
-logger.info('-------------------------------------')
+logger.info('-------------------------------------------')
+logger.info('WeLM AI对话插件正在测试API是否可用并加载JS中~')
+logger.info('-------------------------------------------')
 const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
 let res = fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,"utf8")
 let token = settings.API_token
