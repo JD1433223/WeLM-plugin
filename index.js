@@ -4,9 +4,9 @@ import YAML from 'yaml'
 import axios from 'axios'
 const _path = process.cwd()
 
-logger.info('----------------------------------')
+logger.info('-------------------------------------')
 logger.info('WeLM AI对话测试API是否可用并加载插件中~')
-logger.info('----------------------------------')
+logger.info('-------------------------------------')
 const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
 let res = fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,"utf8")
 let token = settings.API_token
@@ -34,11 +34,11 @@ axios({
     }
   })
   .then(function (response) {
-  logger.info('Token可用')
+  logger.debug('WeLM返回:Token可用')
   return true
   })
   .catch(function (error) {
-    logger.error('Token不可用或者无法访问welm，请检查token或网络')
+    logger.error('WeLM返回:Token不可用或者无法访问WeLM，请检查Token或网络')
   });
 
 const files = fs.readdirSync('./plugins/WeLM-plugin/apps').filter(file => file.endsWith('.js'))
