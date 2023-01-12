@@ -13,7 +13,7 @@ git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./
 ```
 回车
 ### 第二步
-对机器人私聊"#填写token后面跟上你的token" _去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
+对机器人私聊"#填写token xxx"（这个xxx是你的token-api） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
 ![输入图片说明](resources/IMG_20230112_010322.jpg)
 ### 第三步
 _PS:txt在WeLM-plugin/data内_
