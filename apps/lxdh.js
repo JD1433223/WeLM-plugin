@@ -5,8 +5,8 @@ import fs from 'node:fs'
 import YAML from 'yaml'
 
 //此插件由[书辞千楪(1700179844)]编写
-//模型的prompt文件请放到/Yunzai-Bot/resources/dhdata.txt
-//如果没有dhdata.txt文件，请自行在/Yunzai-Bot/resources/内创建"dhdata.txt文件"。
+//模型的prompt文件请放到/Yunzai-Bot/WeLM-plugin/data/dhdata.txt
+//如果没有dhdata.txt文件，请自行在/Yunzai-Bot/WeLM-plugin/data/内创建"dhdata.txt文件"。
 //有报错先看这里！！！！！！可能需要pnpm add axios -w后才能正常使用
 //分割线_____________________________
 
