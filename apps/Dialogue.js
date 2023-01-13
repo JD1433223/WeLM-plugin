@@ -57,8 +57,8 @@ export class RGznbot extends plugin {
         let replystart = settings.lxdhreplystart
         e.msg = e.msg.replace(commandstart, "")
 		let xr_mb = "\n我:" + e.msg + "\n" + bot_name + ":"         //如果不想要对话记录写入模型prompt请删除这一行。		
-		fs.appendFileSync('./plugins/WeLM-plugin/data/gldata.txt', xr_mb, 'utf8')  //如果不想要对话记录写入模型prompt请删除这一行。
-		let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/gldata.txt', { encoding: 'utf-8' })
+		fs.appendFileSync('./plugins/WeLM-plugin/data/jldata.txt', xr_mb, 'utf8')  //如果不想要对话记录写入模型prompt请删除这一行。
+		let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/jldata.txt', { encoding: 'utf-8' })
         axios({
 	        method: 'post',
 	        url: 'https://welm.weixin.qq.com/v1/completions',
@@ -79,14 +79,14 @@ export class RGznbot extends plugin {
         })
 		.then(function (response) {
 		    console.log(response.data.choices[0]);
-			fs.appendFileSync('./plugins/WeLM-plugin/data/gldata.txt', response.data.choices[0].text, 'utf8')
+			fs.appendFileSync('./plugins/WeLM-plugin/data/jldata.txt', response.data.choices[0].text, 'utf8')
 		    e.reply(replystart+response.data.choices[0].text, e.isGroup);
 		})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(由welm回答)"+ | 这一部分
 		.catch(function (error) {
 		    console.log(error);
 			let ys = fs.readFileSync('./plugins/WeLM-plugin/data/dhdata.txt', { encoding: 'utf-8' })
 		    let xr_mb = ys	
-	    	fs.writeFileSync('./plugins/WeLM-plugin/data/gldata.txt', xr_mb, 'utf8')
+	    	fs.writeFileSync('./plugins/WeLM-plugin/data/jldata.txt', xr_mb, 'utf8')
 	    	e.reply("违反政策的内容或者对话字数已达到上限(2048)，已重置对话，请重新开始")
 		});
     }
@@ -94,7 +94,7 @@ export class RGznbot extends plugin {
 	async Cz(e) {
 		let ys = fs.readFileSync('./plugins/WeLM-plugin/data/dhdata.txt', { encoding: 'utf-8' })
 		let xr_mb = ys	
-		fs.writeFileSync('./plugins/WeLM-plugin/data/gldata.txt', xr_mb, 'utf8')
+		fs.writeFileSync('./plugins/WeLM-plugin/data/jldata.txt', xr_mb, 'utf8')
 		e.reply("已清除对话啦")
 	}
 
