@@ -29,7 +29,7 @@ export class RGznbot extends plugin {
 			return false;
 		}
 		e.msg = e.msg.replace(/填文章/g, "")
-		fs.writeFileSync('./plugins/WeLM-plugin/data/ydlj.txt', e.msg, 'utf8')
+		fs.writeFileSync('./plugins/WeLM-plugin/data/ydljdata.txt', e.msg, 'utf8')
 		e.reply("已填入文章，可以使用")
 	}
 
@@ -47,10 +47,12 @@ export class RGznbot extends plugin {
         let top_p = settings.top_p         
         let top_k = settings.top_k            
         let n = settings.n                
-        let stop = settings.stop
-        if (e.msg && e.msg?.indexOf("阅读理解") >= 0 || !e.isGroup){
-        e.msg = e.msg.replace(/阅读理解/g, "")
-		let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/ydlj.txt', { encoding: 'utf-8' })
+		let stop = settings.stop
+		let commandstart = settings.ydljcmdstart
+		let replystart = settings.ydljreplystart
+		if (e.msg && e.msg?.indexOf(commandstart) >= 0 || !e.isGroup) {
+        e.msg = e.msg.replace(commandstart, "")
+		let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/ydljdata.txt', { encoding: 'utf-8' })
 		let sc_cs2 = "阅读文章:\n" +  sc_cs + "\n:" + "问题:" + e.msg + "\n" + "答案" + ":"
         axios({
 	        method: 'post',
@@ -71,8 +73,8 @@ export class RGznbot extends plugin {
 	        }
         })
 		.then(function (response) {
-		    console.log(response.data.choices[0]);
-		    e.reply("(由welm阅读理解)"+response.data.choices[0].text, e.isGroup);
+			logger.info('WeLM返回消息:' + response.data.choices[0].text)
+		    e.reply(replystart+response.data.choices[0].text, e.isGroup);
 		})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(由welm回答)"+ | 这一部分
 		.catch(function (error) {
 		    console.log(error);

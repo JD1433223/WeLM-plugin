@@ -78,7 +78,7 @@ export class RGznbot extends plugin {
 	        }
         })
 		.then(function (response) {
-		    console.log(response.data.choices[0]);
+			logger.info('WeLM返回消息:' + response.data.choices[0].text);
 			fs.appendFileSync('./plugins/WeLM-plugin/data/jldata.txt', response.data.choices[0].text, 'utf8')
 		    e.reply(replystart+response.data.choices[0].text, e.isGroup);
 		})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(由welm回答)"+ | 这一部分
@@ -143,7 +143,7 @@ export class RGznbot extends plugin {
 				}
 			})
 				.then(function (response) {
-					console.log(response.data.choices[0]);
+					logger.info('WeLM返回消息:' + response.data.choices[0].text);
 					e.reply(replystart + response.data.choices[0].text, e.isGroup);
 				})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(由welm回答)"+ | 这一部分
 				.catch(function (error) {

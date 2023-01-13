@@ -43,12 +43,8 @@ export const helpList = [{
   group: '主要功能',
   list: [{
     icon: 94,
-    title: 'welm',
-    desc: '调用你的API-Token进行生成文字并回复你'
-  }, {
-    icon: 90,
-    title: 'lxdh',
-    desc: '与welm一样但是拥有上下文'
+    title: 'welm、lxdh',
+    desc: '调用你的API-Token进行生成文字并回复你, 连续对话与普通对话一致但是拥有上下文功能'
   }, {
     icon: 79,
     title: '提问',
@@ -63,7 +59,7 @@ export const helpList = [{
     desc: '字面意思'
   }, {
     icon: 5,
-    title: '海龟汤',
+    title: '看汤面、看汤底、请问xxx、写汤面、写汤底',
     desc: '出题人只能回答是否与此无关, 然后你来推断出整个故事(海龟汤的汤面汤底要自己填写)'
   }, {
     icon: 85,
