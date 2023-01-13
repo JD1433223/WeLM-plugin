@@ -70,6 +70,8 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
 提问加个前缀"提问"就好了
 ![输入图片说明](resources/README/tiwen.png)
 
+使用#帮助获得功能说明~
+
 #### 如果装了@戏天的那个ai自定义的js的
 需要去那个ai插件里面的104行加上
 
