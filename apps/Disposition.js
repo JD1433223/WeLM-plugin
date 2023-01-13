@@ -5,7 +5,7 @@ import common from'../../../lib/common/common.js'
 import axios from 'axios'
 //感谢@鸢大佬提供的写入yaml部分
 const _path = process.cwd()
-export class example extends plugin {
+export class RGznbot extends plugin {
   constructor () {
     super({
       /** 功能名称 */
