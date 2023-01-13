@@ -16,7 +16,7 @@ import YAML from 'yaml'
 export class RGznbot extends plugin {
     constructor() {
         super({
-            name: 'WeLM续写',
+            name: '续写',
             event: 'message',
             priority: 5000,
             rule: [

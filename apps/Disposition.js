@@ -9,7 +9,7 @@ export class example extends plugin {
   constructor () {
     super({
       /** 功能名称 */
-      name: 'WeLM配置更改',
+      name: '配置更改',
       /** 功能描述 */
       /** https://oicqjs.github.io/oicq/#events */
       event: 'message',
