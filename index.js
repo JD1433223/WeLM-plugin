@@ -34,11 +34,11 @@ axios({
     }
   })
   .then(function (response) {
-  logger.debug('WeLM返回:Token可用')
   return true
   })
   .catch(function (error) {
-    logger.error('WeLM返回:Token不可用或者无法访问WeLM，请检查Token或网络')
+    logger.error('Token不可用或者无法访问WeLM，请检查Token或网络, 如果未填写Token请使用指令: #填写token xxx进行填写')
+    return false
   });
 
 const files = fs.readdirSync('./plugins/WeLM-plugin/apps').filter(file => file.endsWith('.js'))
