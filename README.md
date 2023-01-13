@@ -88,4 +88,4 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
 ![](resources/biaoyangwelm.png)
 
 # 更新日志
-☞[点我前往查看](./UpdateLogs.md)
+☞[点我前往查看](./CHANGELOG.md)
