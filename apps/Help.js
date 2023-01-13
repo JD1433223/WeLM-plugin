@@ -5,7 +5,6 @@ import { segment } from "oicq";
 import puppeteer from '../../../lib/puppeteer/puppeteer.js'
 import cfg from '../../../lib/config/config.js'
 import { Cfg, Common, Data, Version, Plugin_Name, Plugin_Path } from '../components/index.js'
-// import Theme from './help/theme.js'
 
 export class RGznbot extends plugin {
   constructor() {
