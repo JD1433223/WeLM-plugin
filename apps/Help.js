@@ -21,7 +21,7 @@ export class WeLM_help extends plugin {
       rule: [
         {
           /** 命令正则匹配 */
-          reg: '^#(WeLM|AI)(规则|帮助|版本)$',
+          reg: '^#(welm|AI)(规则|帮助|版本)$',
           /** 执行方法 */
           fnc: 'message'
         }
