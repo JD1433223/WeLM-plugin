@@ -1,13 +1,6 @@
+# 普通用户配置专区(怎么改都行)
 API_token: "API" # 你的API token，没有自己上WeLM官网https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail申请
 bot_name: "NAME" # 里面填你机器人角色昵称or自设之类的?
-dhcmdstart: "welm" # 对话指令开头。
-wdcmdstart: "提问" # 问答指令开头。
-xxcmdstart: "续写" # 续写指令开头。
-lxdhcmdstart: "lxdh" # 连续对话指令开头
-dhreplystart: "(由WeLM回答)" # 对话指令回复开头备注, 不用与其他ai区分时可留空。
-wdreplystart: "(由WeLM提问)" # 问答指令回复开头备注, 不用与其他ai区分时可留空。
-xxreplystart: "(由WeLM续写)" # 续写指令回复开头备注, 不用与其他ai区分时可留空。
-lxdhreplystart: "(由WeLM回答(连续对话))" # 连续对话指令回复开头备注, 不用与其他ai区分时可留空。
 
 # 模型参数调试专区(最好不碰,参数已由作者设定完成)
 model: "xl" # 要使用的模型名称，当前支持的模型名称有medium、 large 和 xl。
@@ -22,3 +15,11 @@ twstop: "。" # 默认值"。" ，提问指令停止符号。当模型当前生�
 
 # 插件调试专区(开发人员专用,更改后可能会寄)
 version: "4.6"
+dhcmdstart: "welm" # 对话指令开头。
+wdcmdstart: "提问" # 问答指令开头。
+xxcmdstart: "续写" # 续写指令开头。
+lxdhcmdstart: "lxdh" # 连续对话指令开头
+dhreplystart: "(由WeLM回答)" # 对话指令回复开头备注, 不用与其他ai区分时可留空。
+wdreplystart: "(由WeLM提问)" # 问答指令回复开头备注, 不用与其他ai区分时可留空。
+xxreplystart: "(由WeLM续写)" # 续写指令回复开头备注, 不用与其他ai区分时可留空。
+lxdhreplystart: "(由WeLM回答(连续对话))" # 连续对话指令回复开头备注, 不用与其他ai区分时可留空。
