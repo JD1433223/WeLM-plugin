@@ -42,20 +42,18 @@ fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
 
     async atk(e) {
       if (e.isGroup || !e.isMaster) {
-        e.reply("要是给你在这填了那我岂不是很没面子")
+        e.reply("JD:要是给你在这填了那我岂不是很没面子")
         return true
       }
 
-      let token = e.msg.replace(/#填写token/g, "").trim();
-      let token2 = `"${token}"`
+      let token = e.msg.replace(/#填写token/g, "").trim()
       let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
       let str = `${res}`
       var reg = new RegExp(`"(.*?)"`); 
       var a = str.replace(reg,`"${token}"`);
-      fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
+      fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8")
       e.reply("开始测试token正确性")
-      await common.sleep(1000)
-      const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+      const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'))
       let API_token = settings.API_token
       axios({
 	        method: 'post',
