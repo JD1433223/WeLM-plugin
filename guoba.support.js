@@ -1,5 +1,3 @@
-import path from 'path'
-
 //支持锅巴
 export function supportGuoba() {
     return {
