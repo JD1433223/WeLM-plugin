@@ -15,6 +15,7 @@ twstop: "。" # 默认值"。" ，提问指令停止符号。当模型当前生�
 
 # 插件调试专区(开发人员专用,更改后可能会寄)
 version: "4.6"
+
 dhcmdstart: "welm" # 对话指令开头。
 wdcmdstart: "提问" # 问答指令开头。
 xxcmdstart: "续写" # 续写指令开头。
@@ -25,4 +26,4 @@ dhreplystart: "(由WeLM回答)" # 对话指令回复开头备注, 不用与其�
 wdreplystart: "(由WeLM提问)" # 问答指令回复开头备注, 不用与其他ai区分时可留空。
 xxreplystart: "(由WeLM续写)" # 续写指令回复开头备注, 不用与其他ai区分时可留空。
 lxdhreplystart: "(由WeLM回答(连续对话))" # 连续对话指令回复开头备注, 不用与其他ai区分时可留空。
-ydljreplystart: "(由welm阅读理解)"
+ydljreplystart: "(由welm阅读理解)" # 阅读理解指令回复开头备注, 不用与其他ai区分时可留空。
