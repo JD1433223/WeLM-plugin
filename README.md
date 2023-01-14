@@ -47,17 +47,17 @@ _PS:这一步的所有txt都是上一步移动的文件_
 ```
 pnpm add axios console yaml -w
 ```
-这个可能会掉依赖，希望你不要中奖
+pnpm可能会掉依赖，希望你不要中奖
 
 ```
 npm install axios console yaml
 ```
-这个可能连不上
+npm可能连不上
 
 ```
 cnpm install axios console yaml
 ```
-这个需要安装cnpm，命令是
+cnpm需要安装，命令是:
 
 ```
 npm install -g cnpm -registry=https://registry.npm.taobao.org
