@@ -4,7 +4,7 @@ bot_name: "NAME" # 里面填你机器人角色昵称or自设之类的?
 
 # 模型参数调试专区(最好不碰,参数已由作者设定完成)
 model: "xl" # 要使用的模型名称，当前支持的模型名称有medium、 large 和 xl。
-max_token: "128"  # 最多生成的token个数, 默认值 128。
+max_tokens: "128"  # 最多生成的token个数, 默认值 128。
 max_token_xx: "256" # 续写指令最多生成的token个数，默认值 256。
 temperature: "0.85" # 默认值 0.85，更高的temperature意味着模型具备更多的可能性。对于更有创造性的应用，可以尝试0.85以上，而对于有明确答案的应用，可以尝试0（argmax采样）。 建议改变这个值或top_p，但不要同时改变。
 top_p: "0.95" # 默认值 0.95，来源于nucleus sampling，采用的是累计概率的方式。

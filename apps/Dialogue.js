@@ -45,9 +45,9 @@ export class RGznbot extends plugin {
 		const _path = process.cwd()
         const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         let bot_name =  settings.bot_name 
-        let API_token = settings.API_token 
+        let API_token= settings.API_token
         let model = settings.model          
-        let max_tokens = settings.max_token
+        let max_tokens = settings.max_tokens
         let temperature = settings.temperature   
         let top_p = settings.top_p         
         let top_k = settings.top_k            
@@ -111,7 +111,7 @@ export class RGznbot extends plugin {
 		let bot_name = settings.bot_name
 		let API_token = settings.API_token
 		let model = settings.model
-		let max_tokens = settings.max_token
+		let max_tokens = settings.max_tokens
 		let temperature = settings.temperature
 		let top_p = settings.top_p
 		let top_k = settings.top_k
