@@ -34,7 +34,7 @@ export class RGznbot extends plugin {
         let bot_name =  settings.bot_name 
         let API_token = settings.API_token 
         let model = settings.model          
-        let max_tokens_xx = settings.max_token_xx    
+        let max_tokens_xx = settings.max_tokens_xx    
         let temperature = settings.temperature   
         let top_p = settings.top_p         
         let top_k = settings.top_k            

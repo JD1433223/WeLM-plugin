@@ -42,7 +42,7 @@ export class RGznbot extends plugin {
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
         let API_token = settings.API_token 
         let model = settings.model          
-        let max_tokens = settings.max_token
+        let max_tokens = settings.max_tokens
         let temperature = settings.temperature   
         let top_p = settings.top_p         
         let top_k = settings.top_k            
