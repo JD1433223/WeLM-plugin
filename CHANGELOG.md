@@ -17,12 +17,12 @@ _PS:版本号后面有个.50的为beta版, 例如: 114.514.50_
 # 4.4 (Plugin)
 
 * 添加了设置API-Token的指令(命令语法: #填写token xxxxxxxxxxxxxxxxxxx)并且拥有测试是否能使用的代码
-* 添加了设置机器人名字的指令(命令语法: #更改name xxx)
+* 添加了设置机器人名字的指令(命令语法: #更改name xxxx)
 
 # 4.3.50 (Plugin)
 
 * 添加了设置API-Token的指令(命令语法: #填写token xxxxxxxxxxxxxxxxxxx)
-* 添加了设置机器人名字的指令(命令语法: #更改name xxx)
+* 添加了设置机器人名字的指令(命令语法: #更改name xxxx)
 
 # 4.3 (Plugin)
 
