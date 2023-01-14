@@ -138,7 +138,7 @@ export class update extends plugin {
         end =
             "更多详细信息，请前往gitee查看\nhttps://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/blob/master/CHANGELOG.md";
 
-        log = await this.makeForwardMsg(`椰奶插件更新日志，共${line}条`, log, end);
+        log = await this.makeForwardMsg(`WeLM插件更新日志，共${line}条`, log, end);
 
         return log;
     }

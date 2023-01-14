@@ -6,11 +6,11 @@ const Plugin_Path = `${process.cwd()}/plugins/WeLM-plugin`;
 const README_path = `${Plugin_Path}/README.md`//帮助
 const CHANGELOG_path = `${Plugin_Path}/CHANGELOG.md`//更新
 const yunzai_ver = `v${cfg.package.version}`;//云崽的版本
-const settings = await YAML.parse(fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml','utf8'));
+const version = await YAML.parse(fs.readFileSync('./plugins/WeLM-plugin/config/version.yaml','utf8'));
 
 let logs = {}
 let changelogs = []
-let currentVersion = settings.version
+let currentVersion = version.version
 let versionCount = 6
 
 let packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
