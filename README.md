@@ -1,10 +1,12 @@
 # 云崽自定义对话WeLM
+
 #### 介绍
 此为Yunzai-Bot云崽QQ机器人的插件，需要依赖云崽机器人来实现功能，可以模仿你机器人的人设对话(或许有其他问答功能) _可以去这里研究一下[WeLM](https://welm.weixin.qq.com/docs/api/)_
 
 # 安装教程
 
 ## 插件包版(推荐)
+_PS:最新版本_
 ### 第一步
 在Yunzai-Bot根目录打开终端并输入   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件_**
 
@@ -89,5 +91,9 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
 巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
 ![](resources/README/biaoyangwelm.png)
 
+## 版本下载
+* 插件包版目前最新版本: 4.6  **☞[点我前去下载](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/releases/download/v4.6/WeLM-plugin.zip)**
+* JS版目前最新版本: 4.4 **☞[点我前去下载](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/releases/download/v4.4(JS)/JS-Version.zip)**
+
 # 更新日志
-☞[点我前往查看](./CHANGELOG.md)
+* **☞[点我前往查看](./CHANGELOG.md)**
