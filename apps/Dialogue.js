@@ -16,7 +16,7 @@ export class RGznbot extends plugin {
         super({
             name: '对话',
             event: 'message',
-            priority: 5000,
+            priority: 60010,
             rule: [
                  {
                     reg: '#清除对话',
