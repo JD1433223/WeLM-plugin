@@ -30,6 +30,10 @@ export class RGznbot extends plugin {
     })
   }
 async op(e) {
+      if (!e.isMaster) {
+          e.reply("JD:要是给你填了那我岂不是很没面子")
+        return true
+        }
 let name = e.msg.replace(/#更改name/g, "").trim();
 let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
 
