@@ -61,9 +61,9 @@ export class RGznbot extends plugin {
 		        "stop": stop,
 	        }
         })
-		.then(function (respone) {
+		.then(function (response) {
             logger.info('WeLM返回消息:' + response.data.choices[0].text);
-		    e.reply(replystart+respone.data.choices[0].text, e.isGroup);
+		    e.reply(replystart+response.data.choices[0].text, e.isGroup);
 		})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(welm提问)"+ | 这一部分
 		.catch(function (error) {
 		    console.log(error);
