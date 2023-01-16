@@ -34,7 +34,7 @@ git clone -b js-version https://gitee.com/shuciqianye/yunzai-custom-dialogue-wel
 ### 第二步
 在拉取下来的内容里找到welm.js并将他移动到Yunzai-Bot根目录下的plugins/example
 ### 第三步
-将所有拉去下来的txt文件移动到Yunzai-Bot根目录下的resources文件夹内
+将所有拉取下来的txt文件移动到Yunzai-Bot根目录下的resources文件夹内
 ### 第四步
 _PS:这一步的所有txt都是上一步移动的文件_
 #### 个性问答
