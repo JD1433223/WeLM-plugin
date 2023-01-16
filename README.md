@@ -24,9 +24,6 @@ git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./
 _PS:txt在WeLM-plugin/data内_
 #### 个性问答
 需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个dhdata.txt演示学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把"(JD自用演示)"直接删了放到data直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
-### 第四步(可选)
-使用#更改namexxx把name改成和预设里面机器人要扮演的角色一样的名字
-![输入图片说明](resources/README/27b1d0afd66c13dd.jpg)
 
 ## JS版(不推荐)
  _**PS:版本比较旧**_
