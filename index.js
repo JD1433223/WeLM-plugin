@@ -3,16 +3,16 @@ import YAML from 'yaml'
 import axios from 'axios'
 const _path = process.cwd()
 
-logger.info('----------------------------------------')
+logger.info('-------------------------------------------')
 logger.info('WeLM AI对话插件正在测试API是否可用并加载JS中~')
-logger.info('----------------------------------------')
-const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
-let res = fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,"utf8")
+logger.info('-------------------------------------------')
+const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
 let token = settings.API_token
 let str = `${res}`
 var reg = new RegExp(`"(.*?)"`); 
 var a = str.replace(reg,`"${token}"`);
-fs.writeFileSync(`./plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
+fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
 let API_token = settings.API_token
 axios({
     method: 'post',
@@ -40,7 +40,7 @@ axios({
     return false
   });
 
-const files = fs.readdirSync('./plugins/WeLM-plugin/apps').filter(file => file.endsWith('.js'))
+const files = fs.readdirSync(`${_path}/plugins/WeLM-plugin/apps`).filter(file => file.endsWith('.js'))
 
 let ret = []
 
