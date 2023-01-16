@@ -7,15 +7,16 @@ logger.info('-------------------------------------------')
 logger.info('WeLM AI对话插件正在测试API是否可用并加载JS中~')
 logger.info('-------------------------------------------')
 
+//读取配置
 const _path = process.cwd()
-const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8')) //读取你的配置
+const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8')) 
 
 //调试你的API
 let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
 let token = settings.API_token
 let str = `${res}`
 var reg = new RegExp(`"(.*?)"`); 
-var a = str.replace(reg,`"${token}"`);
+var a = str.replace(reg,`"${token}"`)
 fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8")
 let API_token = settings.API_token
 axios({
