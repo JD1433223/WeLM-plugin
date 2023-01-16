@@ -1,15 +1,10 @@
 # 云崽自定义对话WeLM
-
 #### 介绍
 此为Yunzai-Bot云崽QQ机器人的插件，需要依赖云崽机器人来实现功能，可以模仿你机器人的人设对话(或许有其他问答功能) _可以去这里研究一下[WeLM](https://welm.weixin.qq.com/docs/api/)_
-* **_PS: 将在2023/1/20后不再发布测试版(Beta版)于Gitee,如需体验测试版本请加QQ群815638467后打开群文件下载压缩文件_**
-~~~
-815638467
-~~~
+
 # 安装教程
 
 ## 插件包版(推荐)
-_PS:最新版本_
 ### 第一步
 在Yunzai-Bot根目录打开终端并输入   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件_**
 
@@ -24,6 +19,9 @@ git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./
 _PS:txt在WeLM-plugin/data内_
 #### 个性问答
 需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个dhdata.txt演示学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把"(JD自用演示)"直接删了放到data直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
+### 第四步(可选)
+使用#更改namexxx把name改成和预设里面机器人要扮演的角色一样的名字
+![输入图片说明](resources/README/27b1d0afd66c13dd.jpg)
 
 ## JS版(不推荐)
  _**PS:版本比较旧**_
@@ -52,17 +50,17 @@ _PS:这一步的所有txt都是上一步移动的文件_
 ```
 pnpm add axios console yaml -w
 ```
-pnpm可能会掉依赖，希望你不要中奖
+这个可能会掉依赖，希望你不要中奖
 
 ```
 npm install axios console yaml
 ```
-npm可能连不上
+这个可能连不上
 
 ```
 cnpm install axios console yaml
 ```
-cnpm需要安装，命令是:
+这个需要安装cnpm，命令是
 
 ```
 npm install -g cnpm -registry=https://registry.npm.taobao.org
@@ -74,8 +72,6 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
 
 提问加个前缀"提问"就好了
 ![输入图片说明](resources/README/tiwen.png)
-
-使用#帮助获得功能说明~
 
 #### 如果装了@戏天的那个ai自定义的js的
 需要去那个ai插件里面的104行加上
@@ -94,9 +90,5 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
 巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
 ![](resources/README/biaoyangwelm.png)
 
-## 版本下载
-* 插件包版目前最新版本: 4.6  **☞[点我前去下载](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/releases/download/v4.6/WeLM-plugin.zip)**
-* JS版目前最新版本: 4.4 **☞[点我前去下载](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/releases/download/v4.4(JS)/JS-Version.zip)**
-
 # 更新日志
-* **☞[点我前往查看](./CHANGELOG.md)**
+☞[点我前往查看](./UpdateLogs.md)
