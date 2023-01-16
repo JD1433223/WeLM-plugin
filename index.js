@@ -1,18 +1,22 @@
 import fs from 'node:fs'
 import YAML from 'yaml'
 import axios from 'axios'
-const _path = process.cwd()
 
+//加载提示
 logger.info('-------------------------------------------')
 logger.info('WeLM AI对话插件正在测试API是否可用并加载JS中~')
 logger.info('-------------------------------------------')
-const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+
+const _path = process.cwd()
+const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8')) //读取你的配置
+
+//调试你的API
 let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
 let token = settings.API_token
 let str = `${res}`
 var reg = new RegExp(`"(.*?)"`); 
 var a = str.replace(reg,`"${token}"`);
-fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
+fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8")
 let API_token = settings.API_token
 axios({
     method: 'post',
@@ -32,15 +36,16 @@ axios({
       "stop": "\n",
     }
   })
-  .then(function (response) {
+  .then(function (response) { //如果成功则返回true
   return true
   })
   .catch(function (error) {
-    logger.error('Token不可用或者无法访问WeLM，请检查Token或网络, 如果未填写Token请使用指令: #填写token xxx进行填写')
+    logger.error('Token不可用或者无法访问WeLM，请检查Token或网络, 如果未填写Token请使用指令: #填写token xxx进行填写') //如果失败提示error并输出false
     return false
   });
 
-const files = fs.readdirSync(`${_path}/plugins/WeLM-plugin/apps`).filter(file => file.endsWith('.js'))
+//加载插件
+const files = fs.readdirSync(`${_path}/plugins/WeLM-plugin/apps`).filter(file => file.endsWith('.js')) 
 
 let ret = []
 
