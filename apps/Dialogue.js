@@ -24,7 +24,7 @@ export class RGznbot extends plugin {
                 },
                 {
                     reg: '(^lxdh.*)',
-	                fnc: 'Msg',
+	                fnc: 'lxdh',
                     log: false
 				},
 				{
@@ -35,8 +35,8 @@ export class RGznbot extends plugin {
             ]
         })
     }
-    
-    async Msg(e) {
+
+	async lxdh(e) {
         	//判断一下不是合并消息，不然会报错
         	//下面这个random是随机回复群友的消息，这里的概率是1%，如果不想要的话可以把98改成100
 		if (e.xml || e.img) {
@@ -119,8 +119,9 @@ export class RGznbot extends plugin {
 		let stop = settings.stop
 		let commandstart = settings.dhcmdstart
 		let replystart = settings.dhreplystart
+		let probability = settings.probability
 		let random_ = parseInt(Math.random() * 99);
-		if (random_ >= 98 || random_ <= 0 || e.msg && e.msg?.indexOf(commandstart) >= 0 || !e.isGroup) {
+		if (random_ >= probability || random_ < 0 || e.msg && e.msg?.indexOf(commandstart) >= 0 || !e.isGroup) {
 			e.msg = e.msg.replace(commandstart, "")
 			let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/dhdata.txt', { encoding: 'utf-8' })
 			let sc_cs2 = sc_cs + "\n我:" + e.msg + "\n" + bot_name + ":"
