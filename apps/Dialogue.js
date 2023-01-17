@@ -121,7 +121,7 @@ export class RGznbot extends plugin {
 		let replystart = settings.dhreplystart
 		let probability = settings.probability
 		let random_ = parseInt(Math.random() * 99);
-		if (random_ >= probability || random_ < 0 || e.msg && e.msg?.indexOf(commandstart) >= 0 || !e.isGroup) {
+		if (random_ >= 100 || random_ < probability || e.msg && e.msg?.indexOf(commandstart) >= 0 || !e.isGroup) {
 			e.msg = e.msg.replace(commandstart, "")
 			let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/dhdata.txt', { encoding: 'utf-8' })
 			let sc_cs2 = sc_cs + "\n我:" + e.msg + "\n" + bot_name + ":"
