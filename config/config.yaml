@@ -3,7 +3,7 @@ API_token: "API" # 你的API token，没有的自己上WeLM官网https://docs.qq
 
 bot_name: "NAME" # 里面填你机器人角色昵称or自设之类的?
 
-probability: 98 #  在群里触发的概率(百分比)
+probability: 2 #  在群里触发的概率(百分比)
 
 # 模型参数调试专区(最好不碰,参数已由作者设定完成)
 model: "xl" # 要使用的模型名称，当前支持的模型名称有medium、 large 和 xl。
