@@ -3,13 +3,9 @@ import console from 'console'
 import axios from 'axios'
 import fs from 'node:fs'
 import YAML from 'yaml'
-//此插件由[书辞千楪(1700179844)]编写，JD瞎jb乱搞了一下上传的
-//模型的prompt文件请放到/Yunzai-Bot/resources/dhdata.txt
-//如果没有dhdata.txt文件，请自行在/Yunzai-Bot/resources/内创建"dhdata.txt文件"。
-//提问需要再resources里多放个那个wddata.txt
-//续写只需加个空的xxdata.txt就行了
-//有报错先看这里！！！！！！可能需要npm add axios -w后才能正常使用，看看简介有其他方式
-//有问题问JD(1461072722)在上学回复慢，但是一定会回复，也可以去火火的群(666345141)里面找JD
+//此JS由书辞千楪(1700179844)编写，JD瞎jb乱搞了一下上传的
+//有报错先看这里！！！！！！可能需要cnpm/pnpm/npm install axios yaml fs后才能正常使用，看看简介有其他方式
+//有问题问JD(1461072722)或者兰罗摩(脾气很差别问到高血压)(3584075812)JD在上学回复慢，但是一定会回复，也可以去火火的群(666345141)或者JD的群(815638467)里面找JD
 //分割线_____________________________
 
 

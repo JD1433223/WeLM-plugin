@@ -2,7 +2,7 @@ import plugin from "../../../lib/plugins/plugin.js";
 import { createRequire } from "module";
 import lodash from "lodash";
 import { Restart } from '../../other/restart.js'
-
+//此JS cv自椰奶
 const require = createRequire(import.meta.url);
 const { exec, execSync } = require("child_process");
 

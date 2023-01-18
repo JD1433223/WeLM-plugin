@@ -1,8 +1,8 @@
 import lodash from 'lodash'
 import fs from 'fs'
-import { Cfg, Version, Common, Data, App } from '../components/index.js'
+import { Cfg, Version, Common, Data } from '../components/index.js'
 import HelpTheme from './help/HelpTheme.js'
-
+//此JS cv自喵喵
 export class RGznbot extends plugin {
   constructor() {
     super({

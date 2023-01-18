@@ -3,7 +3,10 @@ import console from 'console'
 import axios from 'axios'
 import fs from 'node:fs'
 import YAML from 'yaml'
-
+//此JS由JD(1461072722)编写
+//有报错先看这里！！！！！！可能需要cnpm/pnpm/npm install axios yaml fs后才能正常使用，看看简介有其他方式
+//有问题问JD(1461072722)或者兰罗摩(脾气很差别问到高血压)(3584075812)JD在上学回复慢，但是一定会回复，也可以去火火的群(666345141)或者JD的群(815638467)里面找JD
+//分割线_____________________________
 
 export class RGznbot extends plugin {
     constructor() {
