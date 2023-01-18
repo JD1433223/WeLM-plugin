@@ -29,7 +29,7 @@ axios({
     data: {
       "prompt": "测试",
       "model": "xl",
-      "max_tokens": "64",
+      "max_tokens": "32",
       "temperature": "0.85",
       "top_p": "0.95",
       "top_k": "50",
@@ -37,13 +37,14 @@ axios({
       "stop": "\n",
     }
   })
-  .then(function (response) { //如果成功则返回true
-  return true
+  .then(function (done) { //如果成功则返回true
+    logger.info(`WeLMAPI可用,当前API为:${settings.API_token}`)
+    return true
   })
-  .catch(function (error) {
+  .catch(function (done) {
     logger.error('Token不可用或者无法访问WeLM，请检查Token或网络, 如果未填写Token请使用指令: #填写token xxx进行填写') //如果失败提示error并输出false
     return false
-  });
+  })
 
 //加载插件
 const files = fs.readdirSync(`${_path}/plugins/WeLM-plugin/apps`).filter(file => file.endsWith('.js')) 
