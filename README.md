@@ -75,7 +75,7 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
 ```
 
 ## 插件名称错误
-![输入图片说明](resources\README\chajianmingcuowu.png)
+![输入图片说明](resources/README/chajianmingcuowu.png)
 如果你遇到了图上的错误就证明你没有按教程来装,重新按**教程**来装即可
 
 # 使用说明
