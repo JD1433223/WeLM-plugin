@@ -51,6 +51,8 @@ _PS:这一步的所有txt都是上一步移动的文件_
 需要填写xxdata.txt后才能正常使用
 
 # 可能遇到的问题
+
+## 缺少依赖
 第一次使用可能会缺少依赖，三选一执行
 
 ```
@@ -71,6 +73,9 @@ cnpm install axios console yaml
 ```
 npm install -g cnpm -registry=https://registry.npm.taobao.org
 ```
+
+## 插件名称错误
+![输入图片说明](resources\README\chajianmingcuowu.png)
 
 # 使用说明
 个性回答默认在群内是2%触发，或者在对话前面加个welm的100%触发指令然后就可以与开始激情对话了。
