@@ -1,3 +1,2 @@
-main.png来自于Miao-Character(https://gitee.com/SmallK111407/Miao-Character)
-原图链接:https://gitee.com/SmallK111407/Miao-Character/blob/master/profile/%E7%BA%B3%E8%A5%BF%E5%A6%B2/13.webp
+main.png与bg.jpg来自于Miao-Plugin(喵喵插件)(https://gitee.com/yoimiya-kokomi/miao-plugin/)
 若侵犯版权我们将立即删除并道歉
