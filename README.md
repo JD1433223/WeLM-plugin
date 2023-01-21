@@ -20,14 +20,14 @@ git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./
 回车
 ### 第二步
 对机器人私聊"#填写token xxx"（这个xxx是你的token-api） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
-![输入图片说明](resources/README/tianxieyanshi.jpg)
+![](resources/README/tianxieyanshi.jpg)
 ### 第三步
 _PS:txt在WeLM-plugin/data内_
 #### 个性问答
 需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个dhdata.txt演示学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把"(JD自用演示)"直接删了放到data直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
 ### 第四步(可选)
 使用#更改namexxx把name改成和预设里面机器人要扮演的角色一样的名字
-![输入图片说明](resources/README/genggainame.jpg)
+![](resources/README/genggainame.jpg)
 
 ## JS版(不推荐)
  _**PS:版本比较旧**_
@@ -75,15 +75,15 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
 ```
 
 ## 插件名称错误
-![输入图片说明](resources/README/chajianmingcuowu.png)
+![](resources/README/chajianmingcuowu.png)
 如果你遇到了图上的错误就证明你没有按教程来装,重新按**教程**来装即可
 
 # 使用说明
 个性回答默认在群内是2%触发，或者在对话前面加个welm的100%触发指令然后就可以与开始激情对话了。
-![输入图片说明](resources/README/gexinghuida.jpg)
+![](resources/README/gexinghuida.jpg)
 
 提问加个前缀"提问"就好了
-![输入图片说明](resources/README/tiwen.png)
+![](resources/README/tiwen.png)
 
 #### 如果装了@戏天的那个ai自定义的js的
 需要去那个ai插件里面的104行加上
@@ -96,7 +96,7 @@ npm install -g cnpm -registry=https://registry.npm.taobao.org
     }
 ```
 这个100%触发指令可以到config.yaml修改(有注释)
-![输入图片说明](resources/README/100%25chufa.jpg)
+![](resources/README/100%25chufa.jpg)
 
 # 效果
 巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
