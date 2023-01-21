@@ -1,6 +1,6 @@
 import lodash from 'lodash'
 import fs from 'fs'
-import { Cfg, Version, Common, Data } from '../components/index.js'
+import { Cfg, Common, Data } from '../components/index.js'
 import HelpTheme from './help/HelpTheme.js'
 //此JS cv自喵喵插件(https://gitee.com/yoimiya-kokomi/miao-plugin)
 //分割线_____________________________

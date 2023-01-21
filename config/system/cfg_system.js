@@ -1,3 +1,4 @@
+//因为是直接cv喵喵的所以这个怎么删了还不报错我也不知道只能等好心人帮忙了
 export const cfgSchema = {
   char: {
     title: '玩家&老婆卡片展示',
