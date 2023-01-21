@@ -1,0 +1,10 @@
+# 排除配置文件
+!/config/config.yaml
+!/config/cfg.js
+!/config/help.js
+
+# 排除你的prompt的txt文件
+!/data
+
+# 排除默认的主题文件夹
+!/resources/help/theme/default
