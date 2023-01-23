@@ -1,6 +1,13 @@
+# 抄的喵喵我也不知道这个干什么的
+*.psd
+.idea
+*.css.map
+
+# 各种配置项
 /config/config.yaml
 /config/cfg.js
 /config/help.js
 /data/*
 /resources/help/theme/*
 !/resources/help/theme/default
+/components/cfg.json
