@@ -68,7 +68,7 @@ npm install axios console yaml fs
 ```
 cnpm install axios console yaml fs
 ```
-这个需要安装cnpm，命令是
+这个需要提前安装cnpm，命令是
 
 ```
 pnpm install -g cnpm -registry=https://registry.npm.taobao.org
