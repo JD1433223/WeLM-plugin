@@ -3,9 +3,9 @@ import YAML from 'yaml'
 import axios from 'axios'
 
 //加载提示
-logger.info('-------------------------------------------')
-logger.info('WeLM AI对话插件正在测试API是否可用并加载JS中~')
-logger.info('-------------------------------------------')
+logger.info('-----------------')
+logger.info('WeLM对话插件初始化~')
+logger.info('-----------------')
 
 //读取配置
 const _path = process.cwd()
@@ -38,11 +38,10 @@ axios({
     }
   })
   .then(function (done) { //如果成功则返回true
-    logger.info(`WeLMAPI可用,当前API为:${settings.API_token}`)
     return true
   })
   .catch(function (done) {
-    logger.error('Token不可用或者无法访问WeLM，请检查Token或网络, 如果未填写Token请使用指令: #填写token xxx进行填写') //如果失败提示error并输出false
+    logger.error(`WeLM-Plugin: API-Token不可用或者无法访问WeLM，请检查API-Token或网络, 如果未填写API-Token请使用指令: #填写token xxx进行填写, 当前API-Token:"${settings.API_token}"`) //如果失败提示error并输出false
     return false
   })
 
