@@ -17,7 +17,7 @@ export class RGznbot extends plugin {
       rule: [
         {
           /** 命令正则匹配 */
-          reg: '^#welm(规则|帮助|版本)$',
+          reg: '^#welm帮助$',
           /** 执行方法 */
           fnc: 'message'
         }
