@@ -17,7 +17,7 @@ let uping = false;
 export class update extends plugin {
     constructor() {
         super({
-            name: "更新",
+            name: "WeLM更新",
             event: "message",
             priority: 1000,
             rule: [

@@ -13,7 +13,7 @@ import YAML from 'yaml'
 export class RGznbot extends plugin {
     constructor() {
         super({
-            name: '对话',
+            name: 'WeLM对话',
             event: 'message',
             priority: 60010,
             rule: [

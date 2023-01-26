@@ -13,7 +13,7 @@ export class RGznbot extends plugin {
   constructor () {
     super({
       /** 功能名称 */
-      name: '配置更改',
+      name: 'WeLM配置更改',
       /** 功能描述 */
       /** https://oicqjs.github.io/oicq/#events */
       event: 'message',

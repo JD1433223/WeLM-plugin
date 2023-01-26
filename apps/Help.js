@@ -9,7 +9,7 @@ export class RGznbot extends plugin {
   constructor() {
     super({
       /** 功能名称 */
-      name: '帮助',
+      name: 'WeLM帮助',
       /** https://oicqjs.github.io/oicq/#events */
       event: 'message',
       /** 优先级，数字越小等级越高 */
