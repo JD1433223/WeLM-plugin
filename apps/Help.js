@@ -1,36 +1,33 @@
 import lodash from 'lodash'
 import fs from 'fs'
-import { Cfg, Common, Data } from '../components/index.js'
-import HelpTheme from './help/HelpTheme.js'
-//此JS cv自喵喵插件(https://gitee.com/yoimiya-kokomi/miao-plugin)
-//分割线_____________________________
+import { Cfg, Version, Common, Data } from '../components/index.js'
+import Theme from './help/theme.js'
 
-export class RGznbot extends plugin {
-  constructor() {
-    super({
-      /** 功能名称 */
-      name: 'WeLM帮助',
-      /** https://oicqjs.github.io/oicq/#events */
-      event: 'message',
-      /** 优先级，数字越小等级越高 */
-      priority: 500,
-      rule: [
-        {
-          /** 命令正则匹配 */
-          reg: '^#welm帮助$',
-          /** 执行方法 */
-          fnc: 'message'
-        }
-      ]
-    });
-  }
-
-async message(e) {
 const _path = process.cwd()
 const helpPath = `${_path}/plugins/WeLM-plugin/resources/help`
 
+export class help extends plugin {
+	constructor() {
+		super({
+			name: 'WeLM帮助',
+			dsc: 'WeLM帮助',
+			event: 'message',
+			priority: 1000,
+			rule: [
+				{
+					reg: "^#?(welm|Welm|WeLM|WELM|WElm)?(命令|帮助|菜单|help|说明|功能|指令|使用说明)$",
+					fnc: 'help'
+				},
+        {
+          reg: "^#?(welm|Welm|WeLM|WELM|WElm)版本$",
+					fnc: 'versionInfo'
+        }
+			]
+		})
+	}
 
-  if (!/#welm帮助/.test(e.msg) && !Cfg.get('help', false)) {
+async help (e) {
+  if ((!/welm/.test(e.msg)) && (!/Welm/.test(e.msg)) && (!/WeLM/.test(e.msg)) && (!/WELM/.test(e.msg)) && (!/WElm/.test(e.msg)) && !Cfg.get('sys.help', false)){
     return false
   }
 
@@ -79,11 +76,20 @@ const helpPath = `${_path}/plugins/WeLM-plugin/resources/help`
 
     helpGroup.push(group)
   })
-  let themeData = await HelpTheme.getThemeData(diyCfg.helpCfg || {}, sysCfg.helpCfg || {})
+  let themeData = await Theme.getThemeData(diyCfg.helpCfg || {}, sysCfg.helpCfg || {})
   return await Common.render('help/index', {
     helpCfg: helpConfig,
     helpGroup,
     ...themeData,
     element: 'default'
   }, { e, scale: 1.2 })
-}}
+}
+
+async versionInfo (e) {
+  return await Common.render('help/version-info', {
+    currentVersion: Version.version,
+    changelogs: Version.changelogs,
+    elem: 'hydro'
+  }, { e, scale: 1.2 })
+}
+}

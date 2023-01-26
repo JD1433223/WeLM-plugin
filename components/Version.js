@@ -1,15 +1,12 @@
 import fs from 'fs'
 import lodash from 'lodash'
-import YAML from 'yaml'
 
 const _path = process.cwd()
 const _logPath = `${_path}/plugins/WeLM-plugin/CHANGELOG.md`
-const settings = await YAML.parse(fs.readFileSync('./plugins/WeLM-plugin/config/version.yaml','utf8'));
-
 
 let logs = {}
 let changelogs = []
-let currentVersion = settings.version
+let currentVersion
 let versionCount = 4
 
 let packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
