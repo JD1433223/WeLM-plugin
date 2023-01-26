@@ -1,6 +1,5 @@
 import fs from 'fs'
-import lodash from 'lodash'
-import cfgData from './cfg-lib/cfg-data.js'
+import lodash from 'lodash' 
 
 const _path = process.cwd()
 const _cfgPath = `${_path}/plugins/WeLM-plugin/components/`
