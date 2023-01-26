@@ -5,7 +5,6 @@
 
 # 各种配置项
 /config/config.yaml
-/config/cfg.js
 /config/help.js
 /data/*
 /resources/help/theme/*
