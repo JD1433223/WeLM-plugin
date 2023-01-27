@@ -4,7 +4,7 @@ import { Data } from '../../components/index.js'
 
 let Theme = {
   async getThemeCfg (theme, exclude) {
-    let dirPath = './plugins/earth-k-plugin/resources/help/theme/'
+    let dirPath = './plugins/WeLM-plugin/resources/help/theme/'
     let ret = []
     let names = []
     let dirs = fs.readdirSync(dirPath)
