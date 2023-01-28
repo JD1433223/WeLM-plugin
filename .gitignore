@@ -10,3 +10,4 @@
 /data/*
 /resources/help/theme/*
 !/resources/help/theme/default
+/.vs
