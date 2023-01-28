@@ -4,10 +4,11 @@
 *.css.map
 
 # 各种配置项
-
 /config/config.yaml
 /config/help.js
 /data/*
 /resources/help/theme/*
 !/resources/help/theme/default
+
+# 使用VS时产生的文件夹
 /.vs
