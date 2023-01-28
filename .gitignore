@@ -4,9 +4,9 @@
 *.css.map
 
 # 各种配置项
+
 /config/config.yaml
 /config/help.js
 /data/*
 /resources/help/theme/*
 !/resources/help/theme/default
-/components/cfg.json
