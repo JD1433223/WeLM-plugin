@@ -13,10 +13,16 @@
 ## 插件包版(推荐)
 ### 第一步
 在Yunzai-Bot根目录打开终端并输入   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件_**
-
+gitee
 ```
 git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./plugins/WeLM-plugin
 ```
+github
+
+```
+git clone https://github.com/JD1433223/WeLM-plugin ./plugins/WeLM-plugin
+```
+
 回车
 ### 第二步
 对机器人私聊"#填写token xxx"（这个xxx是你的token-api） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
