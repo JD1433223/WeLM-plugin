@@ -6,7 +6,7 @@ import { _path, pluginResources, pluginRoot } from "./path.js";
 class Setting {
   constructor () {
     /** 默认设置 */
-    this.defPath = `${_path}/plugins/WeLM-plugin/defSet/`
+    this.defPath = `${_path}/plugins/WeLM-plugin/defCfg/`
     this.defSet = {}
 
     /** 用户设置 */
