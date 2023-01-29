@@ -4,23 +4,20 @@
 此为Yunzai-Bot云崽QQ机器人的插件，需要依赖云崽机器人来实现功能，可以模仿你机器人的人设对话(或许有其他问答功能) _可以去这里研究一下[WeLM](https://welm.weixin.qq.com/docs/api/)_
 
 #### 宣个群(测试版一般不放gitee因为一堆Bug要逝的话进一下,JD整的)
-~~~
+```
 815638467
-~~~
+```
 
 # 安装教程
 
 ## 插件包版(推荐)
 ### 第一步
-在Yunzai-Bot根目录打开终端并输入   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件_**
-gitee
+在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件_**
 ```
-git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./plugins/WeLM-plugin
-```
-github
-
-```
+# Github(进不去时可使用Gitee源)
 git clone https://github.com/JD1433223/WeLM-plugin ./plugins/WeLM-plugin
+# Gitee 
+git clone https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/ ./plugin/WeLM-plugin
 ```
 
 回车
@@ -41,7 +38,10 @@ _PS:txt在WeLM-plugin/data内_
 在任意目录打开终端并输入
 
 ```
-git clone -b js-version https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm ./JS版本WeLM插件
+# Github(进不去时可使用Gitee源)
+git clone -b js-version https://github.com/JD1433223/WeLM-plugin ./plugins/WeLM-plugin
+# Gitee 
+git clone -b js-version https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/ ./plugin/WeLM-plugin
 ```
 ### 第二步
 在拉取下来的内容里找到welm.js并将他移动到Yunzai-Bot根目录下的plugins/example
