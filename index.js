@@ -1,15 +1,16 @@
 import fs from 'node:fs'
 import YAML from 'yaml'
 import axios from 'axios'
-
-//加载提示
-logger.info('-----------------')
-logger.info('WeLM对话插件初始化~')
-logger.info('-----------------')
+import { Version } from './components/index.js'
 
 //读取配置
 const _path = process.cwd()
 const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8')) 
+
+//加载提示
+logger.info('-------------------------------------')
+logger.info(`        WeLM对话插件${Version.version}初始化~`)
+logger.info('------ヾ(￣▽￣)Bye~Bye~--------------')
 
 //调试你的API
 let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
