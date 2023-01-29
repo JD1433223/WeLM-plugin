@@ -27,10 +27,9 @@ export class RGznbot extends plugin {
 	async Xuxie(e) {
         const settings = await YAML.parse(fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml','utf8'));
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
-        let bot_name =  settings.bot_name 
         let API_token = settings.API_token 
         let model = settings.model          
-        let max_tokens_xx = settings.max_tokens_xx    
+        let max_tokens = settings.max_tokens   
         let temperature = settings.temperature   
         let top_p = settings.top_p         
         let top_k = settings.top_k            
@@ -49,7 +48,7 @@ export class RGznbot extends plugin {
 	        data: {
 		        "prompt": e.msg,
 		        "model": model,
-		        "max_tokens": max_tokens_xx,
+		        "max_tokens": max_tokens,
 		        "temperature": temperature,
 		        "top_p": top_p,
 		        "top_k": top_k,

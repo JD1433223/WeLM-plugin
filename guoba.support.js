@@ -1,5 +1,6 @@
 import setting from './models/setting.js'
 import lodash from 'lodash'
+
 //支持锅巴
 export function supportGuoba() {
     return {
@@ -7,11 +8,11 @@ export function supportGuoba() {
     // 如果你的插件没有在插件库里，那么需要填上补充信息
     // 如果存在的话，那么填不填就无所谓了，填了就以你的信息为准
     pluginInfo: {
-        name: 'yunzai-custom-dialogue-welm',
+        name: 'WeLM-plugin',
         title: 'WeLM-plugin',
         author: '@书辞千楪',
         authorlink: 'https://gitee.com/shuciqianye',
-        link: 'https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm',
+        link: 'https://github.com/JD1433223/WeLM-plugin',
         isV3: true,
         isV2: false,
         description: '提供个性ai问答和提问(chatgpt下下下位替代)功能',
@@ -23,33 +24,79 @@ export function supportGuoba() {
         schemas: [
             {
               field: 'config.API_token',
-              label: 'WeLM API',
-              bottomHelpMessage: 'welm申请的api',
+              label: 'API',
+              bottomHelpMessage: '请输入你申请的API-Token',
               component: "Input",
               required: true,
               componentProps: {
-                placeholder: "请输入你的api",
+                placeholder: "WeLM申请到的API-Token",
               },
             },
             {
               field: 'config.bot_name',
-              label: '机器人名字',
-              bottomHelpMessage: '填写你预设的名字',
+              label: '预设内人设(名字)',
+              bottomHelpMessage: '请输入你的预设内人设(名字)',
               component: "Input",
               required: true,
               componentProps: {
-                placeholder: "请输入预设内机器人扮演的名字",
+                placeholder: '预设内机器人扮演的人设(名字)',
               },
             },
             {
               field: 'config.probability',
               label: '对话概率',
-              bottomHelpMessage: '普通在群里触发的概率(百分比)',
+              bottomHelpMessage: '普通对话在群里触发的概率(百分比)',
               component: 'InputNumber',
+              required: true,
               componentProps: {
-                placeholder: "请输入概率",
+                placeholder: '请输入概率',
                 min: "0",
                 max: "100"
+              }
+            },
+            {
+              field: 'config.dhreplystart',
+              label: '对话指令备注',
+              bottomHelpMessage: '可留空',
+              component: 'Input',
+              componentProps: {
+                placeholder: '普通对话指令回复开头备注, 不用与其他ai区分时可留空'
+              }
+            },
+            {
+              field: 'config.lxdhreplystart',
+              label: '连续对话回复备注',
+              bottomHelpMessage: '可留空',
+              component: 'Input',
+              componentProps: {
+                placeholder: '连续对话指令回复开头备注, 不用与其他ai区分时可留空'
+              }
+            },
+            {
+              field: 'config.wdreplystart',
+              label: '问答回复备注',
+              bottomHelpMessage: '可留空',
+              component: 'Input',
+              componentProps: {
+                placeholder: '问答指令回复开头备注, 不用与其他ai区分时可留空'
+              }
+            },
+            {
+              field: 'config.xxreplystart',
+              label: '续写回复备注',
+              bottomHelpMessage: '可留空',
+              component: 'Input',
+              componentProps: {
+                placeholder: '续写指令回复开头备注, 不用与其他ai区分时可留空'
+              }
+            },
+            {
+              field: 'config.ydljreplystart',
+              label: '阅读理解回复备注',
+              bottomHelpMessage: '可留空',
+              component: 'Input',
+              componentProps: {
+                placeholder: '阅读理解指令回复开头备注, 不用与其他ai区分时可留空'
               }
             },
             {
@@ -57,6 +104,7 @@ export function supportGuoba() {
               label: '模型',
               bottomHelpMessage: '当前支持的模型有medium、 large 和 xl',
               component: 'Input',
+              required: true,
               componentProps: {
                 placeholder: '请输入你所使用的模型',
               }
@@ -66,8 +114,9 @@ export function supportGuoba() {
               label: '可能性',
               bottomHelpMessage: '更高的temperature意味着模型具备更多的可能性',
               component: 'InputNumber',
+              required: true,
               componentProps: {
-                placeholder: '建议改变这个值或top_p，但不要同时改变。',
+                placeholder: '建议改变这个值或top_p，但不要同时改变',
               }
             },
             {
@@ -75,8 +124,29 @@ export function supportGuoba() {
               label: '可能性(累计概率)',
               bottomHelpMessage: '来源于nucleus sampling，采用的是累计概率的方式',
               component: 'InputNumber',
+              required: true,
               componentProps: {
                 placeholder: '建议改变这个值或temperature，但不要同时改变'
+              }
+            },
+            {
+              field: 'config.top_k',
+              label: '模型能选择的词汇',
+              bottomHelpMessage: '建议不要过小导致模型能选择的词汇少',
+              component: 'InputNumber',
+              required: true,
+              componentProps: {
+                placeholder: '从概率分布中依据概率最大选择k个单词'
+              }
+            },
+            {
+              field: 'config.stop',
+              label: '停止符号',
+              bottomHelpMessage: '当模型当前生成的字符为stop中的任何一个字符时，会停止生成',
+              component: 'InputNumber',
+              required: true,
+              componentProps: {
+                placeholder: '建议不要输入AI在生成文本时大部分的词汇或文字'
               }
             }
           ],

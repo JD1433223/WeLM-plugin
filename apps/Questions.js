@@ -34,7 +34,7 @@ export class RGznbot extends plugin {
         let top_p = settings.top_p         
         let top_k = settings.top_k            
         let n = settings.n                      
-        let twstop = settings.twstop
+        let stop = settings.stop
         let commandstart = settings.wdcmdstart
         let replystart = settings.wdreplystart
         e.msg = e.msg.replace(commandstart, "")
@@ -54,7 +54,7 @@ export class RGznbot extends plugin {
 		        "top_p": top_p,
 		        "top_k": top_k,
 		        "n": n,
-		        "stop": twstop,
+		        "stop": stop,
 	        }
         })
 		.then(function (response) {
