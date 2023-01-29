@@ -2,11 +2,11 @@
 API_token: "" # 你的API token，没有的自己上WeLM官网https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail申请
 bot_name: "" # 里面填你机器人角色昵称or自设之类的?
 probability: 2 #  在群里触发的概率(百分比)
-dhreplystart: (由WeLM回答) # 对话指令回复开头备注, 不用与其他ai区分时可留空
-wdreplystart: (由WeLM提问) # 问答指令回复开头备注, 不用与其他ai区分时可留空
-xxreplystart: (由WeLM续写) # 续写指令回复开头备注, 不用与其他ai区分时可留空
-lxdhreplystart: (由WeLM回答(连续对话)) # 连续对话指令回复开头备注, 不用与其他ai区分时可留空
-ydljreplystart: (由welm阅读理解) # 阅读理解指令回复开头备注, 不用与其他ai区分时可留空
+dhreplystart: "(由WeLM回答)" # 对话指令回复开头备注, 不用与其他ai区分时可留空
+wdreplystart: "(由WeLM提问)" # 问答指令回复开头备注, 不用与其他ai区分时可留空
+xxreplystart: "(由WeLM续写)" # 续写指令回复开头备注, 不用与其他ai区分时可留空
+lxdhreplystart: "(由WeLM回答(连续对话))" # 连续对话指令回复开头备注, 不用与其他ai区分时可留空
+ydljreplystart: "(由WeLM阅读理解)" # 阅读理解指令回复开头备注, 不用与其他ai区分时可留空
 
 # 模型参数调试专区(最好不碰,参数已由作者设定完成)
 model: xl # 要使用的模型名称，当前支持的模型名称有medium、 large 和 xl
