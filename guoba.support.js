@@ -113,6 +113,7 @@ export function supportGuoba() {
               field: 'config.max_tokens',
               label: '可使用的最大Tokens',
               component: 'InputNumber',
+              required: true,
               componentProps: {
                 placeholder: '请输入模型可使用的最多Tokens, 不建议超过1000有可能会复读'
               }
