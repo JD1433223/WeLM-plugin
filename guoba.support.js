@@ -110,6 +110,14 @@ export function supportGuoba() {
               }
             },
             {
+              field: 'config.max_tokens',
+              label: '可使用的最大Tokens',
+              component: 'InputNumber',
+              componentProps: {
+                placeholder: '请输入模型可使用的最多Tokens, 不建议超过1000有可能会复读'
+              }
+            },
+            {
               field: 'config.temperature',
               label: '可能性',
               bottomHelpMessage: '更高的temperature意味着模型具备更多的可能性',
@@ -143,7 +151,7 @@ export function supportGuoba() {
               field: 'config.stop',
               label: '停止符号',
               bottomHelpMessage: '当模型当前生成的字符为stop中的任何一个字符时，会停止生成',
-              component: 'InputNumber',
+              component: 'Input',
               required: true,
               componentProps: {
                 placeholder: '建议不要输入AI在生成文本时大部分的词汇或文字'
