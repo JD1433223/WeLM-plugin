@@ -1,11 +1,13 @@
+keep: "" # 用于bug填充, 动了也没用
+
 # 普通用户配置专区(怎么改都行)
 API_token: "" # 你的API token，没有的自己上WeLM官网https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail申请
 bot_name: "" # 里面填你机器人角色昵称or自设之类的?
 probability: 2 #  在群里触发的概率(百分比)
 dhreplystart: "(由WeLM回答)" # 对话指令回复开头备注, 不用与其他ai区分时可留空
+lxdhreplystart: "(由WeLM回答(连续对话))" # 连续对话指令回复开头备注, 不用与其他ai区分时可留空
 wdreplystart: "(由WeLM提问)" # 问答指令回复开头备注, 不用与其他ai区分时可留空
 xxreplystart: "(由WeLM续写)" # 续写指令回复开头备注, 不用与其他ai区分时可留空
-lxdhreplystart: "(由WeLM回答(连续对话))" # 连续对话指令回复开头备注, 不用与其他ai区分时可留空
 ydljreplystart: "(由WeLM阅读理解)" # 阅读理解指令回复开头备注, 不用与其他ai区分时可留空
 
 # 模型参数调试专区(最好不碰,参数已由作者设定完成)
@@ -13,7 +15,7 @@ model: xl # 要使用的模型名称，当前支持的模型名称有medium、 l
 max_tokens: 256  # 最多生成的token个数, 默认值 256
 temperature: 0.85 # 默认值 0.85，更高的temperature意味着模型具备更多的可能性对于更有创造性的应用，可以尝试0.85以上，而对于有明确答案的应用，可以尝试0（argmax采样） 建议改变这个值或top_p，但不要同时改变
 top_p: 0.95 # 默认值 0.95，来源于nucleus sampling，采用的是累计概率的方式
-top_k: 50 # 默认值50，从概率分布中依据概率最大选择k个单词，建议不要过小导致模型能选择的词汇少
+top_k: 50 # 默认值50，从概率分布中依据概率最大选择k个单词，建议不要过小导致模a型能选择的词汇少
 n: 2 # 默认值 2, 大于0, 小于等于12 返回的序列的个数
 stop: "。" # 默认值"。"，当模型当前生成的字符为stop中的任何一个字符时，会停止生成
 

@@ -38,12 +38,8 @@ axios({
       "stop": "\n",
     }
   })
-  .then(function (done) { //如果成功则返回true
-    return true
-  })
   .catch(function (done) {
     logger.error(`WeLM-Plugin: API-Token不可用或者无法访问WeLM，请检查API-Token或网络, 如果未填写API-Token请使用指令: #填写token xxx进行填写, 当前API-Token:"${settings.API_token}"`) //如果失败提示error并输出false
-    return false
   })
 
 //加载插件

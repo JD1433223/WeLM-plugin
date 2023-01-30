@@ -1,7 +1,9 @@
 import YAML from 'yaml'
 import chokidar from 'chokidar'
 import fs from 'node:fs'
-import { _path, pluginResources, pluginRoot } from "./path.js";
+
+const _path = process.cwd().replace(/\\/g, '/')
+
 
 class Setting {
   constructor () {
