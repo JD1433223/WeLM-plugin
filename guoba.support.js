@@ -158,6 +158,16 @@ export function supportGuoba() {
               componentProps: {
                 placeholder: '建议不要输入AI在生成文本时大部分的词汇或文字'
               }
+            },
+            {
+              field: 'config.wdstop',
+              label: '问答指令停止符号',
+              bottomHelpMessage: '问答指令特殊停止符号(因为合并会不能用所以分了个出来), 当模型当前生成的字符为stop中的任何一个字符时，会停止生成',
+              component: 'Input',
+              required: true,
+              componentProps: {
+                placeholder: '建议不要输入AI在生成文本时大部分的词汇或文字'
+              }
             }
           ],
 

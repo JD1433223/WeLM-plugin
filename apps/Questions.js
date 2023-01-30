@@ -8,6 +8,8 @@ import YAML from 'yaml'
 //有问题问JD(1461072722)或者兰罗摩(脾气很差别问到高血压)(3584075812)JD在上学回复慢，但是一定会回复，也可以去火火的群(666345141)或者JD的群(815638467)里面找JD
 //分割线_____________________________
 
+const settings = await YAML.parse(fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml','utf8'));
+
 export class RGznbot extends plugin {
     constructor() {
         super({
@@ -16,7 +18,7 @@ export class RGznbot extends plugin {
             priority: 5000,
             rule: [
                  {
-                    reg: '^提问.*',
+                    reg: `^${settings.wdcmdstart}.*`,
                     fnc: 'Wenti',
                     log: false
                 }
@@ -25,7 +27,6 @@ export class RGznbot extends plugin {
     }
     
     async Wenti(e) {
-        const settings = await YAML.parse(fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml','utf8'));
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
         let API_token = settings.API_token 
         let model = settings.model          

@@ -10,6 +10,11 @@ import YAML from 'yaml'
 //有问题问JD(1461072722)或者兰罗摩(脾气很差别问到高血压)(3584075812)JD在上学回复慢，但是一定会回复，也可以去火火的群(666345141)或者JD的群(815638467)里面找JD
 //分割线_____________________________
 
+
+const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+
+
+
 export class RGznbot extends plugin {
     constructor() {
         super({
@@ -22,12 +27,12 @@ export class RGznbot extends plugin {
                     fnc: 'Cz',
                 },
                 {
-                    reg: '(^lxdh.*)',
+                    reg: `(^${settings.lxdhcmdstart}.*)`,
 	                fnc: 'lxdh',
                     log: false
 				},
 				{
-					reg: '(.*)',
+					reg: `(^${settings.dhcmdstart}.*)`,
 					fnc: 'Msg',
 					log: false
 				}
@@ -41,8 +46,6 @@ export class RGznbot extends plugin {
 		if (e.xml || e.img) {
 			return false;
 		}
-		const _path = process.cwd()
-        const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         let bot_name =  settings.bot_name 
         let API_token = settings.API_token
         let model = settings.model          
@@ -51,8 +54,8 @@ export class RGznbot extends plugin {
         let top_p = settings.top_p         
         let top_k = settings.top_k            
         let n = settings.n                
-        let stop = settings.stop            
-        let commandstart = settings.lxdhcmdstart
+        let stop = settings.stop 
+		let commandstart = settings.lxdhcmdstart           
         let replystart = settings.lxdhreplystart
         e.msg = e.msg.replace(commandstart, "")
 		let xr_mb = "\n我:" + e.msg + "\n" + bot_name + ":"         //如果不想要对话记录写入模型prompt请删除这一行。		
@@ -104,8 +107,6 @@ export class RGznbot extends plugin {
 		if (e.xml || e.img) {
 			return false;
 		}
-		const _path = process.cwd()
-		const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, 'utf8'));
 		//如需配置插件请到本插件文件夹内config的config.yaml进行编辑
 		let bot_name = settings.bot_name
 		let API_token = settings.API_token

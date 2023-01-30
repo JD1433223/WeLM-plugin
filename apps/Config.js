@@ -8,7 +8,7 @@ import axios from 'axios'
 //有问题问JD(1461072722)或者兰罗摩(脾气很差别问到高血压)(3584075812)JD在上学回复慢，但是一定会回复，也可以去火火的群(666345141)或者JD的群(815638467)里面找JD
 //PS:感谢鸢(2166683295)大佬提供的写入yaml部分
 //分割线_____________________________
-const _path = process.cwd()
+
 export class RGznbot extends plugin {
   constructor () {
     super({
@@ -38,6 +38,7 @@ async op(e) {
           e.reply("JD:要是给你填了那我岂不是很没面子")
         return true
         }
+const _path = process.cwd()
 let name = e.msg.replace(/#更改name/g, "").trim();
 let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
 
@@ -82,13 +83,14 @@ fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
 	        }
         })
         .then(function (response) {
-        logger.info('Token已更改为:',`"${token}"`);
+        logger.info(`Token已更改为:"${token}"`)
         e.reply("token填写成功")
         return true
         })
         .catch(function (error) {
-          console.log(error);
-          e.reply('token不可用或者无法访问welm，请检查token或网络')
+          logger.error(`${token}不可用, 或无法访问welm`)
+          e.reply('token不可用或无法访问welm，请检查token或网络')
+          console.error(error)
         });
     }
 } 
