@@ -58,8 +58,8 @@ fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
       let token = e.msg.replace(/#填写token/g, "").trim()
       let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
       let str = `${res}`
-      var reg = new RegExp(`"(.*?)"`); 
-      var api = str.replace(reg,`"${token}"`);
+      var reg = new RegExp(`API_token: "(.*?)"`); 
+      var api = str.replace(reg,`API_token: "${token}"`);
       fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,api,"utf8")
       e.reply("开始测试token正确性")
       const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'))
