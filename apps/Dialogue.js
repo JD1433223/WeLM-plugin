@@ -32,7 +32,7 @@ export class RGznbot extends plugin {
                     log: false
 				},
 				{
-					reg: `(^${settings.dhcmdstart}.*)`,
+					reg: `(.*)`,
 					fnc: 'Msg',
 					log: false
 				}
