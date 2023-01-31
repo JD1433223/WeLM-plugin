@@ -3,6 +3,7 @@ import fs from 'fs'
 import YAML from 'yaml'
 import common from'../../../lib/common/common.js'
 import axios from 'axios'
+const _path = process.cwd()
 //此插件由JD(1461072722)编写
 //有报错先看这里！！！！！！可能需要cnpm/pnpm/npm install axios yaml fs后才能正常使用，看看简介有其他方式
 //有问题问JD(1461072722)或者兰罗摩(脾气很差别问到高血压)(3584075812)JD在上学回复慢，但是一定会回复，也可以去火火的群(666345141)或者JD的群(815638467)里面找JD
@@ -38,7 +39,6 @@ async op(e) {
           e.reply("JD:要是给你填了那我岂不是很没面子")
         return true
         }
-const _path = process.cwd()
 let name = e.msg.replace(/#更改name/g, "").trim();
 let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
 
