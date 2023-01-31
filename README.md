@@ -106,5 +106,18 @@ pnpm install -g cnpm -registry=https://registry.npm.taobao.org
 巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
 ![](resources/README/biaoyangwelm.png)
 
+# 贡献者名单
+| 贡献者 | QQ | 主要贡献 |
+| --- | --- | --- |
+| 🎭书辞千楪Sama🌴 | 1700179844 | 提供了插件的主要功能 |
+| JD | 1461072722 | 提供了插件的部分功能 |
+| 兰罗摩 | 3584075812 | 将插件更改为插件包结构并支持锅巴 |
+| 鸢 | 2166683295 | 提供了写入yaml的技术 |
+| 曉K | 1509293009 | 添加了`#welm版本`指令 |
+| [喵喵插件](https://gitee.com/yoimiya-kokomi/miao-plugin) | None | 提供了图片帮助功能 |
+| [椰奶插件](https://gitee.com/yeyang52/yenai-plugin) | None | 提供了更新功能 |
+| [扩展插件](https://gitee.com/SmallK111407/expand-plugin) | None | 提供了锅巴配置的技术 |
+
+
 # 更新日志
 ☞[点我前往查看](./CHANGELOG.md)

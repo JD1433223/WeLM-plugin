@@ -8,9 +8,10 @@ import { Version } from './components/index.js'
 const _path = process.cwd()
 const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8')) 
 
-logger.info('------ヾ(￣▽￣)Bye~Bye~--------------')
-logger.info(`        WeLM对话插件${Version.version}初始化~`)
-
+logger.info('---ヾ(￣▽￣)Bye~Bye~--------')
+logger.info(`WeLM对话插件${Version.version}载入成功awa`)
+logger.info(`作者: ${logger.green('JD')} ${logger.red('兰罗摩')} ${logger.blue('书辞千楪Sama')}`)
+logger.info('-----------------------QwQ--')
 
 //调试你的API
 let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
