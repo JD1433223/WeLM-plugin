@@ -1,7 +1,6 @@
 import plugin from '../../../lib/plugins/plugin.js'
 import fs from 'fs'
 import YAML from 'yaml'
-import common from'../../../lib/common/common.js'
 import axios from 'axios'
 const _path = process.cwd()
 //此插件由JD(1461072722)编写
