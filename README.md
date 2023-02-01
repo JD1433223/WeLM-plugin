@@ -116,7 +116,7 @@ pnpm install -g cnpm -registry=https://registry.npm.taobao.org
 | 曉K | 1509293009 | 添加了`#welm版本`指令 |
 | [喵喵插件](https://gitee.com/yoimiya-kokomi/miao-plugin) | None | 提供了图片帮助功能 |
 | [椰奶插件](https://gitee.com/yeyang52/yenai-plugin) | None | 提供了更新功能 |
-| [扩展插件](https://gitee.com/SmallK111407/expand-plugin) | None | 提供了锅巴配置的技术 |
+| [拓展插件](https://gitee.com/SmallK111407/expand-plugin) | None | 提供了锅巴配置的技术 |
 
 
 # 更新日志
