@@ -3,11 +3,6 @@
 #### 介绍
 此为Yunzai-Bot云崽QQ机器人的插件，需要依赖云崽机器人来实现功能，可以模仿你机器人的人设对话(或许有其他问答功能) _可以去这里研究一下[WeLM](https://welm.weixin.qq.com/docs/api/)_
 
-#### 宣个群(测试版一般不放Gitee或者GitHub因为一堆Bug要逝的话进一下,JD整的)
-```
-815638467
-```
-
 # 安装教程
 
 ## 插件包版(推荐)
@@ -123,7 +118,8 @@ pnpm install -g cnpm -registry=https://registry.npm.taobao.org
 ☞[点我前往查看](./CHANGELOG.md)
 
 # 其他
-### 宣个群(测试版一般不放Gitee或者GitHub因为一堆Bug要逝的话进一下,JD整的)
+
+### 宣个群(如果有未知的bug可以来这里反馈,也可以把他当成交♂流群来用)
 ```
 815638467
 ```
@@ -131,7 +127,6 @@ pnpm install -g cnpm -registry=https://registry.npm.taobao.org
 ### 前往其他代码托管平台内本仓库
 * [☞Github](https://github.com/JD1433223/WeLM-plugin) 
 * [☞Gitee](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
-* [☞Gitlab](https://gitlab.com/arama3/WeLM-plugin) (施工中)
 
 ### 前往其他仓库
 #### Yunzai-Bot插件库:
