@@ -70,6 +70,11 @@ export const helpList = [
         "icon": 3,
         "title": "#welm帮助",
         "desc": "显示此内容"
+      },
+      {
+        "icon": 63,
+        "title": "#welm版本",
+        "desc": "显示版本信息"
       }
     ]
   },
