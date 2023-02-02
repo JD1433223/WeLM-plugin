@@ -26,17 +26,17 @@ export function supportGuoba() {
               field: 'config.API_token',
               label: 'API',
               bottomHelpMessage: '请输入你申请的API-Token',
-              component: "Input",
+              component: 'Input',
               required: true,
               componentProps: {
-                placeholder: "WeLM申请到的API-Token",
+                placeholder: 'WeLM申请到的API-Token',
               },
             },
             {
               field: 'config.bot_name',
               label: '预设内人设(名字)',
               bottomHelpMessage: '请输入你的预设内人设(名字)',
-              component: "Input",
+              component: 'Input',
               required: true,
               componentProps: {
                 placeholder: '预设内机器人扮演的人设(名字)',
@@ -50,8 +50,8 @@ export function supportGuoba() {
               required: true,
               componentProps: {
                 placeholder: '请输入概率',
-                min: "0",
-                max: "100"
+                min: '0',
+                max: '100'
               }
             },
             {
@@ -103,20 +103,27 @@ export function supportGuoba() {
               field: 'config.model',
               label: '模型',
               bottomHelpMessage: '当前支持的模型有medium、 large 和 xl',
-              component: 'Input',
-              required: true,
+              component: 'RadioGroup',
               componentProps: {
-                placeholder: '请输入你所使用的模型',
+                options: [
+                  {label: 'medium', value: 'medium'},
+                  {label: 'large', value: 'large'},
+                  {label: 'xl', value: 'xl'},
+                ],
+                buttonStyle: 'solid',
+                placeholder: '请选择你需要使用的模型'
               }
             },
             {
               field: 'config.max_tokens',
               label: '最大Tokens',
-              bottomHelpMessage: '模型可使用的最大Tokens, 不建议超过1000有可能会复读',
+              bottomHelpMessage: '模型可使用的最大Tokens, 不建议超过300有可能会复读',
               component: 'InputNumber',
               required: true,
               componentProps: {
-                placeholder: '不建议超过1000有可能会复读'
+                placeholder: '不建议超过300有可能会复读',
+                min: '4',
+                max: '512'
               }
             },
             {
@@ -127,6 +134,8 @@ export function supportGuoba() {
               required: true,
               componentProps: {
                 placeholder: '建议改变这个值或top_p，但不要同时改变',
+                min: "0.00",
+                max: "1.00"
               }
             },
             {
@@ -136,7 +145,9 @@ export function supportGuoba() {
               component: 'InputNumber',
               required: true,
               componentProps: {
-                placeholder: '建议改变这个值或temperature，但不要同时改变'
+                placeholder: '建议改变这个值或temperature，但不要同时改变',
+                min: "0.00",
+                max: "1.00"
               }
             },
             {
@@ -146,7 +157,9 @@ export function supportGuoba() {
               component: 'InputNumber',
               required: true,
               componentProps: {
-                placeholder: '从概率分布中依据概率最大选择k个单词'
+                placeholder: '从概率分布中依据概率最大选择k个单词',
+                min: '0',
+                max: '100'
               }
             },
             {
