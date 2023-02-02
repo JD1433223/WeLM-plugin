@@ -1,5 +1,5 @@
 import lodash from 'lodash'
-import fs from 'fs'
+import fs from 'node:fs'
 
 const _path = process.cwd()
 const getRoot = (root = '') => {

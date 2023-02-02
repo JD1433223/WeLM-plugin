@@ -23,7 +23,7 @@ export class update extends plugin {
             rule: [
                 {
                     reg: "^#*(AI|welm)(插件)?(强制)?更新$",
-                    fnc: "update",
+                    fnc: "Update",
                 },
             ],
         });
@@ -33,7 +33,7 @@ export class update extends plugin {
      * rule - 更新WeLM插件
      * @returns
      */
-    async update() {
+    async Update() {
         if (!this.e.isMaster) return false;
 
         /** 检查是否正在更新中 */

@@ -19,8 +19,9 @@
     "console": "^0.7.2",
     "lodash": "^4.17.21",
     "module": "^1.2.5",
-    "fs": "^0.0.1-security",
-    "chalk": "^5.2.0"
+    "chalk": "^5.2.0",
+    "chokidar": "^3.5.3",
+    "fs": "^0.0.1-security"
   },
   "keywords": [
     "Yunzai-Bot",

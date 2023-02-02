@@ -26,19 +26,19 @@ export class RGznbot extends plugin {
           /** 命令正则匹配 */
           reg: "^#填写token(.*)$",
           /** 执行方法 */
-          fnc: 'atk'
+          fnc: 'Token'
 },{
           reg: "^#更改name(.*)$",
           /** 执行方法 */
-          fnc: 'op'
+          fnc: 'Name'
 }
       ]
     })
   }
   
-async op(e) {
+async Name(e) {
       if (!e.isMaster) {
-          e.reply("JD:要是给你填了那我岂不是很没面子")
+        e.reply("JD:要是给你填了那我岂不是很没面子")
         return true
         }
 let name = e.msg.replace(/#更改name/g, "").trim();
@@ -51,9 +51,13 @@ fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
        e.reply(`名字已成功修改为${name}`)
     }
 
-    async atk(e) {
-      if (e.isGroup || !e.isMaster) {
+    async Token(e) {
+      if (e.isGroup) {
         e.reply("JD:要是给你在这填了那我岂不是很没面子")
+        return true
+      }
+      if (!e.isMaster) {
+        e.reply("JD:要是给你填了那我岂不是很没面子")
         return true
       }
 

@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs from 'node:fs'
 import lodash from 'lodash' 
 
 const _path = process.cwd()

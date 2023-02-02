@@ -1,4 +1,4 @@
-import setting from './models/setting.js'
+import Setting from './components/Setting.js'
 import lodash from 'lodash'
 
 //支持锅巴
@@ -73,7 +73,7 @@ export function supportGuoba() {
               }
             },
             {
-              field: 'config.wdreplystart',
+              field: 'config.twreplystart',
               label: '问答回复备注',
               bottomHelpMessage: '可留空',
               component: 'Input',
@@ -160,7 +160,7 @@ export function supportGuoba() {
               }
             },
             {
-              field: 'config.wdstop',
+              field: 'config.twstop',
               label: '问答指令停止符号',
               bottomHelpMessage: '问答指令特殊停止符号(因为合并会不能用所以分了个出来), 当模型当前生成的字符为stop中的任何一个字符时，会停止生成',
               component: 'Input',
@@ -172,7 +172,7 @@ export function supportGuoba() {
           ],
 
         getConfigData () {
-            return setting.merge()
+            return Setting.merge()
           },
           // 设置配置的方法（前端点确定后调用的方法）
           setConfigData (data, { Result }) {
@@ -180,8 +180,8 @@ export function supportGuoba() {
             for (let [keyPath, value] of Object.entries(data)) {
               lodash.set(config, keyPath, value)
             }
-            config = lodash.merge({}, setting.merge, config)
-            setting.analysis(config)
+            config = lodash.merge({}, Setting.merge, config)
+            Setting.analysis(config)
             return Result.ok({}, '保存成功辣~')
             }
         }

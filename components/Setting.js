@@ -8,7 +8,7 @@ const _path = process.cwd().replace(/\\/g, '/')
 class Setting {
   constructor () {
     /** 默认设置 */
-    this.defPath = `${_path}/plugins/WeLM-plugin/defCfg/`
+    this.defPath = `${_path}/plugins/WeLM-plugin/defSet/`
     this.defSet = {}
 
     /** 用户设置 */

@@ -1,13 +1,13 @@
 # 你的配置文件
-/config/**
+/config
 
 # 你的Prompt(预设)
 /data/*.txt
 
 # 你的help主题
-/resources/help/theme/**
+/resources/help/theme
 # 反选上默认主题
-!/resources/help/theme/default/**
+!/resources/help/theme/default
 
 # 使用Visual Studio时产生的文件夹
 /.vs

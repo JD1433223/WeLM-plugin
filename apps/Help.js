@@ -1,7 +1,7 @@
 import lodash from 'lodash'
 import fs from 'node:fs'
 import { Cfg, Version, Common, Data } from '../components/index.js'
-import Theme from './help/theme.js'
+import Theme from './Help/Theme.js'
 
 const _path = process.cwd()
 const helpPath = `${_path}/plugins/WeLM-plugin/resources/help`
@@ -16,17 +16,17 @@ export class help extends plugin {
 			rule: [
 				{
 					reg: "^#?(welm|Welm|WeLM|WELM|WElm)?(命令|帮助|菜单|help|说明|功能|指令|使用说明)$",
-					fnc: 'help'
+					fnc: 'Help'
 				},
         {
           reg: "^#?(welm|Welm|WeLM|WELM|WElm)版本$",
-					fnc: 'versionInfo'
+					fnc: 'VersionInfo'
         }
 			]
 		})
 	}
 
-async help (e) {
+async Help (e) {
   if ((!/welm/.test(e.msg)) && (!/Welm/.test(e.msg)) && (!/WeLM/.test(e.msg)) && (!/WELM/.test(e.msg)) && (!/WElm/.test(e.msg)) && !Cfg.get('sys.help', false)){
     return false
   }
@@ -85,7 +85,7 @@ async help (e) {
   }, { e, scale: 1.2 })
 }
 
-async versionInfo (e) {
+async VersionInfo (e) {
   return await Common.render('help/version-info', {
     currentVersion: Version.version,
     changelogs: Version.changelogs,
