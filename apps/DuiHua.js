@@ -11,7 +11,7 @@ import YAML from 'yaml'
 //分割线_____________________________
 
 
-const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+const ikun = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
 
 
 
@@ -27,7 +27,7 @@ export class RGznbot extends plugin {
                     fnc: 'QingChu',
                 },
                 {
-                    reg: `(^${settings.lxdhcmdstart}.*)`,
+                    reg: `(^${ikun.lxdhcmdstart}.*)`,
 	                fnc: 'LianXuDuiHua',
                     log: false
 				},
@@ -46,6 +46,7 @@ export class RGznbot extends plugin {
 		if (e.xml || e.img) {
 			return false;
 		}
+		const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         let bot_name =  settings.bot_name 
         let API_token = settings.API_token
         let model = settings.model          
@@ -110,6 +111,7 @@ export class RGznbot extends plugin {
 		if (e.xml || e.img) {
 			return false;
 		}
+		const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
 		//如需配置插件请到本插件文件夹内config的config.yaml进行编辑
 		let bot_name = settings.bot_name
 		let API_token = settings.API_token
