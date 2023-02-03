@@ -17,7 +17,7 @@ export class RGznbot extends plugin {
             priority: 5000,
             rule: [
                  {
-                    reg: `^${ikun.wdcmdstart}.*`,
+                    reg: `^${ikun.twcmdstart}.*`,
                     fnc: 'TiWen',
                     log: false
                 }
