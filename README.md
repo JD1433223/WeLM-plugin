@@ -77,7 +77,7 @@ pnpm install -g cnpm -registry=https://registry.npm.taobao.org
 ![](resources/README/chajianmingcuowu.png)
 如果你遇到了图上的错误就证明你没有按教程来装,重新按**教程**来装即可
 
-# 文本生成错误
+## 文本生成错误
 ![](resources/README/Error.png)
 如果你在使用功能时出现类似图上的错误有可能是以下错误:
 <br>
