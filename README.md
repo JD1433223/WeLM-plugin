@@ -53,6 +53,7 @@ _PS:这一步的所有txt都是上一步移动的文件_
 
 ## 缺少依赖
 ![](resources/README/Axios.png)
+
 第一次使用可能会出现图上的错误, 三选一执行:
 
 pnpm可能会掉依赖，希望你不要中奖
@@ -71,10 +72,12 @@ cnpm install axios
 
 ## 插件名称错误
 ![](resources/README/chajianmingcuowu.png)
+
 如果你遇到了图上的错误就证明你没有按教程来装,重新按**教程**来装即可
 
 ## 文本生成错误
 ![](resources/README/Error.png)
+
 如果你在使用功能时出现类似图上的错误有可能是以下错误:
 <br>
 超时：504
