@@ -46,10 +46,12 @@ let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf
 
 let str = `${res}`
 var reg = new RegExp(`bot_name: "(.*?)"`); 
-var a = str.replace(reg,`bot_name: "${name}"`);
-fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
-       e.reply(`名字已成功修改为${name}`)
-    }
+var Botname = str.replace(reg,`bot_name: "${name}"`);
+fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,Botname,"utf8");
+logger.info('------------Name更改成功------------')
+e.reply(`名字已成功修改为${name}`)
+logger.info('-----------------------------------')
+}
 
     async Token(e) {
       if (e.isGroup) {
@@ -91,8 +93,8 @@ fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
         .then(function (response) {
          logger.info('------------API-Token填写/更改成功------------')
          logger.info(`Token已更改为:"${token}"`)
+         logger.info('--------------------------------------------')
          e.reply("Token填写/更改成功")
-         return true
         })
         .catch(function (error) {
           logger.error('----------------WeLM出现错误----------------')
