@@ -10,9 +10,9 @@
 在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件_**
 ```
 # Github(进不去时可使用Gitee源)
-git clone -b master https://github.com/JD1433223/WeLM-plugin ./plugins/WeLM-plugin
+git clone -b master --depth=1 https://github.com/JD1433223/WeLM-plugin ./plugins/WeLM-plugin
 # Gitee 
-git clone -b master https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/ ./plugins/WeLM-plugin
+git clone -b master --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/ ./plugins/WeLM-plugin
 ```
 ### 第二步
 对机器人私聊"#填写token xxx"（这个xxx是你的token-api） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
@@ -32,9 +32,9 @@ _PS:txt在WeLM-plugin/data内_
 
 ```
 # Github(进不去时可使用Gitee源)
-git clone -b js-version https://github.com/JD1433223/WeLM-plugin ./plugins/WeLM-plugin
+git clone -b js-version --depth=1 https://github.com/JD1433223/WeLM-plugin ./plugins/WeLM-plugin
 # Gitee 
-git clone -b js-version https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/ ./plugin/WeLM-plugin
+git clone -b js-version --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/ ./plugin/WeLM-plugin
 ```
 ### 第二步
 在拉取下来的内容里找到welm.js并将他移动到Yunzai-Bot根目录下的plugins/example
