@@ -27,11 +27,16 @@ export class RGznbot extends plugin {
           reg: "^#填写token(.*)$",
           /** 执行方法 */
           fnc: 'Token'
-},{
+        },
+        {
           reg: "^#更改name(.*)$",
           /** 执行方法 */
           fnc: 'Name'
-}
+        },
+        {
+          reg: "^#我的token",
+          fnc: 'MyToken'
+        }
       ]
     })
   }
@@ -53,7 +58,7 @@ e.reply(`名字已成功修改为${name}`)
 logger.info('-----------------------------------')
 }
 
-    async Token(e) {
+async Token(e) {
       if (e.isGroup) {
         e.reply("JD:要是给你在这填了那我岂不是很没面子")
         return true
@@ -68,16 +73,13 @@ logger.info('-----------------------------------')
       let str = `${res}`
       var reg = new RegExp(`API_token: "(.*?)"`); 
       var api = str.replace(reg,`API_token: "${token}"`);
-      fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,api,"utf8")
       e.reply("开始测试Token正确性")
-      const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'))
-      let API_token = settings.API_token
       axios({
 	        method: 'post',
 	        url: 'https://welm.weixin.qq.com/v1/completions',
 	        headers: {
 		        "Content-Type": "application/json",
-		        "Authorization": API_token
+		        "Authorization": token
 	        },
 	        data: {
 		        "prompt": "测试",
@@ -94,6 +96,7 @@ logger.info('-----------------------------------')
          logger.info('------------API-Token填写/更改成功------------')
          logger.info(`Token已更改为:"${token}"`)
          logger.info('--------------------------------------------')
+         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,api,"utf8")
          e.reply("Token填写/更改成功")
         })
         .catch(function (error) {
@@ -108,6 +111,21 @@ logger.info('-----------------------------------')
           e.reply('Token不可用或无法访问welm，请检查Token或网络')
         });
     }
+
+async MyToken(e) {
+  if (e.isGroup) {
+    e.reply("兰罗摩:要是给你在群里看了,那我岂不是很没面子")
+    return true
+  }
+  if (!e.isMaster) {
+    e.reply("兰罗摩:你个勾巴你妹权限,爬爬爬")
+    return true
+  }
+  const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'))
+  let API_token = settings.API_token
+
+  e.reply(`报告主人,目前Token为: "${API_token}"`)
+}
 } 
 
 
