@@ -52,25 +52,21 @@ _PS:这一步的所有txt都是上一步移动的文件_
 # 可能遇到的问题
 
 ## 缺少依赖
-第一次使用可能会缺少依赖，三选一执行
+![](resources/README/Axios.png)
+第一次使用可能会出现图上的错误, 三选一执行:
 
-```
+pnpm可能会掉依赖，希望你不要中奖
+``` 
 pnpm add axios -w
 ```
-这个可能会掉依赖，希望你不要中奖
-
+npm可能连不上
 ```
 npm install axios 
 ```
-这个可能连不上
-
-```
-cnpm install axios
-```
-这个需要提前安装cnpm，命令是
-
+cnpm需要执行2条命令
 ```
 pnpm install -g cnpm -registry=https://registry.npm.taobao.org
+cnpm install axios
 ```
 
 ## 插件名称错误

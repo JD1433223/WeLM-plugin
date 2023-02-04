@@ -14,9 +14,10 @@ try {
   if (!await redis.get('WeLM-plugin:node_modules')) await redis.set('WeLM-plugin:node_modules', '1')
 } catch (error) {
   if (error.stack?.includes('Cannot find package')) {
+    logger.error('--------WeLM依赖缺失--------')
     logger.error(`WeLM-plugin 缺少依赖将无法使用 ${logger.red('所有需要调用API的功能')}`)
     logger.error(`如需使用请运行：${logger.red('pnpm add axios -w')}`)
-    logger.error('--------WeLM依赖缺失--------')
+    logger.error('----------------------------')
   } else {
     logger.error(`WeLM载入依赖错误：${logger.red('axios')}`)
     logger.error(decodeURI(error.stack))
