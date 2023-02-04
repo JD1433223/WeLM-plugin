@@ -1,6 +1,6 @@
 {
   "name": "welm-plugin",
-  "version": "5.0.0",
+  "version": "1.5.1 Beta.2",
   "description": "Yunzai-Bot插件扩展",
   "main": "index.js",
   "type": "module",
