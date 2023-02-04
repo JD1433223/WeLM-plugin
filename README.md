@@ -7,7 +7,7 @@
 
 ## 插件包版(推荐)
 ### 第一步
-在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件_**
+在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
 ```
 # Github(进不去时可使用Gitee源)
 git clone -b master --depth=1 https://github.com/JD1433223/WeLM-plugin ./plugins/WeLM-plugin
