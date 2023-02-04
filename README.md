@@ -77,6 +77,26 @@ pnpm install -g cnpm -registry=https://registry.npm.taobao.org
 ![](resources/README/chajianmingcuowu.png)
 如果你遇到了图上的错误就证明你没有按教程来装,重新按**教程**来装即可
 
+# 文本生成错误
+![](resources/README/Error.png)
+如果你在使用功能时出现类似图上的错误有可能是以下错误:
+<br>
+超时：504
+<br>
+服务不可用：503
+<br>
+用户prompt命中敏感词：400
+<br>
+生成结果命中敏感词：200
+<br>
+用户输入参数不合法：400
+<br>
+配额超限制：429
+<br>
+请求频率超限制：429
+<br>
+Token不可用：403
+
 # 使用说明
 个性回答默认在群内是2%触发，或者在对话前面加个welm的100%触发指令然后就可以与开始激情对话了。
 ![](resources/README/gexinghuida.jpg)
