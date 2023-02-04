@@ -79,7 +79,7 @@ cnpm install axios
 ![](resources/README/Error.png)
 
 如果你在使用功能时出现类似图上的错误有可能是以下错误:
-<br>
+
 超时：504
 <br>
 服务不可用：503
