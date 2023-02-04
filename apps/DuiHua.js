@@ -11,7 +11,7 @@ import YAML from 'yaml'
 //分割线_____________________________
 
 
-const ikun = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+const command = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
 
 
 
@@ -27,7 +27,7 @@ export class RGznbot extends plugin {
                     fnc: 'QingChu',
                 },
                 {
-                    reg: `(^${ikun.lxdhcmdstart}.*)`,
+                    reg: `(^${command.lxdhcmdstart}.*)`,
 	                fnc: 'LianXuDuiHua',
                     log: false
 				},
@@ -81,16 +81,33 @@ export class RGznbot extends plugin {
 	        }
         })
 		.then(function (response) {
-			logger.info('WeLM返回消息:' + response.data.choices[0].text);
-			fs.appendFileSync('./plugins/WeLM-plugin/data/jldata.txt', response.data.choices[0].text, 'utf8')
-		    e.reply(replystart+response.data.choices[0].text, e.isGroup);
-		})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(由welm回答)"+ | 这一部分
+			logger.info('----------------WeLM调试----------------')
+			logger.info('ID:' + response.data.id)
+			logger.info('使用的类型:' + response.data.object)
+			logger.info('使用的模型:' + response.data.model)
+			logger.info('生成的文本:' + response.data.choices[0].text)
+			logger.info('----------------------------------------')
+			e.reply(replystart + response.data.choices[0].text, e.isGroup)
+		})        
 		.catch(function (error) {
-		    console.log(error);
+			logger.error('----------------WeLM出现错误----------------')
+			logger.error('报错内容(经缩减): ' + error)
+			logger.error('-------------------分隔符-------------------')
+			logger.warn('以下为常规报错内容(如果报错内容不含有以下任何一种请提出issues至Github或Gitee, 或进群讨论): ')
+			logger.warn('超时：504')
+			logger.warn('服务不可用：503')
+			logger.warn('用户prompt命中敏感词：400')
+			logger.warn('生成结果命中敏感词：200')
+			logger.warn('用户输入参数不合法：400')
+			logger.warn('配额超限制：429')
+			logger.warn('请求频率超限制：429')
+			logger.warn('Token不可用：403')
+			logger.error('-------------------------------------------')
 			let JiLu = fs.readFileSync('./plugins/WeLM-plugin/data/dhdata.txt', { encoding: 'utf-8' })
 		    let xr_mb = JiLu	
 	    	fs.writeFileSync('./plugins/WeLM-plugin/data/jldata.txt', xr_mb, 'utf8')
-	    	e.reply("违反政策的内容或者对话字数已达到上限(2048)，已重置对话，请重新开始")
+			e.reply(`以下为报错内容(经删减): ` + error)
+	    	e.reply("已重置对话，请重新开始")
 		});
     }
 
@@ -149,11 +166,28 @@ export class RGznbot extends plugin {
 				}
 			})
 				.then(function (response) {
-					logger.info('WeLM返回消息:' + response.data.choices[0].text);
-					e.reply(replystart + response.data.choices[0].text, e.isGroup);
-				})          //如果不需要区分welm与其他ai插件的回复的话可以删掉 | "(由welm回答)"+ | 这一部分
+					logger.info('----------------WeLM调试----------------')
+					logger.info('ID:' + response.data.id)
+					logger.info('使用的类型:' + response.data.object)
+					logger.info('使用的模型:' + response.data.model)
+					logger.info('生成的文本:' + response.data.choices[0].text)
+					logger.info('----------------------------------------')
+					e.reply(replystart + response.data.choices[0].text, e.isGroup)
+				})        
 				.catch(function (error) {
-					console.log(error);
+					logger.error('----------------WeLM出现错误----------------')
+					logger.error('报错内容(经缩减): ' + error)
+					logger.error('-------------------分隔符-------------------')
+					logger.warn('以下为常规报错内容(如果报错内容不含有以下任何一种请提出issues至Github或Gitee, 或进群讨论): ')
+					logger.warn('超时：504')
+					logger.warn('服务不可用：503')
+					logger.warn('用户prompt命中敏感词：400')
+					logger.warn('生成结果命中敏感词：200')
+					logger.warn('用户输入参数不合法：400')
+					logger.warn('配额超限制：429')
+					logger.warn('请求频率超限制：429')
+					logger.warn('Token不可用：403')
+					logger.error('-------------------------------------------')
 				});
 		}
 	}

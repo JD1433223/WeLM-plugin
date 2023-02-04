@@ -67,7 +67,7 @@ fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
       var reg = new RegExp(`API_token: "(.*?)"`); 
       var api = str.replace(reg,`API_token: "${token}"`);
       fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,api,"utf8")
-      e.reply("开始测试token正确性")
+      e.reply("开始测试Token正确性")
       const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'))
       let API_token = settings.API_token
       axios({
@@ -89,14 +89,21 @@ fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,a,"utf8");
 	        }
         })
         .then(function (response) {
-        logger.info(`Token已更改为:"${token}"`)
-        e.reply("token填写成功")
-        return true
+         logger.info('------------API-Token填写/更改成功------------')
+         logger.info(`Token已更改为:"${token}"`)
+         e.reply("Token填写/更改成功")
+         return true
         })
         .catch(function (error) {
-          logger.error(`${token}不可用, 或无法访问welm`)
-          e.reply('token不可用或无法访问welm，请检查token或网络')
-          console.error(error)
+          logger.error('----------------WeLM出现错误----------------')
+          logger.error(`此Token(${token})不可用或无法访问WeLM, 报错内容(经缩减): ` + error)
+          logger.error('-------------------分隔符-------------------')
+          logger.warn('以下为常规报错内容(如果报错内容不含有以下任何一种请提出issues至Github或Gitee, 或进群讨论): ')
+					logger.warn('服务不可用：503')
+					logger.warn('超时：504')
+          logger.warn('Token不可用：403')
+          logger.error('-------------------------------------------')
+          e.reply('Token不可用或无法访问welm，请检查Token或网络')
         });
     }
 } 
