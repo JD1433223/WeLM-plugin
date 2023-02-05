@@ -4,14 +4,14 @@ import fs from 'node:fs'
 import YAML from 'yaml'
 import { checkPackage } from './components/CheckPackage.js'
 
-const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
+const APIToken = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8')).APIToken
 
 //输出提示
 logger.info('----✩•‿• ʜᴀᴠᴇ ᴀ ɢᴏᴏᴅ ᴛɪᴍᴇ☄︎♡----')
 logger.info(`WeLM对话插件初始化(・ω< )★`)
 logger.info(`当前版本: ${chalk.rgb(150, 50, 100)(Version.version)}`)
 logger.info(`作者: ${chalk.rgb(0, 255, 0)('JD')} ${logger.red('兰罗摩')} ${logger.blue('书辞千楪Sama')}`)
-logger.info(`当前API-Token: "${chalk.rgb(103, 93, 189)(settings.APIToken)}"`)
+logger.info(`当前API-Token: "${chalk.rgb(103, 93, 189)(APIToken)}"`)
 logger.info('-------------------------------')
 
 let passed = await checkPackage()
