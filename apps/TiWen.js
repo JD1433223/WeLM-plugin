@@ -31,7 +31,7 @@ export class RGznbot extends plugin {
 		}
         const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
-        let API_token = settings.API_token 
+        let APIToken = settings.APIToken 
         let model = settings.model          
         let max_tokens = settings.max_tokens
         let temperature = settings.temperature   
@@ -48,7 +48,7 @@ export class RGznbot extends plugin {
 	        url: 'https://welm.weixin.qq.com/v1/completions',
 	        headers: {
 		        "Content-Type": "application/json",
-		        "Authorization": API_token
+		        "Authorization": APIToken
 	        },
 	        data: {
 		        "prompt": sc_cs2,

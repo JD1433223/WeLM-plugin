@@ -71,8 +71,8 @@ async Token(e) {
       let token = e.msg.replace(/#填写token/g, "").trim()
       let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
       let str = `${res}`
-      var reg = new RegExp(`API_token: "(.*?)"`); 
-      var api = str.replace(reg,`API_token: "${token}"`);
+      var reg = new RegExp(`APIToken: "(.*?)"`); 
+      var api = str.replace(reg,`APIToken: "${token}"`);
       e.reply("开始测试Token正确性")
       axios({
 	        method: 'post',
@@ -122,9 +122,9 @@ async MyToken(e) {
     return true
   }
   const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'))
-  let API_token = settings.API_token
+  let APIToken = settings.APIToken
 
-  e.reply(`报告主人,目前Token为: "${API_token}"`)
+  e.reply(`报告主人,目前Token为: "${APIToken}"`)
 }
 } 
 
