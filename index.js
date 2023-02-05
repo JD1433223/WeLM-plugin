@@ -2,6 +2,7 @@ import { Version } from './components/index.js'
 import chalk from 'chalk'
 import fs from 'node:fs'
 import YAML from 'yaml'
+import { checkPackage } from './components/CheckPackage.js'
 
 const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
 
@@ -13,20 +14,9 @@ logger.info(`作者: ${chalk.rgb(0, 255, 0)('JD')} ${logger.red('兰罗摩')} ${
 logger.info(`当前API-Token: "${chalk.rgb(103, 93, 189)(settings.APIToken)}"`)
 logger.info('-------------------------------')
 
-try {
-  await import('axios')
-  if (!await redis.get('WeLM-plugin:node_modules')) await redis.set('WeLM-plugin:node_modules', '1')
-} catch (error) {
-  if (error.stack?.includes('Cannot find package')) {
-    logger.error('--------WeLM依赖缺失--------')
-    logger.error(`WeLM-plugin 缺少依赖将无法使用 ${logger.red('所有需要调用API的功能')}`)
-    logger.error(`如需使用请运行：${logger.red('pnpm add axios -w')}`)
-    logger.error('----------------------------')
-  } else {
-    logger.error(`WeLM载入依赖错误：${logger.red('axios')}`)
-    logger.error(decodeURI(error.stack))
-  }
-  await redis.del('WeLM:node_modules')
+let passed = await checkPackage()
+if (!passed) {
+    throw 'Missing necessary dependencies'
 }
 
 //加载插件
