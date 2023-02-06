@@ -154,5 +154,5 @@ Token不可用：403
 * [☞Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
 
 #### Yunzai-Bot
-* [☞Github](https://github.com/Le-niao/Yunzai-Bot)
+* [☞GitHub](https://github.com/Le-niao/Yunzai-Bot)
 * [☞Gitee](https://gitee.com/Le-niao/Yunzai-Bot) 
