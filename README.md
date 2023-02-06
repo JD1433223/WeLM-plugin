@@ -15,7 +15,7 @@ git clone -b master --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plu
 git clone -b master --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm.git ./plugins/WeLM-plugin
 ```
 ### 第二步
-对机器人私聊"#填写token xxx"（这个xxx是你的token-api） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
+对机器人私聊"#填写token xxx"（这个xxx是你的API-Token） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
 ![](resources/README/img/token.jpg)
 ### 第三步
 _PS:txt在WeLM-plugin/data内_
