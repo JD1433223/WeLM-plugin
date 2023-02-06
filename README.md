@@ -64,7 +64,7 @@ npm可能连不上
 ```
 npm install axios 
 ```
-cnpm需要执行2条命令
+cnpm需要提前安装(指令已经在下面了可以直接复制一键执行)
 ```
 pnpm install -g cnpm -registry=https://registry.npm.taobao.org
 cnpm install axios
