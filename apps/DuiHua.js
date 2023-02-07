@@ -47,7 +47,7 @@ export class RGznbot extends plugin {
 			return false;
 		}
 		const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
-        let bot_name =  settings.bot_name 
+        let BotName =  settings.BotName 
         let APIToken = settings.APIToken
         let model = settings.model          
         let max_tokens = settings.max_tokens
@@ -59,7 +59,7 @@ export class RGznbot extends plugin {
 		let commandstart = settings.lxdhcmdstart           
         let replystart = settings.lxdhreplystart
         e.msg = e.msg.replace(commandstart, "")
-		let xr_mb = "\n我:" + e.msg + "\n" + bot_name + ":"         //如果不想要对话记录写入模型prompt请删除这一行。		
+		let xr_mb = "\n我:" + e.msg + "\n" + BotName + ":"         //如果不想要对话记录写入模型prompt请删除这一行。		
 		fs.appendFileSync('./plugins/WeLM-plugin/data/jldata.txt', xr_mb, 'utf8')  //如果不想要对话记录写入模型prompt请删除这一行。
 		let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/jldata.txt', { encoding: 'utf-8' })
         axios({
@@ -130,7 +130,7 @@ export class RGznbot extends plugin {
 		}
 		const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
 		//如需配置插件请到本插件文件夹内config的config.yaml进行编辑
-		let bot_name = settings.bot_name
+		let BotName = settings.BotName
 		let APIToken = settings.APIToken
 		let model = settings.model
 		let max_tokens = settings.max_tokens
@@ -146,7 +146,7 @@ export class RGznbot extends plugin {
 		if (random_ >= 100 || random_ < probability || e.msg && e.msg?.indexOf(commandstart) >= 0 || !e.isGroup) {
 			e.msg = e.msg.replace(commandstart, "")
 			let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/dhdata.txt', { encoding: 'utf-8' })
-			let sc_cs2 = sc_cs + "\n我:" + e.msg + "\n" + bot_name + ":"
+			let sc_cs2 = sc_cs + "\n我:" + e.msg + "\n" + BotName + ":"
 			axios({
 				method: 'post',
 				url: 'https://welm.weixin.qq.com/v1/completions',

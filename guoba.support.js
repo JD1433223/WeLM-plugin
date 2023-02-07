@@ -33,7 +33,7 @@ export function supportGuoba() {
             },
           },
           {
-            field: 'config.bot_name',
+            field: 'config.BotName',
             label: '预设内人设(名字)',
             bottomHelpMessage: '请输入你的预设内人设(名字)',
             component: 'Input',

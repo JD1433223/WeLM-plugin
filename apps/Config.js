@@ -50,8 +50,8 @@ let name = e.msg.replace(/#更改name/g, "").trim();
 let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
 
 let str = `${res}`
-var reg = new RegExp(`bot_name: "(.*?)"`); 
-var Botname = str.replace(reg,`bot_name: "${name}"`);
+var reg = new RegExp(`BotName: "(.*?)"`); 
+var Botname = str.replace(reg,`BotName: "${name}"`);
 fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,Botname,"utf8");
 logger.info('------------Name更改成功------------')
 e.reply(`名字已成功修改为${name}`)
