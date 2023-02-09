@@ -57,6 +57,7 @@ export class RGznbot extends plugin {
         let top_k = settings.top_k            
         let n = settings.n                
         let stop = settings.stop
+        let replystart = settings.twreplystart
         if (e.msg && e.msg?.indexOf("请问") >= 0 || !e.isGroup){
         e.msg = e.msg.replace(/#请问/g, "")
 		let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/hgttd.txt', { encoding: 'utf-8' })
@@ -86,7 +87,7 @@ export class RGznbot extends plugin {
 			logger.info('使用的模型:' + response.data.model)
 			logger.info('生成的文本:' + response.data.choices[0].text)
 			logger.info('----------------------------------------')
-			e.reply(replystart + response.data.choices[0].text, e.isGroup)
+			e.reply(twreplystart + response.data.choices[0].text, e.isGroup)
 		})        
 		.catch(function (error) {
 			logger.error('----------------WeLM出现错误----------------')
