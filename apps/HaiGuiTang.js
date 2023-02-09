@@ -87,7 +87,7 @@ export class RGznbot extends plugin {
 			logger.info('使用的模型:' + response.data.model)
 			logger.info('生成的文本:' + response.data.choices[0].text)
 			logger.info('----------------------------------------')
-			e.reply(twreplystart + response.data.choices[0].text, e.isGroup)
+			e.reply(replystart + response.data.choices[0].text, e.isGroup)
 		})        
 		.catch(function (error) {
 			logger.error('----------------WeLM出现错误----------------')
