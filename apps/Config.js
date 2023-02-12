@@ -12,7 +12,7 @@ const _path = process.cwd()
 
 
 export class RGznbot extends plugin {
-  constructor () {
+  constructor() {
     super({
       /** 功能名称 */
       name: 'WeLM配置更改',
@@ -36,128 +36,140 @@ export class RGznbot extends plugin {
         {
           reg: "^#我的token",
           fnc: 'MyToken'
+        },
+        {
+          reg: "#?welm设置(私聊|群聊)(开启|关闭)",
+          fnc: 'Switch'
         }
       ]
     })
   }
-  
-async Name(e) {
-      if (!e.isMaster) {
-        e.reply("JD:要是给你填了那我岂不是很没面子")
-        return true
-        }
-let name = e.msg.replace(/#更改name/g, "").trim();
-let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
 
-let str = `${res}`
-var reg = new RegExp(`BotName: "(.*?)"`); 
-var Botname = str.replace(reg,`BotName: "${name}"`);
-fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,Botname,"utf8");
-logger.info('------------Name更改成功------------')
-e.reply(`名字已成功修改为${name}`)
-logger.info('-----------------------------------')
-}
+  async Name(e) {
+    if (!e.isMaster) {
+      e.reply("JD:要是给你填了那我岂不是很没面子")
+      return true
+    }
+    let name = e.msg.replace(/#更改name/g, "").trim();
+    let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, "utf8")
 
-async Token(e) {
-      if (e.isGroup) {
-        e.reply("JD:要是给你在这填了那我岂不是很没面子")
-        return true
-      }
-      if (!e.isMaster) {
-        e.reply("JD:要是给你填了那我岂不是很没面子")
-        return true
-      }
+    let str = `${res}`
+    var reg = new RegExp(`BotName: "(.*?)"`);
+    var Botname = str.replace(reg, `BotName: "${name}"`);
+    fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, Botname, "utf8");
+    logger.info('------------Name更改成功------------')
+    e.reply(`名字已成功修改为${name}`)
+    logger.info('-----------------------------------')
+  }
 
-      let token = e.msg.replace(/#填写token/g, "").trim()
-      let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,"utf8")
-      let str = `${res}`
-      var reg = new RegExp(`APIToken: "(.*?)"`); 
-      var api = str.replace(reg,`APIToken: "${token}"`);
-      e.reply("开始测试Token正确性")
-      axios({
-	        method: 'post',
-	        url: 'https://welm.weixin.qq.com/v1/completions',
-	        headers: {
-		        "Content-Type": "application/json",
-		        "Authorization": token
-	        },
-	        data: {
-		        "prompt": "测试",
-		        "model": "xl",
-		        "max_tokens": "64",
-		        "temperature": "0.85",
-		        "top_p": "0.95",
-		        "top_k": "50",
-		        "n": "2",
-		        "stop": "\n",
-	        }
-        })
-        .then(function (response) {
-         logger.info('------------API-Token填写/更改成功------------')
-         logger.info(`Token已更改为:"${token}"`)
-         logger.info('--------------------------------------------')
-         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,api,"utf8")
-         e.reply("Token填写/更改成功")
-        })
-        .catch(function (error) {
-          logger.error('----------------WeLM出现错误----------------')
-          logger.error(`此Token(${token})不可用或无法访问WeLM, 报错内容(经缩减): ` + error)
-          logger.error('-------------------分隔符-------------------')
-          logger.warn('以下为常规报错内容(如果报错内容不含有以下任何一种请提出issues至Github或Gitee, 或进群讨论): ')
-					logger.warn('服务不可用：503')
-					logger.warn('超时：504')
-          logger.warn('Token不可用：403')
-          logger.error('-------------------------------------------')
-          e.reply('Token不可用或无法访问welm，请检查Token或网络')
-        });
+  async Token(e) {
+    if (e.isGroup) {
+      e.reply("JD:要是给你在这填了那我岂不是很没面子")
+      return true
+    }
+    if (!e.isMaster) {
+      e.reply("JD:要是给你填了那我岂不是很没面子")
+      return true
     }
 
-async MyToken(e) {
-  if (e.isGroup) {
-    e.reply("兰罗摩:要是给你在群里看了,那我岂不是很没面子")
-    return true
+    let token = e.msg.replace(/#填写token/g, "").trim()
+    let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, "utf8")
+    let str = `${res}`
+    var reg = new RegExp(`APIToken: "(.*?)"`);
+    var api = str.replace(reg, `APIToken: "${token}"`);
+    e.reply("开始测试Token正确性")
+    axios({
+      method: 'post',
+      url: 'https://welm.weixin.qq.com/v1/completions',
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": token
+      },
+      data: {
+        "prompt": "测试",
+        "model": "xl",
+        "max_tokens": "64",
+        "temperature": "0.85",
+        "top_p": "0.95",
+        "top_k": "50",
+        "n": "2",
+        "stop": "\n",
+      }
+    })
+      .then(function (response) {
+        logger.info('------------API-Token填写/更改成功------------')
+        logger.info(`Token已更改为:"${token}"`)
+        logger.info('--------------------------------------------')
+        fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, api, "utf8")
+        e.reply("Token填写/更改成功")
+      })
+      .catch(function (error) {
+        logger.error('----------------WeLM出现错误----------------')
+        logger.error(`此Token(${token})不可用或无法访问WeLM, 报错内容(经缩减): ` + error)
+        logger.error('-------------------分隔符-------------------')
+        logger.warn('以下为常规报错内容(如果报错内容不含有以下任何一种请提出issues至Github或Gitee, 或进群讨论): ')
+        logger.warn('服务不可用：503')
+        logger.warn('超时：504')
+        logger.warn('Token不可用：403')
+        logger.error('-------------------------------------------')
+        e.reply('Token不可用或无法访问welm，请检查Token或网络')
+      });
   }
-  if (!e.isMaster) {
-    e.reply("兰罗摩:你个勾巴你妹权限,爬爬爬")
-    return true
-  }
-  const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'))
-  let APIToken = settings.APIToken
 
-  e.reply(`报告主人,目前Token为: "${APIToken}"`)
+  async MyToken(e) {
+    if (e.isGroup) {
+      e.reply("兰罗摩:要是给你在群里看了,那我岂不是很没面子")
+      return true
+    }
+    if (!e.isMaster) {
+      e.reply("兰罗摩:你个勾巴你妹权限,爬爬爬")
+      return true
+    }
+    const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, 'utf8'))
+    let APIToken = settings.APIToken
+
+    e.reply(`报告主人,目前Token为: "${APIToken}"`)
+  }
+
+
+  async Switch(e) {
+    if (e.msg.includes('私聊')) {
+      if (e.msg.includes('开启')) {
+        let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/set.yaml`, "utf8")
+        let str = `${res}`
+        var reg = new RegExp(`PrivateSwitch: "(.*?)"`);
+        var Switch = str.replace(reg, `PrivateSwitch: "true"`);
+        fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/set.yaml`, Switch, "utf8");
+        e.reply("私聊WeLM已设为开启")
+        return true
+      } else {
+        let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/set.yaml`, "utf8")
+        let str = `${res}`
+        var reg = new RegExp(`PrivateSwitch: "(.*?)"`);
+        var Switch = str.replace(reg, `PrivateSwitch: "false"`);
+        fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/set.yaml`, Switch, "utf8");
+        e.reply("私聊Welm已设为关闭")
+        return true
+      }
+    }
+    if (e.msg.includes('群聊')) {
+      if (e.msg.includes('开启')) {
+        let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/set.yaml`, "utf8")
+        let str = `${res}`
+        var reg = new RegExp(`GroupSwitch: "(.*?)"`);
+        var Switch = str.replace(reg, `GroupSwitch: "true"`);
+        fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/set.yaml`, Switch, "utf8");
+        e.reply("群聊WeLM对话已设为开启")
+        return true
+      } else {
+        let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/set.yaml`, "utf8")
+        let str = `${res}`
+        var reg = new RegExp(`GroupSwitch: "(.*?)"`);
+        var Switch = str.replace(reg, `GroupSwitch: "false"`);
+        fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/set.yaml`, Switch, "utf8");
+        e.reply("群聊WeLM对话已设为关闭")
+        return true
+      }
+    }
+  }
 }
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
