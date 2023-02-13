@@ -20,7 +20,7 @@ export class RGznbot extends plugin {
         super({
             name: 'WeLM对话',
             event: 'message',
-            priority: 60010,
+            priority: 10000,
             rule: [
                  {
                     reg: '#清除对话',
@@ -180,6 +180,7 @@ export class RGznbot extends plugin {
 					logger.info('生成的文本:' + response.data.choices[0].text)
 					logger.info('----------------------------------------')
 					e.reply(replystart + response.data.choices[0].text, e.isGroup)
+					return false
 				})        
 				.catch(function (error) {
 					logger.error('----------------WeLM出现错误----------------')
@@ -195,6 +196,7 @@ export class RGznbot extends plugin {
 					logger.warn('请求频率超限制：429')
 					logger.warn('Token不可用：403')
 					logger.error('-------------------------------------------')
+					return false
 				});
 		}
 	}
