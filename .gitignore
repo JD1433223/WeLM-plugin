@@ -1,17 +1,16 @@
 # 你的配置文件
-/config/config.yaml
-/config/help.js
+config/*.yaml
+config/help.js
 
 # 你的Prompt(预设)
-/data
+data/**
 
-# 你的help主题
-/resources/help/theme/**/
-# 反选上默认主题
-!/resources/help/theme/default/
+# 你的帮助主题
+resources/help/theme/**/
+!resources/help/theme/default/
 
 # 使用Visual Studio时产生的文件夹
-/.vs
+.vs
 
 # Redis数据
 *.rdb
