@@ -43,6 +43,18 @@ export function supportGuoba() {
             },
           },
           {
+            field: 'set.GroupSwitch',
+            label: '群聊开关',
+            bottomHelpMessage: '在群里是否开启本插件功能',
+            component: 'Switch'
+          },
+          {
+            field: 'set.PrivateSwitch',
+            label: '私聊开关',
+            bottomHelpMessage: '在私聊内是否开启本插件功能',
+            component: 'Switch'
+          },
+          {
             field: 'config.probability',
             label: '对话概率',
             bottomHelpMessage: '普通对话在群里触发的概率(百分比)',
