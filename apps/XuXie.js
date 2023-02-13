@@ -19,13 +19,13 @@ export class RGznbot extends plugin {
             rule: [
                 {
                     reg: `^${command.xxcmdstart}.*`,
-                    fnc: 'Xuxie',
+                    fnc: 'XuXie',
                 }
             ]
         })
     }
 
-	async Xuxie(e) {
+	async XuXie(e) {
         if (e.xml || e.img) {
 			return false;
 		}

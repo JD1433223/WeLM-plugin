@@ -112,7 +112,7 @@ Token不可用：403
 	return false
     }
 ```
-这个100%触发指令可以到config.yaml修改(有注释)
+这个100%触发指令可以到config.yaml修改(有注释,除非你用了锅巴配置并且保存了一次,勾巴setting.js不保存注释气死我了)
 ![](resources/README/img/fangxing.jpg)
 
 # 效果
@@ -125,13 +125,13 @@ Token不可用：403
 | 🎭书辞千楪Sama🌴 | QQ: `1700179844` | 提供了插件的主要功能 |
 | JD | QQ:`1461072722` | 提供了插件的部分功能 |
 | 兰罗摩 | QQ: `3584075812` | 将插件更改为插件包结构并支持锅巴 |
-| 鸢 | QQ: `2166683295` | 提供了写入yaml的技术 |
+| 鸢 | QQ: `2166683295` | 提供了写入.yaml后缀名文件的技术 |
 | 曉K | QQ: `1509293009` | 添加了`#welm版本`指令 |
 | [喵喵插件](https://gitee.com/yoimiya-kokomi/miao-plugin) | 仓库: `https://gitee.com/yoimiya-kokomi/miao-plugin` | 提供了图片帮助功能 |
 | [椰奶插件](https://gitee.com/yeyang52/yenai-plugin) | 仓库: `https://gitee.com/yeyang52/yenai-plugin` | 提供了更新功能 |
 | [拓展插件](https://gitee.com/SmallK111407/expand-plugin) | 仓库: `https://gitee.com/SmallK111407/expand-plugin` | 提供了锅巴配置的技术 |
 | [Ap插件](https://gitee.com/yhArcadia/ap-plugin) | 仓库: `https://gitee.com/yhArcadia/ap-plugin` | 提供了index的缺少依赖提示 |
-| **使用着本插件的你** | None | **在背后默默支持着本仓库** |
+| **使用着本插件的你** | 你就是你自己 | **在背后默默支持着本仓库** |
 
 
 # 更新日志
@@ -154,5 +154,5 @@ Token不可用：403
 * [☞Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
 
 #### Yunzai-Bot
-* [☞GitHub](https://github.com/Le-niao/Yunzai-Bot)
+* [☞GitHub](https://github.com/Le-niao/Yunzai-Bot)(被关了(悲))
 * [☞Gitee](https://gitee.com/Le-niao/Yunzai-Bot) 
