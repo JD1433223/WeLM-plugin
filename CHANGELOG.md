@@ -1,3 +1,8 @@
+# 1.5.1 rc.1
+* 还是tmd修bug
+* 将set.yaml的配置施加至所有生成文件的js
+* 没了(bushi)
+
 # 1.5.1 Beta.4
 * n次修复了bug
 * 添加了个新的yaml文件
