@@ -46,6 +46,13 @@ export class RGznbot extends plugin {
 		if (e.xml || e.img) {
 			return false;
 		}
+		const set = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/set.yaml`,'utf8'));
+		if (set.GroupSwitch === "false") {
+			return false
+		}
+		if (set.PrivateSwitch === "false") {
+			return false
+		}
 		const _path = process.cwd()
 		const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
