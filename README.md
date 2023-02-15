@@ -1,7 +1,47 @@
-# 云崽自定义对话WeLM
+<p align="center">
+  <img src="./resources/README/img/logo.jpg" alt="WeLM-plugin"></a>
+</p>
 
-#### 介绍
-此为Yunzai-Bot云崽QQ机器人的插件，需要依赖云崽机器人来实现功能，可以模仿你机器人的人设对话(或许有其他问答功能) _可以去这里研究一下[WeLM](https://welm.weixin.qq.com/docs/api/)_
+<div align="center">
+
+# WeLM-plugin
+
+_🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
+
+</div>
+
+<p align="center">
+  </a>
+    <img src="./resources/readme/img/head.jpg"> <!--施工中(没图)-->
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Nodejs-16.x+-6BA552.svg" alt="Nodejs">
+  <img src="https://img.shields.io/badge/Yunzai_Bot-v3-red.svg" alt="NoneBot">
+  <br>
+  </a>
+    <a href="https://jq.qq.com/?_wv=1027&k=5jt6obxk">
+    <img src="https://img.shields.io/badge/QQ%E7%BE%A4-%E7%BA%B3%E8%A5%BF%E5%A6%B2%20%F0%9F%A4%A4%F0%9F%A4%A4%F0%9F%A4%A4%20-green?style=flat-square" alt="QQ Chat Group">
+  </a>
+</p>
+
+<!--
+以上Html代码cv自渔火的Ap-Plugin(https://gitee.com/yhArcadia/ap-plugin)
+@Author: 渔火Arcadia  https://github.com/yhArcadia
+@Date: 2022-12-22 00:38:21
+@LastEditors: 渔火Arcadia
+@LastEditTime: 2023-02-08 17:27:42
+@FilePath: \Yunzai-Bot\plugins\ap-plugin\README.md
+@Description: 版本：2.11.5
+
+Copyright (c) 2022 by 渔火Arcadia 1761869682@qq.com, All Rights Reserved.
+-->
+
+# 简介
+WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs/tutorial/)提供的 API 接口进行多参数便捷 AI 对话的 [Yunzai-Bot](https://github.com/Le-niao/Yunzai-Bot) 插件, 此插件功能不断扩展中如有意见或新功能思想可在issues提出, 更多功能敬请期待......
 
 # 安装教程
 
@@ -130,9 +170,11 @@ Token不可用：403
 | [喵喵插件](https://gitee.com/yoimiya-kokomi/miao-plugin) | 仓库: `https://gitee.com/yoimiya-kokomi/miao-plugin` | 提供了图片帮助功能 |
 | [椰奶插件](https://gitee.com/yeyang52/yenai-plugin) | 仓库: `https://gitee.com/yeyang52/yenai-plugin` | 提供了更新功能 |
 | [拓展插件](https://gitee.com/SmallK111407/expand-plugin) | 仓库: `https://gitee.com/SmallK111407/expand-plugin` | 提供了锅巴配置的技术 |
-| [Ap插件](https://gitee.com/yhArcadia/ap-plugin) | 仓库: `https://gitee.com/yhArcadia/ap-plugin` | 提供了index的缺少依赖提示 |
+| [Ap插件](https://gitee.com/yhArcadia/ap-plugin) | 仓库: `https://gitee.com/yhArcadia/ap-plugin` | 提供了index的缺少依赖提示与README.md的Html代码 |
 | **使用着本插件的你** | 你就是你自己 | **在背后默默支持着本仓库** |
 
+# 声明
+此项目仅用于学习交流，请勿用于非法用途, 如有侵权立即删除
 
 # 更新日志
 ☞[点我前往查看](./CHANGELOG.md)
@@ -156,3 +198,9 @@ Token不可用：403
 #### Yunzai-Bot
 * [☞GitHub](https://github.com/Le-niao/Yunzai-Bot)(被关了(悲))
 * [☞Gitee](https://gitee.com/Le-niao/Yunzai-Bot) 
+
+### 爱发电
+如果你喜欢这个项目，请不妨点个 Star🌟，这是对开发者最大的动力
+当然，你可以对我们进行爱发电赞助~
+
+* [兰罗摩](https://afdian.net/order/create?plan_id=42193f0aad2311ed9bca52540025c377&product_type=0)
