@@ -57,9 +57,9 @@ WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs
 在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
 ```
 # GitHub(进不去时可使用Gitee源)
-git clone -b master --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plugins/WeLM-plugin
+git clone -b plugins-version --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plugins/WeLM-plugin
 # Gitee 
-git clone -b master --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm.git ./plugins/WeLM-plugin
+git clone -b plugins-version --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm.git ./plugins/WeLM-plugin
 ```
 ### 第二步
 对机器人私聊"#填写token xxx"（这个xxx是你的API-Token） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
