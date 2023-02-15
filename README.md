@@ -34,6 +34,14 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
   </a>
 </p>
 
+<p align="center">
+  <a href="#插件包版">插件包版</a>
+  ·
+  <a href="#js版">JS版</a>
+  ·
+  <a href="#可能遇到的问题">大概率会遇到的问题</a>
+</p>
+
 <!--以上Html代码cv自渔火Arcadia的Ap-plugin-->
 
 <!--
@@ -52,7 +60,7 @@ WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs
 
 # 安装教程
 
-## 插件包版(推荐)
+## 插件包版
 ### 第一步
 在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
 ```
@@ -72,8 +80,8 @@ _PS:txt在WeLM-plugin/data内_
 使用#更改name xxx把name改成和预设里面机器人要扮演的角色一样的名字
 ![](resources/README/img/name.jpg)
 
-## JS版(不推荐)
- _**PS:版本比较旧**_
+## JS版
+ _**PS:不推荐,版本比较旧**_
 ### 第一步
 在任意目录打开终端并输入
 
@@ -97,7 +105,6 @@ _PS:这一步的所有txt都是上一步移动的文件_
 需要填写xxdata.txt后才能正常使用
 
 # 可能遇到的问题
-
 ## 缺少依赖
 ![](resources/README/img/error1.png)
 
