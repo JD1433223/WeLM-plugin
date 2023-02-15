@@ -3,8 +3,10 @@
   <img src="./resources/README/img/logo.jpg" alt="WeLM-plugin"></a>
 </p>
 -->
-[兰罗摩]: 
-    没图了生草的一批,有没有好心人给点图()
+
+<!--
+兰罗摩: 没图了生草的一批有没有好心人给点图()
+-->
 
 <div align="center">
 
@@ -16,7 +18,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
 <p align="center">
   </a>
-    <img src="./resources/README/img/head.jpg"> <!--施工中(没图)-->
+    <img src="./resources/README/img/head.jpg">
   </a>
 </p>
 
