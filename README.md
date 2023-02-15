@@ -12,7 +12,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
 <p align="center">
   </a>
-    <img src="./resources/readme/img/head.jpg"> <!--施工中(没图)-->
+    <img src="./resources/README/img/head.jpg"> <!--施工中(没图)-->
   </a>
 </p>
 
