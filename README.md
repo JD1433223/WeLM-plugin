@@ -200,7 +200,6 @@ Token不可用：403
 * [☞Gitee](https://gitee.com/Le-niao/Yunzai-Bot) 
 
 ### 爱发电
-如果你喜欢这个项目，请不妨点个 Star🌟，这是对开发者最大的动力
-当然，你可以对我们进行爱发电赞助~
+如果你喜欢这个项目, 请不妨点个 Star🌟, 这是对开发者最大的动力, 当然, 你可以对我们进行爱发电赞助~
 
 * [兰罗摩](https://afdian.net/order/create?plan_id=42193f0aad2311ed9bca52540025c377&product_type=0)
