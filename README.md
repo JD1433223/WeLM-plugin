@@ -1,8 +1,8 @@
-<!---
+<!--
 <p align="center">
   <img src="./resources/README/img/logo.jpg" alt="WeLM-plugin"></a>
 </p>
---->
+-->
 [兰罗摩]: 
     没图了生草的一批,有没有好心人给点图()
 
@@ -32,8 +32,8 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
   </a>
 </p>
 
-[兰罗摩]: 
-      以上Html代码cv自渔火的Ap-Plugin(https://gitee.com/yhArcadia/ap-plugin)
+<!--以上Html代码cv自渔火Arcadia的Ap-plugin-->
+
 <!--
 @Author: 渔火Arcadia  https://github.com/yhArcadia
 @Date: 2022-12-22 00:38:21
