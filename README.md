@@ -1,7 +1,9 @@
+<!---这里是图不够用()--->
+<!---
 <p align="center">
   <img src="./resources/README/img/logo.jpg" alt="WeLM-plugin"></a>
 </p>
-
+--->
 <div align="center">
 
 # WeLM-plugin
