@@ -46,11 +46,11 @@ export class RGznbot extends plugin {
 		if (e.xml || e.img) {
 			return false;
 		}
-		const set = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/set.yaml`,'utf8'));
-		if (set.GroupSwitch === false) {
+		const set = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/switch.yaml`,'utf8'));
+		if (set.GroupSwitch === "off") {
 			return false
 		}
-		if (set.PrivateSwitch === false) {
+		if (set.PrivateSwitch === "off") {
 			return false
 		}
 		const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
@@ -135,11 +135,11 @@ export class RGznbot extends plugin {
 		if (e.xml || e.img) {
 			return false;
 		}
-		const set = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/set.yaml`,'utf8'));
-		if (set.GroupSwitch === false) {
+		const set = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/switch.yaml`,'utf8'));
+		if (set.GroupSwitch === "off") {
 			return false
 		}
-		if (set.PrivateSwitch === false) {
+		if (set.PrivateSwitch === "off") {
 			return false
 		}
 		const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));

@@ -43,16 +43,24 @@ export function supportGuoba() {
             },
           },
           {
-            field: 'set.GroupSwitch',
+            field: 'switch.GroupSwitch',
             label: '群聊开关',
             bottomHelpMessage: '在群里是否开启本插件功能',
-            component: 'Switch'
+            component: 'Switch',
+            componentProps: {
+              checkedValue: "on",
+              unCheckedValue: "off",
+            }
           },
           {
-            field: 'set.PrivateSwitch',
+            field: 'switch.PrivateSwitch',
             label: '私聊开关',
             bottomHelpMessage: '在私聊内是否开启本插件功能',
-            component: 'Switch'
+            component: 'Switch',
+            componentProps: {
+              checkedValue: "on",
+              unCheckedValue: "off",
+            }
           },
           {
             field: 'config.probability',
