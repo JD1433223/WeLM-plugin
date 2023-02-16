@@ -176,18 +176,19 @@ export function supportGuoba() {
           }
         ],
         
-        getConfigData () {
-            return Setting.merge()
-          },
-          // 设置配置的方法（前端点确定后调用的方法）
-          setConfigData (data, { Result }) {
-            let config = {}
-            for (let [keyPath, value] of Object.entries(data)) {
-              lodash.set(config, keyPath, value)
-            }
-            config = lodash.merge({}, Setting.merge, config)
-            Setting.analysis(config)
-            return Result.ok({}, '保存成功辣~')
-            }
+    getConfigData () {
+        return Setting.merge()
+      },
+      // 设置配置的方法（前端点确定后调用的方法）
+      setConfigData (data, { Result }) {
+        let config = {}
+        for (let [keyPath, value] of Object.entries(data)) {
+          lodash.set(config, keyPath, value)
+        }
+        config = lodash.merge({}, Setting.merge, config)
+        Setting.analysis(config)
+        return Result.ok({}, '保存成功辣~')
+        }
       }
-}}
+    }
+  }
