@@ -174,8 +174,10 @@ export function supportGuoba() {
               max: '100'
             }
           }
-          }
-        ],
+        ]
+      },
+      
+        
 
         getConfigData () {
             return Setting.merge()
@@ -190,6 +192,5 @@ export function supportGuoba() {
             Setting.analysis(config)
             return Result.ok({}, '保存成功辣~')
             }
-        }
-    }
+      }
 }
