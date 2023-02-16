@@ -23,7 +23,7 @@ export function supportGuoba() {
         // 配置项 schemas
         schemas: [
           {
-            field: 'config.API_token',
+            field: 'config.APIToken',
             label: 'API',
             bottomHelpMessage: '请输入你申请的API-Token',
             component: 'Input',
