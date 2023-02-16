@@ -47,11 +47,15 @@ export class RGznbot extends plugin {
 			return false;
 		}
 		const set = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/switch.yaml`,'utf8'));
-		if (set.GroupSwitch === "off") {
-			return false
+		if (e.isGroup) {
+			if (set.GroupSwitch === "off") {
+				return false
+			}
 		}
-		if (set.PrivateSwitch === "off") {
-			return false
+		if (!e.isGroup) {
+			if (set.PrivateSwitch === "off") {
+				return false
+			}
 		}
 		const _path = process.cwd()
 		const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));

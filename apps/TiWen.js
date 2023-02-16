@@ -30,11 +30,15 @@ export class RGznbot extends plugin {
 			return false;
 		}
 		const set = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/switch.yaml`,'utf8'));
-		if (set.GroupSwitch === "off") {
-			return false
+		if (e.isGroup) {
+			if (set.GroupSwitch === "off") {
+				return false
+			}
 		}
-		if (set.PrivateSwitch === "off") {
-			return false
+		if (!e.isGroup) {
+			if (set.PrivateSwitch === "off") {
+				return false
+			}
 		}
         const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
