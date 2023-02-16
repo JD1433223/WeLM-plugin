@@ -218,4 +218,4 @@ Token不可用：403
 
 * [兰罗摩](https://afdian.net/a/Arama)
 
-* [书辞千楪](https://afdian.net/a/0906-12)  [微信](https://c2cpicdw.qpic.cn/offpic_new/1700179844//1700179844-965983258-ED2FAEE4CB946AC0B27942E4AA3337D1/0?term=3&is_origin=0)&[支付宝](https://c2cpicdw.qpic.cn/offpic_new/1700179844//1700179844-1826583575-7A34D043964C5D2FBD833CBFCC16A9A0/0?term=3&is_origin=0)
+* [书辞千楪](https://afdian.net/a/0906-12)  [微信](https://img1.imgtp.com/2023/02/16/MdDza14P.png)&[支付宝](https://img1.imgtp.com/2023/02/16/luH0pKxj.jpg)
