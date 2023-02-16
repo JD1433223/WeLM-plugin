@@ -1,2 +1,2 @@
-GroupSwitch: "true"    #群聊开关true为开，false为关
-PrivateSwitch: "true"     #私聊开关true为开，false为关
+GroupSwitch: true
+PrivateSwitch: true
