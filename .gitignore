@@ -1,9 +1,9 @@
 # 你的配置文件
-config/*.yaml
-config/help.js
+config/*
+!config/**/
 
 # 你的Prompt(预设)
-data/**
+data
 
 # 你的帮助主题
 resources/help/theme/**/
