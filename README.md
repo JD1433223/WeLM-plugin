@@ -13,6 +13,8 @@
 # WeLM-plugin
 
 _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
+<br>
+[![访问量](https://profile-counter.glitch.me/yunzai-custom-dialogue-welm/count.svg)](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm)
 
 </div>
 
