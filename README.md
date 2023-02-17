@@ -89,7 +89,7 @@ _PS:txt在WeLM-plugin/data内_
 # GitHub(进不去时可使用Gitee源)
 git clone -b js-version --depth=1 https://github.com/JD1433223/WeLM-plugin ./plugins/WeLM-plugin
 # Gitee 
-git clone -b js-version --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/ ./plugin/WeLM-plugin
+git clone -b js-version --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/ ./plugins/WeLM-plugin
 ```
 ### 第二步
 在拉取下来的内容里找到WeLM.js并将他移动到Yunzai-Bot根目录下的plugins/example
