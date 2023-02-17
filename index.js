@@ -3,6 +3,7 @@ import chalk from 'chalk'
 import fs from 'node:fs'
 import YAML from 'yaml'
 import { checkPackage } from './components/CheckPackage.js'
+import './components/Init.js'
 
 const APIToken = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8')).APIToken
 
@@ -21,10 +22,13 @@ if (!passed) {
 
 //加载插件
 const files = fs.readdirSync('./plugins/WeLM-plugin/apps').filter(file => file.endsWith('.js'))
+
 let ret = []
+
 files.forEach((file) => {
   ret.push(import(`./apps/${file}`))
 })
+
 
 ret = await Promise.allSettled(ret)
 
@@ -33,10 +37,12 @@ for (let i in files) {
   let name = files[i].replace('.js', '')
 
   if (ret[i].status != 'fulfilled') {
-    logger.error(`载入插件错误：${logger.red(name)}`)
-    logger.error(ret[i].reason)
-    continue
+      logger.error(`载入插件错误：${logger.red(name)}`)
+      logger.error(ret[i].reason)
+      continue
   }
   apps[name] = ret[i].value[Object.keys(ret[i].value)[0]]
 }
+
+
 export { apps }
