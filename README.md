@@ -14,7 +14,9 @@
 
 _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 <br>
-[![访问量](https://profile-counter.glitch.me/yunzai-custom-dialogue-welm/count.svg)](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm)
+Gitee访问量(❁´◡`❁): [![访问量](https://profile-counter.glitch.me/yunzai-custom-dialogue-welm/count.svg)](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm)
+<br>
+Github访问量╰(*°▽°*)╯: [![访问量](https://profile-counter.glitch.me/WeLM-plugin/count.svg)](https://github.com/JD1433223/WeLM-plugin.git)
 
 </div>
 
