@@ -39,9 +39,9 @@ Github访问量╰(*°▽°*)╯: [![访问量](https://profile-counter.glitch.m
 </p>
 
 <p align="center">
-  <a href="#插件包版">插件包版</a>
+  <a href="#稳定版">稳定版</a>
   ·
-  <a href="#js版">JS版</a>
+  <a href="#测试版">测试版</a>
   ·
   <a href="#可能遇到的问题">大概率会遇到的问题</a>
 </p>
@@ -64,7 +64,7 @@ WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs
 
 # 安装教程
 
-## 插件包版
+## 稳定版
 ### 第一步
 在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
 ```
@@ -84,29 +84,26 @@ _PS:txt在WeLM-plugin/data内_
 使用#更改name xxx把name改成和预设里面机器人要扮演的角色一样的名字
 ![](resources/README/img/name.jpg)
 
-## JS版
- _**PS:不推荐,版本比较旧**_
+## 测试版
+ _**PS:不推荐, 不稳定**_
 ### 第一步
-在任意目录打开终端并输入
-
+在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
 ```
 # GitHub(进不去时可使用Gitee源)
-git clone -b js-version --depth=1 https://github.com/JD1433223/WeLM-plugin ./plugins/WeLM-plugin
+git clone -b develop --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plugins/WeLM-plugin
 # Gitee 
-git clone -b js-version --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/ ./plugins/WeLM-plugin
+git clone -b develop --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm.git ./plugins/WeLM-plugin
 ```
-### 第二步
-在拉取下来的内容里找到WeLM.js并将他移动到Yunzai-Bot根目录下的plugins/example
+### 第二步(以下教程与稳定版一致)
+对机器人私聊"#填写token xxx"（这个xxx是你的API-Token） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
+![](resources/README/img/token.jpg)
 ### 第三步
-将所有拉取下来的txt文件移动到Yunzai-Bot根目录下的resources文件夹内
-### 第四步
-_PS:这一步的所有txt都是上一步移动的文件_
+_PS:txt在WeLM-plugin/data内_
 #### 个性问答
-需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个dhdata.txt演示学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把"(JD自用演示)"直接删了放到resources里直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
-#### 提问
-需要填写wddata.txt后才能正常使用
-#### 续写
-需要填写xxdata.txt后才能正常使用
+需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个[dhdata演示](./resources/README/markdown/dhdata.md)学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把演示里的复制粘贴到data/dhdata.txt直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
+### 第四步(可选)
+使用#更改name xxx把name改成和预设里面机器人要扮演的角色一样的名字
+![](resources/README/img/name.jpg)
 
 # 可能遇到的问题
 ## 缺少依赖
