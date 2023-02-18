@@ -29,8 +29,7 @@ export class RGznbot extends plugin {
                 {
                     reg: `(^${command.lxdhcmdstart}.*)`,
 	                fnc: 'LianXuDuiHua',
-                    log: false
-				},
+                    log: fal},
 				{
 					reg: `(.*)`,
 					fnc: 'DuiHua',
@@ -59,7 +58,7 @@ export class RGznbot extends plugin {
 		}
 		const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         let BotName =  settings.BotName 
-        let APIToken = settings.APIToken
+        let APIToken = settings.APoken
         let model = settings.model          
         let max_tokens = settings.max_tokens
         let temperature = settings.temperature   

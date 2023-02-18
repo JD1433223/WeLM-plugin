@@ -52,7 +52,6 @@ export class RGznbot extends plugin {
     }
     let name = e.msg.replace(/#更改name/g, "").trim();
     let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, "utf8")
-
     let str = `${res}`
     var reg = new RegExp(`BotName: "(.*?)"`);
     var Botname = str.replace(reg, `BotName: "${name}"`);
