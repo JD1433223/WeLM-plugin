@@ -225,7 +225,4 @@ Token不可用：403
 
 * [书辞千楪](https://afdian.net/a/0906-12)  [微信](https://img1.imgtp.com/2023/02/16/MdDza14P.png)&[支付宝](https://img1.imgtp.com/2023/02/16/luH0pKxj.jpg)
 
-## 留声洞
-_PS: 如果要留言请pr到下面_
-<br>
-兰罗摩: tmd我要骂个人,tmd整天冲我(勾巴管理Mix)
+![Alt](https://repobeats.axiom.co/api/embed/d865d122c9f04e620e44853b05ed53bf012bf6b4.svg "Repobeats analytics image")
