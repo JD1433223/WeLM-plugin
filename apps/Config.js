@@ -132,12 +132,15 @@ export class RGznbot extends plugin {
 
 
   async Switch(e) {
+    if (!e.isMaster) {
+      return false
+    }
     if (e.msg.includes('私聊')) {
       if (e.msg.includes('开启')) {
         let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
         let str = `${res}`
         var reg = new RegExp(`PrivateSwitch: "(.*?)"`);
-        var Switch = str.replace(reg, `PrivateSwitch: "true"`);
+        var Switch = str.replace(reg, `PrivateSwitch: "on"`);
         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, Switch, "utf8");
         e.reply("私聊WeLM已设为开启")
         return true
@@ -145,7 +148,7 @@ export class RGznbot extends plugin {
         let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
         let str = `${res}`
         var reg = new RegExp(`PrivateSwitch: "(.*?)"`);
-        var Switch = str.replace(reg, `PrivateSwitch: "false"`);
+        var Switch = str.replace(reg, `PrivateSwitch: "off"`);
         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, Switch, "utf8");
         e.reply("私聊Welm已设为关闭")
         return true
@@ -156,7 +159,7 @@ export class RGznbot extends plugin {
         let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
         let str = `${res}`
         var reg = new RegExp(`GroupSwitch: "(.*?)"`);
-        var Switch = str.replace(reg, `GroupSwitch: "true"`);
+        var Switch = str.replace(reg, `GroupSwitch: "on"`);
         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, Switch, "utf8");
         e.reply("群聊WeLM对话已设为开启")
         return true
@@ -164,7 +167,7 @@ export class RGznbot extends plugin {
         let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
         let str = `${res}`
         var reg = new RegExp(`GroupSwitch: "(.*?)"`);
-        var Switch = str.replace(reg, `GroupSwitch: "false"`);
+        var Switch = str.replace(reg, `GroupSwitch: "off"`);
         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, Switch, "utf8");
         e.reply("群聊WeLM对话已设为关闭")
         return true
