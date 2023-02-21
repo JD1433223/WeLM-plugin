@@ -17,6 +17,9 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 ![Logo](./resources/README/img/logo.jpg)
 
 ---
+## 访问量
+[![访问量](https://profile-counter.glitch.me/yunzai-custom-dialogue-welm/count.svg)](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
+---
 
 [![Node.js](https://img.shields.io/badge/NodeJS-16.x+-6BA552.svg)](https://nodejs.org/en/download/)
 [![Yunzai-Bot](https://img.shields.io/badge/Yunzai_Bot-v3-red.svg)](../../../../Le-niao/Yunzai-Bot)
@@ -24,18 +27,13 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 [![QQ群1](https://img.shields.io/badge/QQ%E7%BE%A4-%E7%BA%B3%E8%A5%BF%E5%A6%B2%20%F0%9F%A4%A4%F0%9F%A4%A4%F0%9F%A4%A4%20-green?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=5jt6obxk)
 [![QQ群2](https://img.shields.io/badge/QQ%E7%BE%A4-%E9%9B%B7%E7%A5%9E%20%F0%9F%A4%A4%F0%9F%A4%A4%F0%9F%A4%A4%20-purple?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm)
 
-![贪吃蛇](https://cdn.jsdelivr.net/gh/xianxincoder/xianxincoder/assets/github-contribution-grid-snake.svg)
+<a href="#安装插件">安装教程</a>
+·
+<a href="#关于测试版">关于测试版</a>
+·
+<a href="#可能遇到的问题">大概率会遇到的问题</a>
 
 </div>
-
-<p align="center">
-  <a href="#安装插件">安装教程</a>
-  ·
-  <a href="#关于测试版">关于测试版</a>
-  ·
-  <a href="#可能遇到的问题">大概率会遇到的问题</a>
-</p>
-
 <!--以上Html代码cv自渔火Arcadia的Ap-plugin-->
 
 <!--
