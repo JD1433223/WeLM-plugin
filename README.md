@@ -196,10 +196,14 @@ Token不可用：403
 # 其他
 
 ### 宣个群(如果有未知的bug可以来这里反馈,也可以把他当成交♂流群来用)
+群1: 
 ```
 815638467
 ```
-
+群2: 
+```
+712074725
+```
 ### 前往其他代码托管平台内本仓库
 * [☞GitHub](https://github.com/JD1433223/WeLM-plugin) 
 * [☞Gitee](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
