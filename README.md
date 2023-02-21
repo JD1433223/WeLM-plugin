@@ -13,10 +13,11 @@
 # WeLM-plugin
 
 _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
-<br>
-Gitee访问量(❁´◡`❁): [![访问量](https://profile-counter.glitch.me/yunzai-custom-dialogue-welm/count.svg)](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm)
-<br>
-Github访问量╰(*°▽°*)╯: [![访问量](https://profile-counter.glitch.me/WeLM-plugin/count.svg)](https://github.com/JD1433223/WeLM-plugin.git)
+
+[![Stars](https://img.shields.io/github/stars/JD1433223/WeLM-plugin?color=yellow&label=收藏)](../../stargazers)
+![访问量](https://visitor-badge.glitch.me/badge?page_id=JD1433223.WeLM-plugin&right_color=red&left_text=访问量)
+
+![贪吃蛇](https://cdn.jsdelivr.net/gh/xianxincoder/xianxincoder/assets/github-contribution-grid-snake.svg)
 
 </div>
 
