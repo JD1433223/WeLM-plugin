@@ -118,6 +118,7 @@ _**PS:不推荐, 不稳定**_
 ![](resources/README/img/error1.png)
 
 如果你使用的是pnpm可能会出现图上的错误请到上面的教程重新使用npm或cnpm安装
+* [快速链接](#2-安装必要依赖axios)
 
 ## 插件名称错误
 ![](resources/README/img/error2.png)
@@ -151,6 +152,8 @@ Token不可用：403
 
 提问加个前缀"提问"就好了
 ![](resources/README/img/tiwen.png)
+
+续写、阅读理解与提问的使用教程一致(懒得重新演示了)
 
 #### 如果装了@戏天的那个ai自定义的js的
 需要去那个ai插件里面的104行加上
