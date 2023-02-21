@@ -1,16 +1,20 @@
 # 你的配置文件
-config/*
-!config/**/
+/config/*
+!/config/**/
+!/config/help_default.js
 
 # 你的Prompt(预设)
-data
+/data
 
 # 你的帮助主题
-resources/help/theme/**/
-!resources/help/theme/default/
+/resources/help/theme/**/
+!/resources/help/theme/default/
 
 # 使用Visual Studio时产生的文件夹
-.vs
+/.vs
 
 # Redis数据
 *.rdb
+
+# 你的依赖文件夹(直接在插件执行的傻逼采用得到)
+/node_modules

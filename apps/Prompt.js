@@ -14,16 +14,16 @@ export class RGznbot extends plugin {
             rule: [
                 {
                     reg: `^#切换预设.*`,
-                    fnc: 'Qiehuan',
+                    fnc: 'QieHuan',
                 },
                 {
                     reg: '^#welm预设列表',
-                    fnc: 'read'
+                    fnc: 'Read'
                 }
             ]
         })
     }
-    async Qiehuan(e) {
+    async QieHuan(e) {
         //备份原本预设
 
         //换预设
@@ -50,7 +50,7 @@ export class RGznbot extends plugin {
         e.reply("已将预设和name切换为" + name)
     }
 
-    async read(e) {
+    async Read(e) {
         fs.readdir('./plugins/WeLM-plugin/groupFriend', function (err, files) {
             if (err) {
                 return console.error(err);
