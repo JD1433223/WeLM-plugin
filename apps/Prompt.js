@@ -28,9 +28,9 @@ export class RGznbot extends plugin {
 
         //换预设
         var name = e.msg.replace(/#切换预设/, "")
-        let defFile = `./plugins/WeLM-plugin\/groupFriend\/${name}dhdata.txt`
+        let defFile = `./plugins/WeLM-plugin\/data\/prompts\/${name}dhdata.txt`
         // 异步读取
-        fs.readFile(defFile, function (err, data) {
+        fs.readFile(defFile, function (err) {
             if (err) {
                 e.reply(name + "预设不存在，请前往WeLM交流群上传预设，或者到插件包根目录/groupFriend目录下创建该预设，详细报错如下" + "\n" + err)
                 return console.error(err);
@@ -51,7 +51,7 @@ export class RGznbot extends plugin {
     }
 
     async Read(e) {
-        fs.readdir('./plugins/WeLM-plugin/groupFriend', function (err, files) {
+        fs.readdir('./plugins/WeLM-plugin/data/prompts', function (err, files) {
             if (err) {
                 return console.error(err);
             }
