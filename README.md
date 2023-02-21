@@ -14,14 +14,11 @@
 
 _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
-</div>
+![Logo](./resources/README/img/logo.jpg)
 
 ---
 
-<div align="center">
-
-
-[![Node.js](https://img.shields.io/badge/Nodejs-16.x+-6BA552.svg)](https://nodejs.org/en/download/)
+[![Node.js](https://img.shields.io/badge/NodeJS-16.x+-6BA552.svg)](https://nodejs.org/en/download/)
 [![Yunzai-Bot](https://img.shields.io/badge/Yunzai_Bot-v3-red.svg)](../../../../Le-niao/Yunzai-Bot)
 <br>
 [![QQ群1](https://img.shields.io/badge/QQ%E7%BE%A4-%E7%BA%B3%E8%A5%BF%E5%A6%B2%20%F0%9F%A4%A4%F0%9F%A4%A4%F0%9F%A4%A4%20-green?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=5jt6obxk)
