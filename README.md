@@ -23,8 +23,8 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 [![Stars](https://img.shields.io/github/stars/JD1433223/WeLM-plugin?color=yellow&label=收藏)](../../stargazers)
 ![访问量](https://visitor-badge.glitch.me/badge?page_id=JD1433223.WeLM-plugin&right_color=red&left_text=访%20问%20量)
 <br>
-![Node.js](https://img.shields.io/badge/Nodejs-16.x+-6BA552.svg)
-![Yunzai-Bot](https://img.shields.io/badge/Yunzai_Bot-v3-red.svg)
+[![Node.js](https://img.shields.io/badge/Nodejs-16.x+-6BA552.svg)](https://nodejs.org/en/download/)
+[![Yunzai-Bot](https://img.shields.io/badge/Yunzai_Bot-v3-red.svg)](../../../../Le-niao/Yunzai-Bot)
 <br>
 [![QQ群1](https://img.shields.io/badge/QQ%E7%BE%A4-%E7%BA%B3%E8%A5%BF%E5%A6%B2%20%F0%9F%A4%A4%F0%9F%A4%A4%F0%9F%A4%A4%20-green?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=5jt6obxk)
 [![QQ群2](https://img.shields.io/badge/QQ%E7%BE%A4-%E9%9B%B7%E7%A5%9E%20%F0%9F%A4%A4%F0%9F%A4%A4%F0%9F%A4%A4%20-purple?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm)
