@@ -1,6 +1,6 @@
 <!--
 <p align="center">
-  <img src="./resources/README/img/logo.jpg" alt="WeLM-plugin"></a>
+  <img src="./resources/README/img/head.jpg" alt="WeLM-plugin"></a>
 </p>
 -->
 
@@ -8,21 +8,19 @@
 兰罗摩: 没图了生草的一批有没有好心人给点图()
 -->
 
-<p align="center">
-  </a>
-    <img src="./resources/README/img/logo.jpg">
-  </a>
-</p>
-
 <div align="center">
 
-# WeLM-plugin
+# WeLM Plugin
 
 _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
-[![Stars](https://img.shields.io/github/stars/JD1433223/WeLM-plugin?color=yellow&label=收藏)](../../stargazers)
-![访问量](https://visitor-badge.glitch.me/badge?page_id=JD1433223.WeLM-plugin&right_color=red&left_text=访%20问%20量)
-<br>
+</div>
+
+---
+
+<div align="center">
+
+
 [![Node.js](https://img.shields.io/badge/Nodejs-16.x+-6BA552.svg)](https://nodejs.org/en/download/)
 [![Yunzai-Bot](https://img.shields.io/badge/Yunzai_Bot-v3-red.svg)](../../../../Le-niao/Yunzai-Bot)
 <br>
@@ -32,9 +30,6 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 ![贪吃蛇](https://cdn.jsdelivr.net/gh/xianxincoder/xianxincoder/assets/github-contribution-grid-snake.svg)
 
 </div>
-
----
-
 
 <p align="center">
   <a href="#稳定版">稳定版</a>
@@ -57,71 +52,72 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 Copyright (c) 2022 by 渔火Arcadia 1761869682@qq.com, All Rights Reserved.
 -->
 
-# 简介
+## 简介
 WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs/tutorial/)提供的 API 接口进行多参数便捷 AI 对话的 [Yunzai-Bot](https://github.com/Le-niao/Yunzai-Bot) 插件, 此插件功能不断扩展中如有意见或新功能思想可在issues提出, 更多功能敬请期待......
 
-# 安装教程
+## 安装插件
 
-## 稳定版
-### 第一步
+### 1. 克隆本仓库至plugins目录
 在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
 ```
-# GitHub(进不去时可使用Gitee源)
-git clone -b master --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plugins/WeLM-plugin
-# Gitee 
+cd Yunzai-Bot
+```
+
+- 使用Gitee（国内服务器推荐使用此方法）
+```
 git clone -b master --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm.git ./plugins/WeLM-plugin
 ```
-### 第二步
+
+- 使用GitHub
+```
+git clone -b master --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plugins/WeLM-plugin
+```
+
+### 2. 安装必要依赖(axios)
+_PS: 请在**Yunzai-Bot根目录**执行_
+#### 使用npm
+```
+npm install axios --registry=https://registry.npmmirror.com
+```
+
+#### 使用pnpm
+```
+pnpm add axios -w
+```
+
+#### 使用cnpm
+_PS: 需提前安装_
+* cnpm安装指令
+```
+pnpm install -g cnpm -registry=https://registry.npm.taobao.org
+```
+* 安装依赖指令
+```
+cnpm install axios
+```
+
+### 3. 填写Token(否则大部分功能无法使用)
 对机器人私聊"#填写token xxx"（这个xxx是你的API-Token） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
 ![](resources/README/img/token.jpg)
-### 第三步
-_PS:txt在WeLM-plugin/data内_
-#### 个性问答
+
+### 4. 填写预设
+_PS: dhdata.txt在WeLM-plugin/data内_
 需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个[dhdata演示](./resources/README/markdown/dhdata.md)学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把演示里的复制粘贴到data/dhdata.txt直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
-### 第四步(可选)
+
+### 5. 填写机器人预设内名称
 使用#更改name xxx把name改成和预设里面机器人要扮演的角色一样的名字
 ![](resources/README/img/name.jpg)
 
 ## 测试版
- _**PS:不推荐, 不稳定**_
-### 第一步
-在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
-```
-# GitHub(进不去时可使用Gitee源)
-git clone -b develop --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plugins/WeLM-plugin
-# Gitee 
-git clone -b develop --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm.git ./plugins/WeLM-plugin
-```
-### 第二步(以下教程与稳定版一致)
-对机器人私聊"#填写token xxx"（这个xxx是你的API-Token） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
-![](resources/README/img/token.jpg)
-### 第三步
-_PS:txt在WeLM-plugin/data内_
-#### 个性问答
-需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个[dhdata演示](./resources/README/markdown/dhdata.md)学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把演示里的复制粘贴到data/dhdata.txt直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
-### 第四步(可选)
-使用#更改name xxx把name改成和预设里面机器人要扮演的角色一样的名字
-![](resources/README/img/name.jpg)
+_**PS:不推荐, 不稳定**_ 
+<br>
+教程请到[develop分支](../develop)查看
 
 # 可能遇到的问题
 ## 缺少依赖
 ![](resources/README/img/error1.png)
 
-第一次使用可能会出现图上的错误, 三选一执行:
-
-pnpm可能会掉依赖，希望你不要中奖
-``` 
-pnpm add axios -w
-```
-npm可能连不上
-```
-npm install axios 
-```
-cnpm需要提前安装(指令已经在下面了可以直接复制一键执行)
-```
-pnpm install -g cnpm -registry=https://registry.npm.taobao.org
-cnpm install axios
-```
+如果你使用的是pnpm可能会出现图上的错误请到上面的教程重新使用npm或cnpm安装
 
 ## 插件名称错误
 ![](resources/README/img/error2.png)
