@@ -32,9 +32,9 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 </div>
 
 <p align="center">
-  <a href="#稳定版">稳定版</a>
+  <a href="#安装插件">安装教程</a>
   ·
-  <a href="#测试版">测试版</a>
+  <a href="#关于测试版">关于测试版</a>
   ·
   <a href="#可能遇到的问题">大概率会遇到的问题</a>
 </p>
@@ -108,11 +108,6 @@ _PS: dhdata.txt在WeLM-plugin/data内_
 使用#更改name xxx把name改成和预设里面机器人要扮演的角色一样的名字
 ![](resources/README/img/name.jpg)
 
-## 测试版
-_**PS:不推荐, 不稳定**_ 
-<br>
-教程请到[develop分支](../develop)查看
-
 # 可能遇到的问题
 ## 缺少依赖
 ![](resources/README/img/error1.png)
@@ -170,6 +165,11 @@ Token不可用：403
 # 效果
 巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
 ![](resources/README/img/welm.png)
+
+# 关于测试版
+**_PS: 这个版本虽然是最新的但也是最多Bug的, 如果你只是想试用本插件那得劝退, 如果你是想为我们改进WeLM Plugin请在测试版分支进行PR提交_**
+<br>
+分支快速链接: [点我前往分支](../develop)
 
 # 贡献者名单
 | 贡献者 | 联系方式 | 主要贡献 |
