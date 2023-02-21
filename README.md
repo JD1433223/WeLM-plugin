@@ -1,73 +1,22 @@
-<!--
-<p align="center">
-  <img src="./resources/README/img/head.jpg" alt="WeLM-plugin"></a>
-</p>
--->
+# 简介
+**此分支为测试版分支(开发版), 如果你只是来试用本插件那请跳转[稳定版分支](../master)(此版本虽然是最新的但也是Bug最多的, 千万不要图小新鲜很容易趋势), 此分支随时可能会更新冲突如果图方便请到[稳定版分支](../master)**
 
-<!--
-兰罗摩: 没图了生草的一批有没有好心人给点图()
--->
-
-<div align="center">
-
-# WeLM Plugin
-
-_🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
-
-![Logo](./resources/README/img/logo.jpg)
-
----
-
-## 访问量
-[![访问量](https://profile-counter.glitch.me/yunzai-custom-dialogue-welm/count.svg)](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
-
----
-
-[![Node.js](https://img.shields.io/badge/NodeJS-16.x+-6BA552.svg)](https://nodejs.org/en/download/)
-[![Yunzai-Bot](https://img.shields.io/badge/Yunzai_Bot-v3-red.svg)](../../../../Le-niao/Yunzai-Bot)
-<br>
-[![QQ群1](https://img.shields.io/badge/QQ%E7%BE%A4-%E7%BA%B3%E8%A5%BF%E5%A6%B2%20%F0%9F%A4%A4%F0%9F%A4%A4%F0%9F%A4%A4%20-green?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=5jt6obxk)
-[![QQ群2](https://img.shields.io/badge/QQ%E7%BE%A4-%E9%9B%B7%E7%A5%9E%20%F0%9F%A4%A4%F0%9F%A4%A4%F0%9F%A4%A4%20-purple?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm)
-
-<a href="#安装插件">安装教程</a>
-·
-<a href="#关于测试版">关于测试版</a>
-·
-<a href="#可能遇到的问题">大概率会遇到的问题</a>
-
-</div>
-<!--以上Html代码cv自渔火Arcadia的Ap-plugin-->
-
-<!--
-@Author: 渔火Arcadia  https://github.com/yhArcadia
-@Date: 2022-12-22 00:38:21
-@LastEditors: 渔火Arcadia
-@LastEditTime: 2023-02-08 17:27:42
-@FilePath: \Yunzai-Bot\plugins\ap-plugin\README.md
-@Description: 版本：2.11.5
-
-Copyright (c) 2022 by 渔火Arcadia 1761869682@qq.com, All Rights Reserved.
--->
-
-## 简介
-WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs/tutorial/)提供的 API 接口进行多参数便捷 AI 对话的 [Yunzai-Bot](https://github.com/Le-niao/Yunzai-Bot) 插件, 此插件功能不断扩展中如有意见或新功能思想可在issues提出, 更多功能敬请期待......
-
-## 安装插件
+## 测试版安装教程
 
 ### 1. 克隆本仓库至plugins目录
 在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
 
 - 使用Gitee（国内服务器推荐使用此方法）
 ```
-git clone -b master --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm.git ./plugins/WeLM-plugin
+git clone -b develop --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm.git ./plugins/WeLM-plugin
 ```
 
 - 使用GitHub
 ```
-git clone -b master --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plugins/WeLM-plugin
+git clone -b develop --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plugins/WeLM-plugin
 ```
 
-### 2. 安装必要依赖(axios)
+### 2. 安装必要依赖(axios) <!--下面的教程与稳定版一致-->
 _PS: 请在**Yunzai-Bot根目录**执行_
 #### 使用npm
 ```
@@ -135,35 +84,6 @@ _PS: dhdata.txt在WeLM-plugin/data内_
 <br>
 Token不可用：403
 
-# 使用说明
-个性回答默认在群内是2%触发，或者在对话前面加个welm的100%触发指令然后就可以与开始激情对话了。
-![](resources/README/img/duihua.jpg)
-
-提问加个前缀"提问"就好了
-![](resources/README/img/tiwen.png)
-
-续写、阅读理解与提问的使用教程一致(懒得重新演示了)
-
-#### 如果装了@戏天的那个ai自定义的js的
-需要去那个ai插件里面的104行加上
-
-```
-    //放行welm测试指令
-    if(e.msg.includes("welm")){
-	return false
-    }
-```
-这个100%触发指令可以到config.yaml修改(有注释,除非你用了锅巴配置并且保存了一次,勾巴setting.js不保存注释气死我了)
-![](resources/README/img/fangxing.jpg)
-
-# 效果
-巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
-![](resources/README/img/welm.png)
-
-# 关于测试版
-**_PS: 如果你只是来试用本插件那请不要使用测试版(测试版虽然是最新的但也是Bug最多的, 千万不要图小新鲜很容易趋势), 测试版随时可能会更新冲突如果图方便请不要使用测试版_**
-<br>
-分支快速链接: [点我前往分支](../develop)
 
 # 贡献者名单
 | 贡献者 | 联系方式 | 主要贡献 |
@@ -217,4 +137,4 @@ Token不可用：403
 
 * [书辞千楪](https://afdian.net/a/0906-12)  [微信](https://img1.imgtp.com/2023/02/16/MdDza14P.png)&[支付宝](https://img1.imgtp.com/2023/02/16/luH0pKxj.jpg)
 
-![Alt](https://repobeats.axiom.co/api/embed/d865d122c9f04e620e44853b05ed53bf012bf6b4.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/d865d122c9f04e620e44853b05ed53bf012bf6b4.svg "Repobeats analytics image") 
