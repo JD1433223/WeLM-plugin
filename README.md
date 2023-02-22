@@ -56,9 +56,6 @@ WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs
 
 ### 1. 克隆本仓库至plugins目录
 在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
-```
-cd Yunzai-Bot
-```
 
 - 使用Gitee（国内服务器推荐使用此方法）
 ```
