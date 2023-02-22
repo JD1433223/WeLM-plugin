@@ -98,6 +98,7 @@ export class RGznbot extends plugin {
 			logger.info('使用的模型:' + response.data.model)
 			logger.info('生成的文本:' + response.data.choices[0].text)
 			logger.info('----------------------------------------')
+			fs.appendFileSync('./plugins/WeLM-plugin/data/jldata.txt', response.data.choices[0].text, 'utf8')
 			e.reply(replystart + response.data.choices[0].text, e.isGroup)
 		})        
 		.catch(function (error) {
