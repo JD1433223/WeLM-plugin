@@ -102,6 +102,30 @@ _PS: dhdata.txt在WeLM-plugin/data内_
 使用#更改name xxx把name改成和预设里面机器人要扮演的角色一样的名字
 ![](resources/README/img/name.jpg)
 
+* [点我快速跳过测试版教程](#可能遇到的问题)
+## 测试版
+
+### 简介
+**此分支为测试版分支(开发版), 如果你只是来试用本插件那请跳转[稳定版分支](../master)(此版本虽然是最新的但也是Bug最多的, 千万不要图小新鲜很容易趋势), 此分支随时可能会更新冲突如果图方便请到[稳定版分支](../master)**
+
+### 安装教程
+
+#### 1. 克隆本仓库至plugins目录
+在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
+
+- 使用Gitee（国内服务器推荐使用此方法）
+```
+git clone -b develop --depth=1 https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm.git ./plugins/WeLM-plugin
+```
+
+- 使用GitHub
+```
+git clone -b develop --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plugins/WeLM-plugin
+```
+
+#### 后面的步骤与稳定版完全一致
+* [点我快速前往查看与稳定版一致的教程](#2-安装必要依赖axios)
+
 # 可能遇到的问题
 ## 缺少依赖
 ![](resources/README/img/error1.png)
@@ -159,11 +183,6 @@ Token不可用：403
 # 效果
 巨久之前测试的，那时候无需100%触发指令，现在要，放这个单纯为了表扬一下WeLM和装个逼 :smirk: 
 ![](resources/README/img/welm.png)
-
-# 关于测试版
-**_PS: 如果你只是来试用本插件那请不要使用测试版(测试版虽然是最新的但也是Bug最多的, 千万不要图小新鲜很容易趋势), 测试版随时可能会更新冲突如果图方便请不要使用测试版_**
-<br>
-分支快速链接: [点我前往分支](../develop)
 
 # 贡献者名单
 | 贡献者 | 联系方式 | 主要贡献 |
