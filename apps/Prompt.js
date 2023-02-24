@@ -32,7 +32,7 @@ export class RGznbot extends plugin {
         // 异步读取
         fs.readFile(defFile, function (err) {
             if (err) {
-                e.reply(name + "预设不存在，请前往WeLM交流群上传预设，或者到插件包根目录/groupFriend目录下创建该预设，详细报错如下" + "\n" + err)
+                e.reply(name + "预设不存在，请前往WeLM交流群上传预设，或者到插件包根目录/data/prompts目录下创建该预设，详细报错如下" + "\n" + err)
                 return console.error(err);
             }
 
