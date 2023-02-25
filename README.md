@@ -160,6 +160,8 @@ git clone -b develop --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./pl
 <br>
 Token不可用：403
 
+* 详细请前往[Github的Wiki](https://github.com/JD1433223/WeLM-plugin/wiki/%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98)查看
+
 # 使用说明
 个性回答默认在群内是2%触发，或者在对话前面加个welm的100%触发指令然后就可以与开始激情对话了。
 ![](resources/README/img/duihua.jpg)
