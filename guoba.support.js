@@ -75,6 +75,10 @@ export function supportGuoba() {
             }
           },
           {
+              label: '以下为指令回复备注专区',
+              component: 'Divider'
+          },
+          {
             field: 'config.dhreplystart',
             label: '对话指令备注',
             bottomHelpMessage: '可留空',
@@ -118,6 +122,10 @@ export function supportGuoba() {
             componentProps: {
               placeholder: '阅读理解指令回复开头备注, 不用与其他ai区分时可留空'
             }
+          },
+          {
+              label: '以下为模型参数专区',
+              component: 'Divider'
           },
           {
             field: 'config.model',
