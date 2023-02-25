@@ -23,6 +23,10 @@ export function supportGuoba() {
         // 配置项 schemas
         schemas: [
           {
+              label: '以下为通用设置',
+              component: 'Divider'
+          },
+          {
             field: 'config.APIToken',
             label: 'API',
             bottomHelpMessage: '请输入你申请的API-Token',
@@ -124,7 +128,7 @@ export function supportGuoba() {
             }
           },
           {
-              label: '以下为模型参数专区',
+              label: '以下为模型参数调试专区',
               component: 'Divider'
           },
           {
