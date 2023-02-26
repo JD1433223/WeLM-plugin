@@ -206,7 +206,7 @@ _PS: 以上采自[dhdata演示](resources/README/markdown/dhdata.md)_
 * [☞快速跳过](#连续对话)因为这个图太tm长了()
 <br>
 巨久之前测试的，那时候无需100%触发指令，现在要放这个单纯为了表扬一下WeLM和装个逼 :smirk:
-![](resources/README/img/%E8%A1%A8%E6%89%ACWeLM.png)
+![](resources/README/img/表扬WeLM.png)
 
 ### 连续对话
 
