@@ -202,13 +202,6 @@ _PS: 以上采自[dhdata演示](resources/README/markdown/dhdata.md)_
 #### 示例
 ![](resources/README/img/%E5%AF%B9%E8%AF%9D.jpg)
 
-#### 超鸡旧之前的效果(JS版时代)
-* [☞快速跳过](#连续对话)因为这个图太tm长了()
-<br>
-巨久之前测试的，那时候无需100%触发指令，现在要放这个单纯为了表扬一下WeLM和装个逼 :smirk:
-<br>
-![](resources/README/img/表扬WeLM.png)
-
 ### 连续对话
 
 #### 简介
