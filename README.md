@@ -33,7 +33,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 ·
 <a href="#可能遇到的问题">大概率会遇到的问题</a>
 ·
-<a href="#支持我们">支持我们</a>
+<a href="#使用说明">使用说明</a>
 
 </div>
 <!--以上Html代码cv自渔火Arcadia的Ap-plugin-->
@@ -92,7 +92,7 @@ cnpm install axios
 
 ### 3. 填写Token(否则大部分功能无法使用)
 对机器人私聊"#填写token xxx"（这个xxx是你的API-Token） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
-![](resources/README/img/token.jpg)
+![](resources/README/img/%E5%A1%ABToken.jpg)
 
 ### 4. 填写预设
 _PS: dhdata.txt在WeLM-plugin/data内_
@@ -100,22 +100,22 @@ _PS: dhdata.txt在WeLM-plugin/data内_
 
 ### 5. 填写机器人预设内名称
 使用#更改name xxx把name改成和预设里面机器人要扮演的角色一样的名字
-![](resources/README/img/name.jpg)
+![](resources/README/img/%E6%9B%B4%E6%94%B9%E5%90%8D%E5%AD%97.jpg)
 
 # 可能遇到的问题
 ## 缺少依赖
-![](resources/README/img/error1.png)
+![](resources/README/img/%E7%BC%BA%E4%BE%9D%E8%B5%96.png)
 
 如果你使用的是pnpm可能会出现图上的错误请到上面的教程重新使用npm或cnpm安装
 * [点我快速前往](#2-安装必要依赖axios)
 
 ## 插件名称错误
-![](resources/README/img/error2.png)
+![](resources/README/img/%E6%B2%A1%E6%8C%89%E6%95%99%E7%A8%8B.png)
 
 如果你遇到了图上的错误就证明你没有按教程来装,重新按**教程**来装即可
 
 ## 文本生成错误
-![](resources/README/img/error3.png)
+![](resources/README/img/%E7%94%9F%E6%88%90%E9%94%99%E8%AF%AF.png)
 
 如果你在使用功能时出现类似图上的错误有可能是以下错误:
 
@@ -193,13 +193,13 @@ _PS: 需提前填写dhdata.txt, 不填写无人设, 填写格式请看下面_
 _PS: 以上采自[dhdata演示](resources/README/markdown/dhdata.md)_
 
 #### 示例
-![](resources/README/img/duihua.jpg)
+![](resources/README/img/%E5%AF%B9%E8%AF%9D.jpg)
 
 #### 超鸡旧之前的效果(JS版时代)
 * [☞快速跳过](#连续对话)因为这个图太tm长了()
 <br>
 巨久之前测试的，那时候无需100%触发指令，现在要放这个单纯为了表扬一下WeLM和装个逼 :smirk:
-![](resources/README/img/welm.png)
+![](resources/README/img/%E8%A1%A8%E6%89%ACWeLM%E4%B8%80%E6%B3%A2.png)
 
 ### 连续对话
 
@@ -221,7 +221,7 @@ _PS: 人设需要在jldata.txt提前填写_
 * 指令格式: `提问xxx`
 
 #### 示例
-![](resources/README/img/tiwen.png)
+![](resources/README/img/%E6%8F%90%E9%97%AE.png)
 
 ## 续写
 
