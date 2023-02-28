@@ -214,6 +214,8 @@ export class RGznbot extends plugin {
 					logger.error('-------------------------------------------')
 					return false
 				});
+		} else {
+			return false
 		}
 	}
 }
