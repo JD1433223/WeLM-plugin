@@ -1,12 +1,6 @@
-<!--
 <p align="center">
-  <img src="./resources/README/img/head.jpg" alt="WeLM-plugin"></a>
+  <img src="./resources/README/img/README顶部.png" alt="WeLM-plugin"></a>
 </p>
--->
-
-<!--
-兰罗摩: 没图了生草的一批有没有好心人给点图()
--->
 
 <div align="center">
 
