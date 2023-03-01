@@ -1,6 +1,10 @@
 <p align="center">
-  <img src="./resources/README/img/README顶部.png" alt="WeLM-plugin"></a>
+  <img src="./resources/README/img/README顶部.bmp" alt="WeLM-plugin"></a>
 </p>
+
+<!--
+此图来源于Pixiv.net的105473760(PID)作品
+-->
 
 <div align="center">
 
@@ -280,6 +284,7 @@ _PS: 人设需要在jldata.txt提前填写_
 | [拓展插件](https://gitee.com/SmallK111407/expand-plugin) | 仓库: `https://gitee.com/SmallK111407/expand-plugin` | 提供了锅巴配置的技术 |
 | [小叶插件](https://gitee.com/xiaoye12123/xiaoye-plugin) | 仓库: `https://gitee.com/xiaoye12123/xiaoye-plugin` | 提供了初始化的JS代码 |
 | [Ap插件](https://gitee.com/yhArcadia/ap-plugin) | 仓库: `https://gitee.com/yhArcadia/ap-plugin` | 提供了index的缺少依赖提示与README.md的Html代码 |
+| [ぶらんぶた](https://www.pixiv.net/users/14225654) | Pixiv主页: `https://www.pixiv.net/users/14225654` | 提供了README顶部的纳西妲图 |
 | **使用着本插件的你** | 你就是你自己 | **在背后默默支持着本仓库** |
 
 # 声明
