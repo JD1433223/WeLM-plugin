@@ -24,8 +24,8 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 [![Node.js](https://img.shields.io/badge/NodeJS-16.x+-6BA552.svg)](https://nodejs.org/en/download/)
 [![Yunzai-Bot](https://img.shields.io/badge/Yunzai_Bot-v3-red.svg)](../../../../Le-niao/Yunzai-Bot)
 <br>
-[![QQ群1](https://img.shields.io/badge/QQ%E7%BE%A4-%E7%BA%B3%E8%A5%BF%E5%A6%B2%20%F0%9F%A4%A4%F0%9F%A4%A4%F0%9F%A4%A4%20-green?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=5jt6obxk)
-[![QQ群2](https://img.shields.io/badge/QQ%E7%BE%A4-%E9%9B%B7%E7%A5%9E%20%F0%9F%A4%A4%F0%9F%A4%A4%F0%9F%A4%A4%20-purple?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm)
+[![QQ群1](https://img.shields.io/badge/QQ群-纳西妲%20🤤🤤🤤%20-green?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=5jt6obxk)
+[![QQ群2](https://img.shields.io/badge/QQ群-雷神%20🤤🤤🤤%20-purple?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm)
 
 <a href="#安装插件">安装教程</a>
 ·
@@ -48,10 +48,10 @@ Copyright (c) 2022 by 渔火Arcadia 1761869682@qq.com, All Rights Reserved.
 -->
 
 ## 简介
-WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs/tutorial/)提供的 API 接口进行多参数便捷 AI 对话的 [Yunzai-Bot](https://github.com/Le-niao/Yunzai-Bot) 插件, 此插件功能不断扩展中如有意见或新功能思想可在issues提出, 更多功能敬请期待......
+WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs/tutorial/)提供的 API 接口进行多参数便捷 AI 对话的 [Yunzai-Bot](../../../../Le-niao/Yunzai-Bot) 插件, 此插件功能不断扩展中如有意见或新功能思想可在issues提出, 更多功能敬请期待......
 
 ## 安装插件
-#### 使用前请先阅读并同意本插件用户协议: [（点击查看）WeLM插件用户协议](./resources/README/markdown/用户协议.md)
+#### 使用前请先阅读并同意本插件用户协议: [（点击查看）WeLM插件用户协议](./resources/README/document/用户协议.txt)
 
 
 ### 1. 克隆本仓库至plugins目录
@@ -92,30 +92,30 @@ cnpm install axios
 
 ### 3. 填写Token(否则大部分功能无法使用)
 对机器人私聊"#填写token xxx"（这个xxx是你的API-Token） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
-![](resources/README/img/%E5%A1%ABToken.jpg)
+![](resources/README/img/填Token.jpg)
 
 ### 4. 填写预设
 _PS: dhdata.txt在WeLM-plugin/data内_
-需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个[dhdata演示](./resources/README/markdown/dhdata演示.md)学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把演示里的复制粘贴到data/dhdata.txt直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
+需要在dhdata.txt内写入预设，预设内第1行输入给模型的提示信息，然后回车空一行，接下来写一段模拟的对话。强烈建议去看看去看那个[dhdata演示](resources/README/document/dhdata演示.md)学习一下，如果再不理解可以到渔火的群蒙德幼儿园找一个叫"群傻逼时不时来问问题喵~"的人问一下。或者!!!如果你机器人也是纳西妲的话可以把演示里的复制粘贴到data/dhdata.txt直接开用(强烈建议自己研究下，我用的这个对话起来bug很多)
 
 ### 5. 填写机器人预设内名称
 使用#更改name xxx把name改成和预设里面机器人要扮演的角色一样的名字
-![](resources/README/img/%E6%9B%B4%E6%94%B9%E5%90%8D%E5%AD%97.jpg)
+![](resources/README/img/更改名字.jpg)
 
 # 可能遇到的问题
 ## 缺少依赖
-![](resources/README/img/%E7%BC%BA%E4%BE%9D%E8%B5%96.png)
+![](resources/README/img/缺依赖.png)
 
 如果你使用的是pnpm可能会出现图上的错误请到上面的教程重新使用npm或cnpm安装
 * [点我快速前往](#2-安装必要依赖axios)
 
 ## 插件名称错误
-![](resources/README/img/%E6%B2%A1%E6%8C%89%E6%95%99%E7%A8%8B.png)
+![](resources/README/img/没按教程.png)
 
 如果你遇到了图上的错误就证明你没有按教程来装,重新按**教程**来装即可
 
 ## 文本生成错误
-![](resources/README/img/%E7%94%9F%E6%88%90%E9%94%99%E8%AF%AF.png)
+![](resources/README/img/生成错误.png)
 
 如果你在使用功能时出现类似图上的错误有可能是以下错误:
 
@@ -135,7 +135,7 @@ _PS: dhdata.txt在WeLM-plugin/data内_
 <br>
 Token不可用：403
 
-* 详细请前往[Github的Wiki](https://github.com/JD1433223/WeLM-plugin/wiki/%E5%A4%A7%E5%A4%9A%E6%95%B0%E4%BC%9A%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98)查看
+* 详细请前往[Github的Wiki](https://github.com/JD1433223/WeLM-plugin/wiki/大多数会遇到的问题)查看
 
 ## 插件冲突
 如果出现明明没有报错但是依然没有返回消息的话就说明你遇到插件冲突了
@@ -197,10 +197,10 @@ _PS: 需提前填写dhdata.txt, 不填写无人设, 填写格式请看下面_
 我:晚安
 纳西妲:快去睡吧，放心，我已经为你准备好甜甜的梦啦。
 ```
-_PS: 以上采自[dhdata演示](resources/README/markdown/dhdata.md)_
+_PS: 以上采自[dhdata演示](resources/README/document/dhdata演示.md)_
 
 #### 示例
-![](resources/README/img/%E5%AF%B9%E8%AF%9D.jpg)
+![](resources/README/img/对话演示.jpg)
 
 ### 连续对话
 
@@ -222,7 +222,7 @@ _PS: 人设需要在jldata.txt提前填写_
 * 指令格式: `提问xxx`
 
 #### 示例
-![](resources/README/img/%E6%8F%90%E9%97%AE.png)
+![](resources/README/img/提问演示.png)
 
 ## 续写
 
