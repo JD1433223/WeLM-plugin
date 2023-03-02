@@ -12,12 +12,8 @@
 
 _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
-![Logo](./resources/README/img/logo.jpg)
-
----
-
-## 访问量
-[![访问量](https://profile-counter.glitch.me/yunzai-custom-dialogue-welm/count.svg)](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
+![Logo](./resources/README/img/logo.png) 
+<!--此logo图中部分内容来源于WeLM官网,如侵权请联系兰罗摩(3584075812@qq.com),会立即删除-->
 
 ---
 
@@ -34,6 +30,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 <a href="#使用说明">使用说明</a>
 
 </div>
+
 <!--以上Html代码cv自渔火Arcadia的Ap-plugin-->
 
 <!--
