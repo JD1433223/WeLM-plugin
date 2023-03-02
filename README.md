@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./resources/README/img/README顶部.bmp" alt="WeLM-plugin" width="2000"></a>
+  <img src="./resources/README/img/README顶部.bmp" alt="WeLM-plugin" width="200"></a>
 </p>
 
 <!--
