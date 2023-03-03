@@ -25,21 +25,24 @@ await firstGuide()
 
 async function firstGuide() {
   let Guide = (await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'))).Guide
-  if (!Guide === "yes") {
-    sendToMaster('欢迎使用WeLM插件!\n如果你是第一次使用请查看WeLM插件用户条约:https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/blob/master/resources/README/document/%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE.txt')
+  if (Guide != "yes") {
+    sendToMaster('欢迎您使用WeLM自定义对话插件! \n本插件帮助文档: https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm \n数据物价, 请充分了解本插件功能与用户条约后再使用! \n感谢您的支持!!!')
+    let res = fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml', "utf8")
+    let str = `${res}`
+    var reg = new RegExp(`Guide: "(.*?)"`);
     var config = str.replace(reg, `Guide: "yes"`);
-    fs.writeFileSync(process.cwd().replace(/\\/g, "/") + '/plugins/WeLM-plugin/config/config.yaml', config, "utf8");
+    fs.writeFileSync('./plugins/WeLM-plugin/config/config.yaml', config, "utf8");
   }
 }
 
-const APIToken = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8')).APIToken
+const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'))
 
 //输出提示
 logger.info('----✩•‿• ʜᴀᴠᴇ ᴀ ɢᴏᴏᴅ ᴛɪᴍᴇ☄︎♡----')
 logger.info(`WeLM对话插件初始化(・ω< )★`)
 logger.info(`当前版本: ${chalk.rgb(150, 50, 100)(Version.version)}`)
 logger.info(`作者: ${chalk.rgb(0, 255, 0)('JD')} ${logger.red('兰罗摩')} ${logger.blue('书辞千楪Sama')}`)
-logger.info(`当前API-Token: "${chalk.rgb(103, 93, 189)(APIToken)}"`)
+logger.info(`当前API-Token: "${chalk.rgb(103, 93, 189)(settings.APIToken)}"`)
 logger.info('-------------------------------')
 
 let passed = await checkPackage()
