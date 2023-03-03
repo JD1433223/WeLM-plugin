@@ -3,7 +3,34 @@ import chalk from 'chalk'
 import fs from 'node:fs'
 import YAML from 'yaml'
 import { checkPackage } from './components/CheckPackage.js'
-import './components/Init.js'
+import { sendToMaster } from './components/Common.js'
+
+await init()
+
+/** 初始化事件 */
+async function init() {
+  //检测有没有配置文件
+  const configPath = process.cwd().replace(/\\/g, "/") + '/plugins/WeLM-plugin/'
+  let path = configPath + 'config/'
+  let pathDef = configPath + 'defSet/'
+  const files = fs.readdirSync(pathDef).filter(file => file.endsWith('.yaml'))
+  for (let file of files) {
+    if (!fs.existsSync(`${path}${file}`)) {
+      fs.copyFileSync(`${pathDef}${file}`, `${path}${file}`)
+    }
+  }
+}
+
+await firstGuide()
+
+async function firstGuide() {
+  let Guide = (await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'))).Guide
+  if (!Guide === "yes") {
+    sendToMaster('欢迎使用WeLM插件!\n如果你是第一次使用请查看WeLM插件用户条约:https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/blob/master/resources/README/document/%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE.txt')
+    var config = str.replace(reg, `Guide: "yes"`);
+    fs.writeFileSync(process.cwd().replace(/\\/g, "/") + '/plugins/WeLM-plugin/config/config.yaml', config, "utf8");
+  }
+}
 
 const APIToken = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8')).APIToken
 

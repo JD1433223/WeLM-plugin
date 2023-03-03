@@ -28,3 +28,5 @@ lxdhcmdstart: "lxdh" # 连续对话指令开头
 twcmdstart: "提问" # 问答指令开头
 xxcmdstart: "续写" # 续写指令开头
 ydlicmdstart: "阅读理解" # 阅读理解指令开头
+
+Guide: "yes" # 是否初始化
