@@ -15,6 +15,7 @@ export class RGznbot extends plugin {
                 {
                     reg: `^#切换预设.*`,
                     fnc: 'QieHuan',
+                    permission: "master",
                 },
                 {
                     reg: '^#welm预设列表',
