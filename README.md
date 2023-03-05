@@ -1,18 +1,14 @@
-<p align="center">
-  <img src="./resources/README/img/README顶部.bmp" alt="WeLM-plugin" width="350"></a>
-</p>
-
+<div align="center">
+<img src="./resources/README/img/README顶部.bmp" alt="WeLM-plugin" width="350">
 <!--
 此图来源于Pixiv.net的105473760(PID)作品
 -->
-
-<div align="center">
 
 # WeLM Plugin
 
 _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
-![Logo](./resources/README/img/logo.png) 
+<img src="resources/README/img/logo.png" alt="logo" width="4000">
 <!--此logo图中部分内容来源于WeLM官网,如侵权请联系兰罗摩(3584075812@qq.com),会立即删除-->
 
 ---
