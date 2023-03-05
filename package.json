@@ -1,6 +1,6 @@
 {
   "name": "welm-plugin",
-  "version": "1.5.1",
+  "version": "1.x.x",
   "description": "Yunzai-Bot插件扩展",
   "main": "index.js",
   "type": "module",
@@ -12,7 +12,7 @@
     "url": "https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/"
   },
   "author": "JD 兰罗摩 书佬",
-  "license": "MulanPSL-2.0",
+  "license": "GPL 3.0",
   "dependencies": {
     "axios": "^1.2.6",
     "yaml": "^2.2.1",
