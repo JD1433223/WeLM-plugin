@@ -88,26 +88,3 @@ const Common = {
 }
 
 export default Common
-
-async function replyPrivate(userId, msg) {
-  userId = Number(userId)
-  let friend = Bot.fl.get(userId)
-  if (friend) {
-    logger.mark(`发送好友消息[${friend.nickname}](${userId})`)
-    return await Bot.pickUser(userId).sendMsg(msg).catch((err) => {
-      logger.mark(err)
-    })
-  }
-}
-
-async function getMasterQQ() {
-  return (await import( '../../../lib/config/config.js')).default.masterQQ
-}
-
-export async function sendToMaster(msg, all = false, idx = 0) {
-  let masterQQ = await getMasterQQ()
-  let sendTo = all ? masterQQ : [masterQQ[idx]]
-  for (let qq of sendTo) {
-    await replyPrivate(qq, msg)
-  }
-}

@@ -3,12 +3,10 @@ import chalk from 'chalk'
 import fs from 'node:fs'
 import YAML from 'yaml'
 import { checkPackage } from './components/CheckPackage.js'
-import { sendToMaster } from './components/Common.js'
 
-await init()
+await initConfig()
 
-/** 初始化事件 */
-async function init() {
+async function initConfig() {
   //检测有没有配置文件
   const configPath = process.cwd().replace(/\\/g, "/") + '/plugins/WeLM-plugin/'
   let path = configPath + 'config/'
@@ -21,14 +19,36 @@ async function init() {
   }
 }
 
+async function replyPrivate(userId, msg) {
+  userId = Number(userId)
+  let friend = Bot.fl.get(userId)
+  if (friend) {
+    logger.mark(`发送好友消息[${friend.nickname}](${userId})`)
+    return await Bot.pickUser(userId).sendMsg(msg).catch((err) => {
+      logger.mark(err)
+    })
+  }
+}
+
+async function getMasterQQ() {
+  return (await import( '../../lib/config/config.js')).default.masterQQ
+}
+
+async function sendToMaster(msg, all = false, idx = 0) {
+  let masterQQ = await getMasterQQ()
+  let sendTo = all ? masterQQ : [masterQQ[idx]]
+  for (let qq of sendTo) {
+    await replyPrivate(qq, msg)
+  }
+}
+
 await firstGuide()
 
 async function firstGuide() {
   let Guide = (await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'))).Guide
-  if (Guide !== "yes") {
+  if (Guide === "no" || Guide !== 'yes' || Guide === '' ) {
     sendToMaster('欢迎您使用WeLM自定义对话插件! \n本插件帮助文档: https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm \n数据无价, 请充分了解本插件功能与用户条约后再使用! \n感谢您的支持!!!')
-    let res = fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml', "utf8")
-    let str = `${res}`
+    let str = fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml', "utf8")
     var reg = new RegExp(`Guide: "(.*?)"`);
     var config = str.replace(reg, `Guide: "yes"`);
     fs.writeFileSync('./plugins/WeLM-plugin/config/config.yaml', config, "utf8");
