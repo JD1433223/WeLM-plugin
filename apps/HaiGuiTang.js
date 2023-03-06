@@ -60,35 +60,25 @@ export class RGznbot extends plugin {
 		const _path = process.cwd()
 		const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
-        let APIToken = settings.APIToken 
-        let model = settings.model          
-        let max_tokens = settings.max_tokens
-        let temperature = settings.temperature   
-        let top_p = settings.top_p         
-        let top_k = settings.top_k            
-        let n = settings.n                
-        let stop = settings.stop
-        let replystart = settings.twreplystart
         if (e.msg && e.msg?.indexOf("请问") >= 0 || !e.isGroup){
         e.msg = e.msg.replace(/#请问/g, "")
-		let sc_cs = fs.readFileSync('./plugins/WeLM-plugin/data/hgttd.txt', { encoding: 'utf-8' })
-		let sc_cs2 = "阅读文章你只能回答“是”与“不是”，“相关”与“不相关”，如无法回答上述内容的话请回答“不知道，请重新提问”\n" +  sc_cs + "\n:" + "问题:" + e.msg + "\n" + "回答" + ":"
+		let sc_cs = "阅读文章你只能回答“是”与“不是”，“相关”与“不相关”，如无法回答上述内容的话请回答“不知道，请重新提问”\n" + fs.readFileSync('./plugins/WeLM-plugin/data/hgttd.txt', { encoding: 'utf-8' }) + "\n:" + "问题:" + e.msg + "\n" + "回答" + ":"
         axios({
 	        method: 'post',
 	        url: 'https://welm.weixin.qq.com/v1/completions',
 	        headers: {
 		        "Content-Type": "application/json",
-		        "Authorization": APIToken
+		        "Authorization": settings.APIToken
 	        },
 	        data: {
-		        "prompt": sc_cs2,
-		        "model": model,
-		        "max_tokens": max_tokens,
-		        "temperature": temperature,
-		        "top_p": top_p,
-		        "top_k": top_k,
-		        "n": n,
-		        "stop": stop,
+		        "prompt": sc_cs,
+		        "model": settings.model,
+		        "max_tokens": settings.max_tokens,
+		        "temperature": settings.temperature,
+		        "top_p": settings.top_p,
+		        "top_k": settings.top_k,
+		        "n": settings.n,
+		        "stop": settings.stop,
 	        }
         })
 		.then(function (response) {
@@ -98,7 +88,7 @@ export class RGznbot extends plugin {
 			logger.info('使用的模型:' + response.data.model)
 			logger.info('生成的文本:' + response.data.choices[0].text)
 			logger.info('----------------------------------------')
-			e.reply(replystart + response.data.choices[0].text, e.isGroup)
+			e.reply(settings.twreplystart + response.data.choices[0].text, e.isGroup)
 		})        
 		.catch(function (error) {
 			logger.error('----------------WeLM出现错误----------------')

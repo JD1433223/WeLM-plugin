@@ -42,34 +42,24 @@ export class RGznbot extends plugin {
 		}
         const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
-        let APIToken = settings.APIToken 
-        let model = settings.model          
-        let max_tokens = settings.max_tokens
-        let temperature = settings.temperature   
-        let top_p = settings.top_p         
-        let top_k = settings.top_k            
-        let n = settings.n                      
-        let stop = settings.twstop
-        let commandstart = settings.twcmdstart
-        let replystart = settings.twreplystart
-        e.msg = e.msg.replace(commandstart, "")
-		let sc_cs2 = "根据你所学知识回答" + "\n问题:" + e.msg + "\n" + "回答" + ":"
+        e.msg = e.msg.replace(settings.twcmdstart, "")
+		let sc_cs = "根据你所学知识回答" + "\n问题:" + e.msg + "\n" + "回答" + ":"
         axios({
 	        method: 'post',
 	        url: 'https://welm.weixin.qq.com/v1/completions',
 	        headers: {
 		        "Content-Type": "application/json",
-		        "Authorization": APIToken
+		        "Authorization": settings.APIToken
 	        },
 	        data: {
-		        "prompt": sc_cs2,
-		        "model": model,
-		        "max_tokens": max_tokens,
-		        "temperature": temperature,
-		        "top_p": top_p,
-		        "top_k": top_k,
-		        "n": n,
-		        "stop": stop,
+		        "prompt": sc_cs,
+		        "model": settings.model,
+		        "max_tokens": settings.max_tokens,
+		        "temperature": settings.temperature,
+		        "top_p": settings.top_p,
+		        "top_k": settings.top_k,
+		        "n": settings.n,
+		        "stop": settings.stop,
 	        }
         })
         .then(function (response) {
@@ -79,7 +69,7 @@ export class RGznbot extends plugin {
             logger.info('使用的模型:' + response.data.model)
             logger.info('生成的文本:' + response.data.choices[0].text)
             logger.info('----------------------------------------')
-            e.reply(replystart + response.data.choices[0].text, e.isGroup)
+            e.reply(settings.twreplystart + response.data.choices[0].text, e.isGroup)
         })        
         .catch(function (error) {
             logger.error('----------------WeLM出现错误----------------')

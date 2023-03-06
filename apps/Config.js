@@ -26,20 +26,25 @@ export class RGznbot extends plugin {
           /** 命令正则匹配 */
           reg: "^#填写token(.*)$",
           /** 执行方法 */
-          fnc: 'Token'
+          fnc: 'Token',
+          permission: "master"
         },
         {
           reg: "^#更改name(.*)$",
           /** 执行方法 */
-          fnc: 'Name'
+          fnc: 'Name',
+          permission: "master"
         },
         {
           reg: "^#我的token",
-          fnc: 'MyToken'
+          fnc: 'MyToken',
+          permission: "master"
+
         },
         {
           reg: "#?welm设置(私聊|群聊)(开启|关闭)",
-          fnc: 'Switch'
+          fnc: 'Switch',
+          permission: "master"
         }
       ]
     })
@@ -51,8 +56,7 @@ export class RGznbot extends plugin {
       return true
     }
     let name = e.msg.replace(/#更改name/g, "").trim();
-    let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, "utf8")
-    let str = `${res}`
+    let str = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, "utf8")
     var reg = new RegExp(`BotName: "(.*?)"`);
     var Botname = str.replace(reg, `BotName: "${name}"`);
     fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, Botname, "utf8");
@@ -66,14 +70,9 @@ export class RGznbot extends plugin {
       e.reply("JD:要是给你在这填了那我岂不是很没面子")
       return true
     }
-    if (!e.isMaster) {
-      e.reply("JD:要是给你填了那我岂不是很没面子")
-      return true
-    }
 
     let token = e.msg.replace(/#填写token/g, "").trim()
-    let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, "utf8")
-    let str = `${res}`
+    let str = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, "utf8")
     var reg = new RegExp(`APIToken: "(.*?)"`);
     var api = str.replace(reg, `APIToken: "${token}"`);
     e.reply("开始测试Token正确性")
@@ -120,14 +119,8 @@ export class RGznbot extends plugin {
       e.reply("兰罗摩:要是给你在群里看了,那我岂不是很没面子")
       return true
     }
-    if (!e.isMaster) {
-      e.reply("兰罗摩:你个勾巴你妹权限,爬爬爬")
-      return true
-    }
     const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, 'utf8'))
-    let APIToken = settings.APIToken
-
-    e.reply(`报告主人,目前Token为: "${APIToken}"`)
+    e.reply(`报告主人,目前Token为: "${settings.APIToken}"`)
   }
 
 
@@ -137,16 +130,14 @@ export class RGznbot extends plugin {
     }
     if (e.msg.includes('私聊')) {
       if (e.msg.includes('开启')) {
-        let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
-        let str = `${res}`
+        let str = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
         var reg = new RegExp(`PrivateSwitch: "(.*?)"`);
         var Switch = str.replace(reg, `PrivateSwitch: "on"`);
         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, Switch, "utf8");
         e.reply("私聊WeLM已设为开启")
         return true
       } else {
-        let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
-        let str = `${res}`
+        let str = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
         var reg = new RegExp(`PrivateSwitch: "(.*?)"`);
         var Switch = str.replace(reg, `PrivateSwitch: "off"`);
         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, Switch, "utf8");
@@ -156,16 +147,14 @@ export class RGznbot extends plugin {
     }
     if (e.msg.includes('群聊')) {
       if (e.msg.includes('开启')) {
-        let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
-        let str = `${res}`
+        let str = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
         var reg = new RegExp(`GroupSwitch: "(.*?)"`);
         var Switch = str.replace(reg, `GroupSwitch: "on"`);
         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, Switch, "utf8");
         e.reply("群聊WeLM对话已设为开启")
         return true
       } else {
-        let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
-        let str = `${res}`
+        let str = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, "utf8")
         var reg = new RegExp(`GroupSwitch: "(.*?)"`);
         var Switch = str.replace(reg, `GroupSwitch: "off"`);
         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/switch.yaml`, Switch, "utf8");

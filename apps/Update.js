@@ -24,6 +24,8 @@ export class update extends plugin {
                 {
                     reg: "^#*(AI|welm)(插件)?(强制)?更新$",
                     fnc: "Update",
+                    permission: "master",
+
                 },
             ],
         });
@@ -34,8 +36,6 @@ export class update extends plugin {
      * @returns
      */
     async Update() {
-        if (!this.e.isMaster) return false;
-
         /** 检查是否正在更新中 */
         if (uping) {
             await this.reply("已有命令更新中..请勿重复操作");

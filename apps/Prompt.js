@@ -15,7 +15,7 @@ export class RGznbot extends plugin {
                 {
                     reg: `^#切换预设.*`,
                     fnc: 'QieHuan',
-                    permission: "master",
+                    permission: "master"
                 },
                 {
                     reg: '^#welm预设列表',
@@ -43,8 +43,7 @@ export class RGznbot extends plugin {
         fs.writeFileSync('./plugins/WeLM-plugin/data/dhdata.txt', yushe, 'utf8')
         //更名
         await common.sleep(1000)
-        let res = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, "utf8")
-        let str = `${res}`
+        let str = fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, "utf8")
         var reg = new RegExp(`BotName: "(.*?)"`);
         var Botname = str.replace(reg, `BotName: "${name}"`);
         fs.writeFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`, Botname, "utf8");
