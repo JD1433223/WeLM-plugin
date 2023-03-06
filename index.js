@@ -60,7 +60,7 @@ async function firstGuide() {
           type: 'list',
           name: 'type',
           message: '确认卸载?',
-          choices: ['确认', '算了算了我还是同意吧']
+          choices: ['确认卸载', '算了算了我还是同意吧']
         }
       ])
       if (del.type === '确认卸载') {
