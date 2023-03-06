@@ -64,10 +64,39 @@ async function firstGuide() {
         }
       ])
       if (del.type === '确认卸载') {
-        await execSync(`del /S /F /Q ${process.cwd()}\\plugins\\WeLM-plugin\\*`)
-        await common.sleep(500)
-        logger.warn('如卸载不完全请自行删除')
-        return false
+        const system = await inquirer.prompt([
+          {
+            type: 'list',
+            name: 'type',
+            message: '系统是?',
+            choices: ['Windows', 'Linux']
+          }
+        ])
+        if (system.type === 'Windows') {
+          const terminal = await inquirer.prompt([
+            {
+              type: 'list',
+              name: 'type',
+              message: '使用的终端?',
+              choices: ['PowerShell', 'Cmd']
+            }
+          ])
+          if (terminal.type === 'PowerShell') {
+            await execSync(`Remove-Item ${process.cwd()}\\plugins\\WeLM-plugin -Recurse -Force`)
+            logger.warn('如删除不完全请自行删除')
+            return false
+          }
+          if (terminal.type === 'Cmd') {
+            await execSync(`rd /S /Q ${process.cwd()}\\plugins\\WeLM-plugin`)
+            logger.warn('如删除不完全请自行删除')
+            return false
+          }
+        }
+        if (system.type === 'Linux') {
+          await execSync(`rm -rf ${process.cwd()}\\plugins\\WeLM-plugin`)
+          logger.warn('如删除不完全请自行删除')
+          return false
+        }
       }
       if (del.type === '算了算了我还是同意吧') {
         let str = fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml', "utf8")
