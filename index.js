@@ -144,8 +144,9 @@ async function firstGuide() {
     var config = str.replace(reg, `Guide: "yes"`);
     fs.writeFileSync('./plugins/WeLM-plugin/config/config.yaml', config, "utf8");
   }
-} 
-
+}
+const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'))
+await common.sleep(200)
 //输出提示
 logger.info('----✩•‿• ʜᴀᴠᴇ ᴀ ɢᴏᴏᴅ ᴛɪᴍᴇ☄︎♡----')
 logger.info(`WeLM对话插件初始化(・ω< )★`)
