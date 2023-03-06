@@ -99,6 +99,22 @@ async function firstGuide() {
   }
 }
 
+/**
+// 原来的代码
+await firstGuide()
+
+async function firstGuide() {
+  let Guide = (await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'))).Guide
+  if (Guide === "no" || Guide !== 'yes' || Guide === '' ) {
+    sendToMaster('欢迎您使用WeLM自定义对话插件! \n本插件帮助文档: https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm \n数据无价, 请充分了解本插件功能与用户条约后再使用! \n感谢您的支持!!!')
+    let str = fs.readFileSync('./plugins/WeLM-plugin/config/config.yaml', "utf8")
+    var reg = new RegExp(`Guide: "(.*?)"`);
+    var config = str.replace(reg, `Guide: "yes"`);
+    fs.writeFileSync('./plugins/WeLM-plugin/config/config.yaml', config, "utf8");
+  }
+} 
+*/
+
 let passed = await checkPackage()
 if (!passed) {
     throw 'Missing necessary dependencies'
