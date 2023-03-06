@@ -68,7 +68,7 @@ async function firstGuide() {
           {
             type: 'list',
             name: 'type',
-            message: '系统是?',
+            message: '选择你的系统',
             choices: ['Windows', 'Linux']
           }
         ])
@@ -77,7 +77,7 @@ async function firstGuide() {
             {
               type: 'list',
               name: 'type',
-              message: '使用的终端?',
+              message: '选择你开启Yunzai-Bot的终端',
               choices: ['PowerShell', 'Cmd']
             }
           ])
