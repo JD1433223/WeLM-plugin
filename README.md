@@ -2,16 +2,14 @@
 
 <img src="./resources/README/img/README顶部.bmp" alt="WeLM-plugin" width="350">
 
-<!--
-此图来源于Pixiv.net的105473760(PID)作品
--->
+<!-- 此图来源于Pixiv.net的105473760(PID)作品 -->
 
 # WeLM Plugin
 
 _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
 <img src="resources/README/img/logo.png" alt="logo" width="4000">
-<!--此logo图中部分内容来源于WeLM官网,如侵权请联系兰罗摩(3584075812@qq.com),会立即删除-->
+<!-- 此logo图中部分内容来源于WeLM官网,如侵权请联系兰罗摩(3584075812@qq.com),会立即删除 -->
 
 ---
 
@@ -29,7 +27,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
 </div>
 
-<!--以上Html代码cv自渔火Arcadia的Ap-plugin-->
+<!-- 以上Html代码cv自渔火Arcadia的Ap-plugin -->
 
 <!--
 @Author: 渔火Arcadia  https://github.com/yhArcadia
@@ -260,7 +258,7 @@ _PS: 人设需要在jldata.txt提前填写_
 * 使用指令: `#填写tokenxxxxxxxxxxxxxxxxxx`
 
 # 贡献者名单
-<!--抄的土块-->
+<!-- 抄的土块 -->
 | 贡献者 | 联系方式 | 主要贡献 |
 | --- | --- | --- |
 | 🎭书辞千楪Sama🌴 | QQ: `1700179844` | 提供了插件的主要功能 |
@@ -278,7 +276,7 @@ _PS: 人设需要在jldata.txt提前填写_
 | **使用着本插件的你** | 你就是你自己 | **在背后默默支持着本仓库** |
 
 # 免责声明
-<!--抄的锅巴-->
+<!-- 抄的锅巴 -->
 1. 本插件禁止任何形式的商用和违法用途，仅供小范围使用和学习，如违反相关规定，后果自负，与本插件及作者无关
 2. 图片与其他素材均来自于网络，仅供交流学习使用，如有侵权请联系兰罗摩(3584075812@qq.com)，会立即删除
 3. 禁止在未授权的情况下使用，本插件内所有内容禁止以任何形式用以冒充、反串、水军、侵犯他人权益、无底线粉丝行为、诈骗等不正当用途，如违反相关规定插件作者有权追究
@@ -296,7 +294,7 @@ _PS: 人设需要在jldata.txt提前填写_
 712074725
 ```
 ### 前往其他代码托管平台内本仓库
-<!--抄的渔火-->
+<!-- 抄的渔火 -->
 * [☞GitHub](https://github.com/JD1433223/WeLM-plugin)/[☞Gitee](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
 
 ### 前往其他仓库
@@ -307,7 +305,7 @@ _PS: 人设需要在jldata.txt提前填写_
 * [☞GitHub](https://github.com/Le-niao/Yunzai-Bot)/[☞Gitee](https://gitee.com/Le-niao/Yunzai-Bot) 
 
 ### 支持我们
-<!--渔火听我说谢谢你,因为有你温暖了司机,谢谢你因为有你世界更美丽-->
+<!-- 渔火听我说谢谢你,因为有你温暖了司机,谢谢你因为有你世界更美丽 -->
 如果你喜欢这个项目, 请不妨点个 Star🌟, 这是对开发者最大的动力, 当然, 你可以对我们进行赞助~
 
 * [兰罗摩](https://afdian.net/a/Arama)
