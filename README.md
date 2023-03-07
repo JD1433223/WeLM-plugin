@@ -1,6 +1,7 @@
 <div align="center">
 
 <img src="./resources/README/img/README顶部.bmp" alt="WeLM-plugin" width="350">
+
 <!--
 此图来源于Pixiv.net的105473760(PID)作品
 -->
@@ -45,8 +46,6 @@ Copyright (c) 2022 by 渔火Arcadia 1761869682@qq.com, All Rights Reserved.
 WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs/tutorial/)提供的 API 接口进行多参数便捷 AI 对话的 [Yunzai-Bot](../../../../Le-niao/Yunzai-Bot) 插件, 此插件功能不断扩展中如有意见或新功能思想可在issues提出, 更多功能敬请期待......
 
 ## 安装插件
-#### 使用前请先阅读并同意本插件用户协议: [（点击查看）WeLM插件用户协议](./resources/README/document/用户协议.txt)
-
 
 ### 1. 克隆本仓库至plugins目录
 在Yunzai-Bot根目录打开终端并选择一个执行   **_PS:如果不使用给出的命令安装插件包版可能会无法载入插件, 并且不要2个都执行!!!!!!!!!!!!!!!!!!!!!!!_**
@@ -278,7 +277,8 @@ _PS: 人设需要在jldata.txt提前填写_
 | **使用着本插件的你** | 你就是你自己 | **在背后默默支持着本仓库** |
 
 # 免责声明
-此项目仅用于学习交流，请勿用于非法用途, 如有侵权请联系兰罗摩,会立即删除
+1. 功能仅限内部交流与小范围使用，严禁将本插件用于任何商业用途或盈利
+2. 图片与其他素材均来自于网络，仅供交流学习使用，如有侵权请联系兰罗摩(3584075812@qq.com)，会立即删除
 
 # 其他
 

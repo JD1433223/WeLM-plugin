@@ -3,6 +3,9 @@
 !/config/**/
 !/config/help_default.js
 
+# 你的初始化文件
+/config/system/Guide.txt
+
 # 你的Prompt(预设)
 /data
 
