@@ -260,6 +260,7 @@ _PS: 人设需要在jldata.txt提前填写_
 * 使用指令: `#填写tokenxxxxxxxxxxxxxxxxxx`
 
 # 贡献者名单
+<!--抄的土块-->
 | 贡献者 | 联系方式 | 主要贡献 |
 | --- | --- | --- |
 | 🎭书辞千楪Sama🌴 | QQ: `1700179844` | 提供了插件的主要功能 |
@@ -277,6 +278,7 @@ _PS: 人设需要在jldata.txt提前填写_
 | **使用着本插件的你** | 你就是你自己 | **在背后默默支持着本仓库** |
 
 # 免责声明
+<!--抄的锅巴-->
 1. 功能仅限内部交流与小范围使用，严禁将本插件用于任何商业用途或盈利
 2. 图片与其他素材均来自于网络，仅供交流学习使用，如有侵权请联系兰罗摩(3584075812@qq.com)，会立即删除
 
@@ -292,6 +294,7 @@ _PS: 人设需要在jldata.txt提前填写_
 712074725
 ```
 ### 前往其他代码托管平台内本仓库
+<!--抄的渔火-->
 * [☞GitHub](https://github.com/JD1433223/WeLM-plugin)/[☞Gitee](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
 
 ### 前往其他仓库
@@ -302,6 +305,7 @@ _PS: 人设需要在jldata.txt提前填写_
 * [☞GitHub](https://github.com/Le-niao/Yunzai-Bot)/[☞Gitee](https://gitee.com/Le-niao/Yunzai-Bot) 
 
 ### 支持我们
+<!--渔火听我说谢谢你,因为有你温暖了司机,谢谢你因为有你世界更美丽-->
 如果你喜欢这个项目, 请不妨点个 Star🌟, 这是对开发者最大的动力, 当然, 你可以对我们进行赞助~
 
 * [兰罗摩](https://afdian.net/a/Arama)
