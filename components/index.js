@@ -1,3 +1,5 @@
+//  Copyright (c) 2023 Yoimiya
+
 import Data from './Data.js'
 import Common from './Common.js'
 import Cfg from './Cfg.js'

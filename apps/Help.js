@@ -1,3 +1,5 @@
+//  Copyright (c) 2023 Yoimiya
+
 import lodash from 'lodash'
 import fs from 'node:fs'
 import { Cfg, Version, Common, Data } from '../components/index.js'

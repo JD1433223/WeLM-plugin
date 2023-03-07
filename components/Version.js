@@ -1,3 +1,5 @@
+//  Copyright (c) 2023 Yoimiya
+
 import fs from 'fs'
 import lodash from 'lodash'
 

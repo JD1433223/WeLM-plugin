@@ -1,3 +1,5 @@
+//  Copyright (c) 2023 SunRyK
+
 import YAML from 'yaml'
 import chokidar from 'chokidar'
 import fs from 'node:fs'

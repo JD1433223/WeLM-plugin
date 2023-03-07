@@ -1,3 +1,5 @@
+//  Copyright (c) 2023 Yoimiya
+
 import Cfg from './Cfg.js'
 import render from './common-lib/render.js'
 import { Version } from './index.js'

@@ -1,3 +1,5 @@
+//  Copyright (c) 2023 Yoimiya
+
 export const style = {
   // 主文字颜色
   fontColor: '#ceb78b',
