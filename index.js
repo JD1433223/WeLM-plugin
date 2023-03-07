@@ -4,7 +4,6 @@ import fs from 'node:fs'
 import YAML from 'yaml'
 import { sendToMaster } from './components/Common.js'
 import { checkPackage } from './components/CheckPackage.js'
-import { execSync } from 'node:child_process'
 import common from '../../lib/common/common.js'
 
 await initConfig()
@@ -22,19 +21,14 @@ async function initConfig() {
   }
 }
 
-
-// 屎山代码2.1
-fs.appendFile('./plugins/WeLM-plugin/config/system/Guide.txt', 'no', (error) => {
-  if (error) {
-    logger.error('生成初始化文件失败')
-    logger.error(error)
-    return false
-  }
-})
+if (!fs.existsSync('./plugins/WeLM/plugin/config/system/Guide.txt')) {
+  fs.appendFile('./plugins/WeLM-plugin/config/system/Guide.txt', 'no', (error) => {})
+}
 
 await firstGuide()
 
 async function firstGuide() {
+  setTimeout(() => {}, 600000)
   let Guide = fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide.txt`,'utf8')
   if (Guide !== 'yes') {
     sendToMaster('欢迎您使用WeLM自定义对话插件! \n本插件帮助文档: https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm \n数据无价, 请充分了解本插件功能与用户条约后再使用! \n感谢您的支持!!!')
