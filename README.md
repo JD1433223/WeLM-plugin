@@ -1,3 +1,13 @@
+<!-- 
+Copyright (c) 2023 书辞千楪
+WeLM-plugin is licensed under Mulan PSL v2.
+You can use this software according to the terms and conditions of the Mulan PSL v2. 
+You may obtain a copy of Mulan PSL v2 at:
+        http://license.coscl.org.cn/MulanPSL2 
+THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.  
+See the Mulan PSL v2 for more details.  
+ -->
+
 <div align="center">
 
 <img src="./resources/README/img/README顶部.bmp" alt="WeLM-plugin" width="350">
@@ -26,19 +36,6 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 <a href="#使用说明">使用说明</a>
 
 </div>
-
-<!-- 以上Html代码cv自渔火Arcadia的Ap-plugin -->
-
-<!--
-@Author: 渔火Arcadia  https://github.com/yhArcadia
-@Date: 2022-12-22 00:38:21
-@LastEditors: 渔火Arcadia
-@LastEditTime: 2023-02-08 17:27:42
-@FilePath: \Yunzai-Bot\plugins\ap-plugin\README.md
-@Description: 版本：2.11.5
-
-Copyright (c) 2022 by 渔火Arcadia 1761869682@qq.com, All Rights Reserved.
--->
 
 ## 简介
 WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs/tutorial/)提供的 API 接口进行多参数便捷 AI 对话的 [Yunzai-Bot](../../../../Le-niao/Yunzai-Bot) 插件, 此插件功能不断扩展中如有意见或新功能思想可在issues提出, 更多功能敬请期待......
