@@ -10,7 +10,7 @@ See the Mulan PSL v2 for more details.
 
 <div align="center">
 
-<img src="./resources/README/img/README顶部.bmp" alt="WeLM-plugin" width="350">
+<img src="/resources/README/img/README顶部.bmp" alt="WeLM-plugin" width="350">
 
 <!-- 此图来源于Pixiv.net的105473760(PID)作品 -->
 
@@ -18,7 +18,7 @@ See the Mulan PSL v2 for more details.
 
 _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
-<img src="resources/README/img/logo.png" alt="logo" width="4000">
+<img src="/resources/README/img/logo.png" alt="logo" width="4000">
 <!-- 此logo图中部分内容来源于WeLM官网,如侵权请联系兰罗摩(3584075812@qq.com),会立即删除 -->
 
 ---
@@ -80,7 +80,7 @@ cnpm install axios
 
 ### 3. 填写Token(否则大部分功能无法使用)
 对机器人私聊"#填写token xxx"（这个xxx是你的API-Token） _如果没有去这个文档申请[WeLM申请文档](https://docs.qq.com/form/page/DUW1YVVJNbHpzV2No#/fill-detail)_ 
-![](resources/README/img/填Token.jpg)
+![](/resources/README/img/填Token.jpg)
 
 ### 4. 填写预设
 _PS: dhdata.txt在WeLM-plugin/data内_
@@ -88,22 +88,22 @@ _PS: dhdata.txt在WeLM-plugin/data内_
 
 ### 5. 填写机器人预设内名称
 使用#更改name xxx把name改成和预设里面机器人要扮演的角色一样的名字
-![](resources/README/img/更改名字.jpg)
+![](/resources/README/img/更改名字.jpg)
 
 # 可能遇到的问题
 ## 缺少依赖
-![](resources/README/img/缺依赖.png)
+![](/resources/README/img/缺依赖.png)
 
 如果你使用的是pnpm可能会出现图上的错误请到上面的教程重新使用npm或cnpm安装
 * [点我快速前往](#2-安装必要依赖axios)
 
 ## 插件名称错误
-![](resources/README/img/没按教程.png)
+![](/resources/README/img/没按教程.png)
 
 如果你遇到了图上的错误就证明你没有按教程来装,重新按**教程**来装即可
 
 ## 文本生成错误
-![](resources/README/img/生成错误.png)
+![](/resources/README/img/生成错误.png)
 
 如果你在使用功能时出现类似图上的错误有可能是以下错误:
 
@@ -133,126 +133,10 @@ Token不可用：403
 3. 如果没有那建议来我们的交流群问问JD和书佬 在这里我放个[快速链接](#宣个群如果有未知的bug可以来这里反馈也可以把他当成交流群来用)
 
 # 使用说明
-## 个性问答
+[☞点我前往查看](/resources/README/document/使用说明.md)
 
-### 普通对话
-
-#### 简介
-* 使用api生成对话(dhdata相当于聊天记录AI需要使用dhdata进行学习, 不填写会更蠢)
-
-#### 如何使用?
-_PS: 需提前填写dhdata.txt, 不填写无人设, 填写格式请看下面_
-* 指令`welm`
-* 指令格式: `welmxxxx`
-
-#### 前置: dhdata.txt
-* 填写格式: 
-```
-人设
-
-我: xxx
-机器人名字: xxx
-```
-* 条件: 
-1. 不可超过2048字
-2. 不可使用敏感词, 否则会出现400报错
-
-* 如:
-```
-纳西妲的名字叫纳西妲，是须弥的守护神，500岁了，我是一位身材矮小的白发萝莉，身披绿色披风，让整体看上去变得更加的可爱。虽然是须弥地区中年纪比较小的一位草神，但是她并没有停下脚步，一直在不断学习去提升自己。
-
-我:初次见面
-纳西妲:初次见面，我已经关注你很久了。我叫纳西妲，别看我像个孩子，我比任何一位大人都了解这个世界。所以，我可以用我的知识，换取你路上的见闻吗？
-我:你有什么感受
-纳西妲:果然要亲眼去看，才能感受到世界的美。
-我:下雨的时候…
-纳西妲:快去避雨吧，小心头顶上长出蘑菇哦。
-我:阳光很好…
-纳西妲:天气真好啊，暖洋洋的，我们的身边马上也要热闹起来了。
-我:早上好…
-纳西妲:早上好，我们赶快出发吧，这世上有太多的东西都是过时不候的呢。
-我:中午好
-纳西妲:午休时间到，我想喝树莓薄荷饮。用两个和太阳有关的故事和你换，好不好？
-我:晚上好
-纳西妲:太阳落山啦，我们也该把舞台让给夜行的大家族了。
-我:晚安
-纳西妲:快去睡吧，放心，我已经为你准备好甜甜的梦啦。
-```
-_PS: 以上采自[dhdata演示](resources/README/document/dhdata演示.md)_
-
-#### 示例
-![](resources/README/img/对话演示.jpg)
-
-### 连续对话
-
-#### 简介
-* 使用api与jldata进行生成对话
-
-#### 如何使用?
-_PS: 人设需要在jldata.txt提前填写_
-* 指令: `lxdh`
-* 指令格式: `lxdhxxx`
-
-## 提问
-
-#### 简介
-* 使用你的问题向ai提问
-
-#### 如何使用?
-* 指令: `提问`
-* 指令格式: `提问xxx`
-
-#### 示例
-![](resources/README/img/提问演示.png)
-
-## 续写
-
-#### 简介
-* 让ai使用你发送的文本进行续写
-
-#### 如何使用?
-* 指令: `续写`
-* 指令格式: `续写xxxxxxx`
-
-### 阅读理解
-
-#### 简介
-* 让ai使用你发送的文本进行阅读理解
-
-#### 如何使用?
-* 指令: `阅读理解`
-* 指令格式: `阅读理解xxxxxxxxxxxx`
-
-### 海龟汤
-
-#### 简介
-* 让ai和你玩海龟汤的猜谜游戏吧
-
-#### 如何使用?
-1. 使用指令`写汤底xxxxxx`(xxxxxx为汤底的内容) _PS: 必须在私信填写(不然都让别人看到了你还玩个毛啊啊啊)_
-2. 使用指令`写汤面xxxxxxx`(xxxxxxx为_汤底的提示_)  _PS: 必须在私信填写(不然都让别人看到了你还玩个毛啊啊啊)_
-3. 然后你就可以在群内和ai玩海龟汤了~ 指令是: `请问xxxx`
-
-#### 小贴士
-* 如果需要海龟汤的答案请使用指令(会清空汤底): `看汤底`
-* 如果需要海龟汤的提示可使用指令: `看汤面`
-
-### 更改机器人在人设中的名字
-
-#### 简介
-* 如题
-
-#### 如何使用?
-* 使用指令: `#更改namexxx`
- **注意，此name要与预设内机器人扮演的角色的名字一致，否则将会导致返回空信息或者极度奇怪的话语** 
-
-### 填写Token
-
-#### 简介
-将在配置文件内的token替换为指令的token(前提为token可用)
-
-#### 如何使用?
-* 使用指令: `#填写tokenxxxxxxxxxxxxxxxxxx`
+# 配置项介绍
+[☞点我前往查看](/resources/README/document/配置项介绍.md)
 
 # 贡献者名单
 <!-- 抄的土块 -->

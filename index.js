@@ -21,18 +21,20 @@ async function initConfig() {
   }
 }
 
+//读取初始化文件如果报错就创建并且写入"no"
 try {
   fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide.txt`,'utf8')
 } catch {
   fs.appendFile(`./plugins/WeLM-plugin/config/system/Guide.txt`, 'no', () => {})
 }
 
-await setTimeout(firstGuide, 300)
+//延迟执行不然初始化文件内容会变"yesno"
+await setTimeout(firstGuide, 300) 
 
 async function firstGuide() {
   let Guide = fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide.txt`,'utf8')
   if (Guide !== 'yes') {
-    sendToMaster('欢迎您使用WeLM自定义对话插件! \n本插件帮助文档: https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm \n数据无价, 请充分了解本插件功能与用户条约后再使用! \n感谢您的支持!!!')
+    sendToMaster('欢迎您使用WeLM自定义对话插件! \n本插件帮助文档: https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm \n数据无价, 请充分了解本插件功能后再使用! \n感谢您的支持!!!')
     fs.writeFile('./plugins/WeLM-plugin/config/system/Guide.txt', 'yes', (error) => {
       if (error) {
         logger.error('初始化状态失败')
@@ -43,8 +45,8 @@ async function firstGuide() {
   }
 }
 
+//读取配置
 const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'))
-await common.sleep(200)
 //输出提示
 logger.info('----✩•‿• ʜᴀᴠᴇ ᴀ ɢᴏᴏᴅ ᴛɪᴍᴇ☄︎♡----')
 logger.info(`WeLM对话插件初始化(・ω< )★`)
@@ -53,7 +55,7 @@ logger.info(`作者: ${chalk.rgb(0, 255, 0)('JD')} ${logger.red('兰罗摩')} ${
 logger.info(`当前API-Token: "${chalk.rgb(103, 93, 189)(settings.APIToken)}"`)
 logger.info('-------------------------------')
 
-
+//检测依赖全了没
 let passed = await checkPackage()
 if (!passed) {
     throw 'Missing necessary dependencies'
