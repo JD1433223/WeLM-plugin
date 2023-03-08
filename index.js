@@ -21,14 +21,15 @@ async function initConfig() {
   }
 }
 
-if (!fs.existsSync('./plugins/WeLM/plugin/config/system/Guide.txt')) {
-  fs.appendFile('./plugins/WeLM-plugin/config/system/Guide.txt', 'no', (error) => {})
+try {
+  fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide.txt`,'utf8')
+} catch {
+  fs.appendFile(`./plugins/WeLM-plugin/config/system/Guide.txt`, 'no', () => {})
 }
 
-await firstGuide()
+await setTimeout(firstGuide, 300)
 
 async function firstGuide() {
-  setTimeout(() => {}, 600000)
   let Guide = fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide.txt`,'utf8')
   if (Guide !== 'yes') {
     sendToMaster('欢迎您使用WeLM自定义对话插件! \n本插件帮助文档: https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm \n数据无价, 请充分了解本插件功能与用户条约后再使用! \n感谢您的支持!!!')
