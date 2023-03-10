@@ -21,6 +21,8 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 <img src="/resources/README/img/logo.png" alt="logo" width="4000">
 <!-- 此logo图中部分内容来源于WeLM官网,如侵权请联系兰罗摩(3584075812@qq.com),会立即删除 -->
 
+---
+
 <a href="#安装插件">安装教程</a>
 |
 <a href="#可能遇到的问题">大概率会遇到的问题</a>
