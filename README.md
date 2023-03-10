@@ -42,7 +42,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
     <img src="https://img.shields.io/github/languages/code-size/JD1433223/WeLM-plugin.svg" alt="代码大小">
 </a>
 <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/license-MulanPSL-2.0-green" alt="License" />
+    <img src="https://img.shields.io/badge/license-MulanPSL 2.0-green" alt="License" />
 </a>
 
 </div>
