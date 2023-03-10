@@ -164,7 +164,7 @@ export class RGznbot extends plugin {
 		const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
 		//如需配置插件请到本插件文件夹内config的config.yaml进行编辑
 		let random_ = parseInt(Math.random() * 99);
-		if (random_ >= 100 || random_ < settings.probability || e.msg && e.msg?.indexOf(settings.dhcmdstart) >= 0 || !e.isGroup || e.atme) {
+		if (random_ >= 100 || random_ < settings.probability || e.msg && e.msg?.indexOf(settings.dhcmdstart) >= 0 || e.isPrivate || e.atme) {
 			e.msg = e.msg.replace(settings.dhcmdstart, "")
 			let sc_cs = `${fs.readFileSync('./plugins/WeLM-plugin/data/dhdata.txt', { encoding: 'utf-8' })}\n我:${e.msg}\n${settings.BotName}:`
 			axios({
