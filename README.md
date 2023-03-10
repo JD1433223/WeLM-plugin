@@ -162,7 +162,7 @@ Token不可用：403
 | 写汤面 | 写入海龟汤的汤面(提示) | `#写汤面 xxxxxx`
 | 写汤底 | 写入海龟汤的汤底(答案) | `#写汤底 xxxxxx`
 
-* 详细可看: [☞点我前往查看](/resources/README/document/详细使用说明.md)
+* 全部指令介绍详细可看: [☞点我前往查看](/resources/README/document/详细使用说明.md)
 
 # 配置项介绍
 [☞点我前往查看](/resources/README/document/配置项介绍.md)
