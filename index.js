@@ -51,7 +51,7 @@ const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/
 logger.info('----✩•‿• ʜᴀᴠᴇ ᴀ ɢᴏᴏᴅ ᴛɪᴍᴇ☄︎♡----')
 logger.info(`WeLM对话插件初始化(・ω< )★`)
 logger.info(`当前版本: ${chalk.rgb(150, 50, 100)(Version.version)}`)
-logger.info(`作者: ${chalk.rgb(0, 255, 0)('JD')} ${chalk.rgb(153, 255, 255)('兰罗摩')} ${logger.blue('书辞千楪Sama')}`)
+logger.info(`作者: ${chalk.rgb(0, 255, 0)('JD')} ${chalk.rgb(153, 255, 255)('兰罗摩')} ${chalk.rgb(0, 0, 255)('书辞千楪Sama')}`)
 logger.info(`当前API-Token: "${chalk.rgb(103, 93, 189)(settings.APIToken)}"`)
 logger.info('-------------------------------')
 
