@@ -191,7 +191,6 @@ Token不可用：403
 2. 图片与其他素材均来自于网络，仅供交流学习使用，如有侵权请联系兰罗摩(3584075812@qq.com)，会立即删除
 3. 禁止在未授权的情况下使用，本插件内所有内容禁止以任何形式用以冒充、反串、水军、侵犯他人权益、无底线粉丝行为、诈骗等不正当用途，如违反相关规定插件作者有权追究
 
-
 # 其他
 
 ### 宣个群(如果有未知的bug可以来这里反馈,也可以把他当成交♂流群来用)
@@ -208,11 +207,8 @@ Token不可用：403
 * [☞GitHub](https://github.com/JD1433223/WeLM-plugin)/[☞Gitee](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
 
 ### 前往其他仓库
-#### Yunzai-Bot插件库:
-* [☞GitHub](https://github.com/yhArcadia/Yunzai-Bot-plugins-index)/[☞Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
-
-#### Yunzai-Bot
-* [☞GitHub](https://github.com/Le-niao/Yunzai-Bot)/[☞Gitee](https://gitee.com/Le-niao/Yunzai-Bot) 
+* Yunzai-Bot插件库: [☞GitHub](https://github.com/yhArcadia/Yunzai-Bot-plugins-index)/[☞Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
+* Yunzai-Bot: [☞GitHub](https://github.com/Le-niao/Yunzai-Bot)/[☞Gitee](https://gitee.com/Le-niao/Yunzai-Bot) 
 
 ### 支持我们
 <!-- 渔火听我说谢谢你,因为有你温暖了司机,谢谢你因为有你世界更美丽 -->
@@ -220,4 +216,4 @@ Token不可用：403
 
 * [兰罗摩](https://afdian.net/a/Arama)
 
-* [书辞千楪](https://afdian.net/a/0906-12)  [微信](https://img1.imgtp.com/2023/02/16/MdDza14P.png)&[支付宝](https://img1.imgtp.com/2023/02/16/luH0pKxj.jpg)
+* [书辞千楪](https://afdian.net/a/0906-12)  [微信](https://img1.imgtp.com/2023/02/16/MdDza14P.png)/[支付宝](https://img1.imgtp.com/2023/02/16/luH0pKxj.jpg)
