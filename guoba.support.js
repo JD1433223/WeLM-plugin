@@ -8,22 +8,22 @@ export function supportGuoba() {
     // 如果你的插件没有在插件库里，那么需要填上补充信息
     // 如果存在的话，那么填不填就无所谓了，填了就以你的信息为准
     pluginInfo: {
-        name: 'WeLM-plugin',
-        title: 'WeLM-plugin',
-        author: '@书辞千楪',
-        authorlink: 'https://gitee.com/shuciqianye',
-        link: 'https://github.com/JD1433223/WeLM-plugin',
-        isV3: true,
-        isV2: false,
-        description: '提供个性ai问答和提问(chatgpt下下下位替代)功能',
-        icon: 'eos-icons:ai-operator'
-        },
-        // 配置项信息
+      name: 'WeLM-Plugin',
+      title: 'WeLM-plugin',
+      author: '@书辞千楪',
+      authorlink: 'https://gitee.com/shuciqianye',
+      link: 'https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm',
+      isV3: true,
+      isV2: false,
+      description: '提供个性ai问答和提问(chatgpt下下下位替代)功能',
+      icon: 'eos-icons:ai-operator'
+    },
+    // 配置项信息
     configInfo: {
         // 配置项 schemas
         schemas: [
           {
-              label: '以下为通用设置',
+              label: '通用设置',
               component: 'Divider'
           },
           {
@@ -51,6 +51,7 @@ export function supportGuoba() {
             label: '群聊开关',
             bottomHelpMessage: '在群里是否开启本插件功能',
             component: 'Switch',
+            required: true,
             componentProps: {
               checkedValue: "on",
               unCheckedValue: "off",
@@ -61,14 +62,38 @@ export function supportGuoba() {
             label: '私聊开关',
             bottomHelpMessage: '在私聊内是否开启本插件功能',
             component: 'Switch',
+            required: true,
             componentProps: {
               checkedValue: "on",
               unCheckedValue: "off",
             }
           },
           {
+            label: '对话',
+            component: 'Divider'
+          },
+          {
+            field: 'config.dhreplystart',
+            label: '指令备注',
+            bottomHelpMessage: '可留空',
+            component: 'Input',
+            componentProps: {
+              placeholder: '普通对话指令回复开头备注, 不用与其他ai区分时可留空'
+            }
+          },
+          {
+            field: 'config.dhcmdstart',
+            label: '指令开头',
+            bottomHelpMessage: '别填太离谱,不然你压根不能触发指令',
+            component: 'Input',
+            required: true,
+            componentProps: {
+              placeholder: '对话指令开头, 别填太离谱不然你自己都不能触发了'
+            }
+          },
+          {
             field: 'config.probability',
-            label: '对话概率',
+            label: '触发概率',
             bottomHelpMessage: '普通对话在群里触发的概率(百分比)',
             component: 'InputNumber',
             required: true,
@@ -79,21 +104,12 @@ export function supportGuoba() {
             }
           },
           {
-              label: '以下为指令回复备注专区',
-              component: 'Divider'
-          },
-          {
-            field: 'config.dhreplystart',
-            label: '对话指令备注',
-            bottomHelpMessage: '可留空',
-            component: 'Input',
-            componentProps: {
-              placeholder: '普通对话指令回复开头备注, 不用与其他ai区分时可留空'
-            }
+             label: '连续对话',
+            component: 'Divider'
           },
           {
             field: 'config.lxdhreplystart',
-            label: '连续对话回复备注',
+            label: '回复备注',
             bottomHelpMessage: '可留空',
             component: 'Input',
             componentProps: {
@@ -101,17 +117,45 @@ export function supportGuoba() {
             }
           },
           {
-            field: 'config.twreplystart',
-            label: '问答回复备注',
-            bottomHelpMessage: '可留空',
+            field: 'config.lxdhcmdstart',
+            label: '指令开头',
+            bottomHelpMessage: '别填太离谱,不然你压根不能触发指令',
             component: 'Input',
+            required: true,
             componentProps: {
-              placeholder: '问答指令回复开头备注, 不用与其他ai区分时可留空'
+              placeholder: '连续对话指令开头, 别填太离谱不然你自己都不能触发了'
             }
           },
           {
+            label: '提问',
+            component: 'Divider'
+          },
+          {
+            field: 'config.twreplystart',
+            label: '回复备注',
+            bottomHelpMessage: '可留空',
+            component: 'Input',
+            componentProps: {
+              placeholder: '提问指令回复开头备注, 不用与其他ai区分时可留空'
+            }
+          },
+          {
+            field: 'config.twcmdstart',
+            label: '指令开头',
+            bottomHelpMessage: '别填太离谱,不然你压根不能触发指令',
+            component: 'Input',
+            required: true,
+            componentProps: {
+              placeholder: '提问指令开头, 别填太离谱不然你自己都不能触发了'
+            }
+          },
+          {
+            label: '续写',
+            component: 'Divider'
+          },
+          {
             field: 'config.xxreplystart',
-            label: '续写回复备注',
+            label: '回复备注',
             bottomHelpMessage: '可留空',
             component: 'Input',
             componentProps: {
@@ -119,8 +163,22 @@ export function supportGuoba() {
             }
           },
           {
+            field: 'config.xxcmdstart',
+            label: '指令开头',
+            bottomHelpMessage: '别填太离谱,不然你压根不能触发指令',
+            component: 'Input',
+            required: true,
+            componentProps: {
+              placeholder: '续写指令开头, 别填太离谱不然你自己都不能触发了'
+            }
+          },
+          {
+            label: '阅读理解',
+            component: 'Divider'
+          },
+          {
             field: 'config.ydljreplystart',
-            label: '阅读理解回复备注',
+            label: '回复备注',
             bottomHelpMessage: '可留空',
             component: 'Input',
             componentProps: {
@@ -128,14 +186,25 @@ export function supportGuoba() {
             }
           },
           {
-              label: '以下为模型参数调试专区',
-              component: 'Divider'
+            field: 'config.ydljcmdstart',
+            label: '指令开头',
+            bottomHelpMessage: '别填太离谱,不然你压根不能触发指令',
+            component: 'Input',
+            required: true,
+            componentProps: {
+              placeholder: '阅读理解指令开头, 别填太离谱不然你自己都不能触发了'
+            }
+          },
+          {
+            label: '模型参数调试类',
+            component: 'Divider'
           },
           {
             field: 'config.model',
             label: '模型',
             bottomHelpMessage: '当前支持的模型有medium、 large 和 xl',
             component: 'RadioGroup',
+            required: true,
             componentProps: {
               options: [
                 {label: 'medium', value: 'medium'},
