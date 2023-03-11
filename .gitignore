@@ -2,9 +2,7 @@
 /config/*
 !/config/**/
 !/config/help_default.js
-
-# 你的初始化文件
-/config/system/Guide.txt
+/config/system/Guide
 
 # 你的Prompt(预设)
 /data

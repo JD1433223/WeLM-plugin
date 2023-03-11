@@ -4,7 +4,6 @@ import fs from 'node:fs'
 import YAML from 'yaml'
 import { sendToMaster } from './components/Common.js'
 import { checkPackage } from './components/CheckPackage.js'
-import common from '../../lib/common/common.js'
 
 await initConfig()
 
@@ -17,25 +16,26 @@ async function initConfig() {
   for (let file of files) {
     if (!fs.existsSync(`${path}${file}`)) {
       fs.copyFileSync(`${pathDef}${file}`, `${path}${file}`)
+      logger.error(`检测到路径为${path + file}的配置文件不存在, 已重新生成`)
     }
   }
 }
 
-//读取初始化文件如果报错就创建并且写入"no"
+//延迟执行不然初始化文件内容会变"yesno"
+setTimeout(firstGuide, 300) 
+
+//读取初始化文件,如果报错(相当于检测文件是否存在)就创建并且写入"no"
 try {
-  fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide.txt`,'utf8')
+  fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide`,'utf8')
 } catch {
-  fs.appendFile(`./plugins/WeLM-plugin/config/system/Guide.txt`, 'no', () => {})
+  fs.appendFile(`./plugins/WeLM-plugin/config/system/Guide`, 'no', () => {})
 }
 
-//延迟执行不然初始化文件内容会变"yesno"
-await setTimeout(firstGuide, 300) 
-
+//如果初始化文件不是yes就发送消息到主人那
 async function firstGuide() {
-  let Guide = fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide.txt`,'utf8')
-  if (Guide !== 'yes') {
+  if (fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide`,'utf8') !== "yes") {
     sendToMaster('欢迎您使用WeLM自定义对话插件! \n本插件帮助文档: https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm \n数据无价, 请充分了解本插件功能后再使用! \n感谢您的支持!!!')
-    fs.writeFile('./plugins/WeLM-plugin/config/system/Guide.txt', 'yes', (error) => {
+    fs.writeFile('./plugins/WeLM-plugin/config/system/Guide', 'yes', (error) => {
       if (error) {
         logger.error('初始化状态失败')
         logger.error(error)
