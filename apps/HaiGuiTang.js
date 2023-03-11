@@ -62,7 +62,7 @@ export class RGznbot extends plugin {
 				return false
 			}
 		}
-		if (!e.isGroup) {
+		if (e.isPrivate) {
 			if (set.PrivateSwitch === "off") {
 				return false
 			}
@@ -70,7 +70,7 @@ export class RGznbot extends plugin {
 		const _path = process.cwd()
 		const settings = await YAML.parse(fs.readFileSync(`${_path}/plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
-        if (e.msg && e.msg?.indexOf("请问") >= 0 || !e.isGroup){
+        if (e.msg && e.msg?.indexOf("请问") >= 0 || e.isPrivate){
         e.msg = e.msg.replace(/#请问/g, "")
 		let sc_cs = "阅读文章你只能回答“是”与“不是”，“相关”与“不相关”，如无法回答上述内容的话请回答“不知道，请重新提问”\n" + fs.readFileSync('./plugins/WeLM-plugin/data/hgttd.txt', { encoding: 'utf-8' }) + "\n:" + "问题:" + e.msg + "\n" + "回答" + ":"
         axios({

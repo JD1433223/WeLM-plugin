@@ -62,23 +62,12 @@ export class RGznbot extends plugin {
 				return false
 			}
 		}
-		if (!e.isGroup) {
+		if (e.isPrivate) {
 			if (set.PrivateSwitch === "off") {
 				return false
 			}
 		}
 		const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
-        let BotName =  settings.BotName 
-        let APIToken = settings.APIToken
-        let model = settings.model          
-        let max_tokens = settings.max_tokens
-        let temperature = settings.temperature   
-        let top_p = settings.top_p         
-        let top_k = settings.top_k            
-        let n = settings.n                
-        let stop = settings.stop 
-		let commandstart = settings.lxdhcmdstart           
-        let replystart = settings.lxdhreplystart
         e.msg = e.msg.replace(settings.lxdhcmdstart, "")
 		let xr_mb = "\n我:" + e.msg + "\n" + settings.BotName + ":"         //如果不想要对话记录写入模型prompt请删除这一行。		
 		fs.appendFileSync('./plugins/WeLM-plugin/data/jldata.txt', xr_mb, 'utf8')  //如果不想要对话记录写入模型prompt请删除这一行。
@@ -93,7 +82,7 @@ export class RGznbot extends plugin {
 	        data: {
 		        "prompt": sc_cs,
 		        "model": settings.stop,
-		        "max_tokens": max_tokens,
+		        "max_tokens": settings.max_tokens,
 		        "temperature": settings.temperature,
 		        "top_p": settings.top_p ,
 		        "top_k": settings.top_k,
@@ -156,7 +145,7 @@ export class RGznbot extends plugin {
 				return false
 			}
 		}
-		if (!e.isGroup) {
+		if (e.isPrivate) {
 			if (set.PrivateSwitch === "off") {
 				return false
 			}

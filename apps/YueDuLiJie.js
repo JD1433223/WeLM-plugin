@@ -58,14 +58,14 @@ export class RGznbot extends plugin {
 				return false
 			}
 		}
-		if (!e.isGroup) {
+		if (e.isPrivate) {
 			if (set.PrivateSwitch === "off") {
 				return false
 			}
 		}
 		const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
-		if (e.msg && e.msg?.indexOf(commandstart) >= 0 || !e.isGroup) {
+		if (e.msg && e.msg?.indexOf(commandstart) >= 0 || e.isPrivate) {
         e.msg = e.msg.replace(settings.ysljcmdstart, "")
 		let sc_cs = "阅读文章:\n" + fs.readFileSync('./plugins/WeLM-plugin/data/ydljdata.txt', { encoding: 'utf-8' }) + "\n:" + "问题:" + e.msg + "\n" + "答案" + ":"
         axios({

@@ -45,7 +45,7 @@ export class RGznbot extends plugin {
 				return false
 			}
 		}
-		if (!e.isGroup) {
+		if (e.isPrivate) {
 			if (set.PrivateSwitch === "off") {
 				return false
 			}
