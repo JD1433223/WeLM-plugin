@@ -12,7 +12,7 @@ async function initConfig() {
   const configPath = process.cwd().replace(/\\/g, "/") + '/plugins/WeLM-plugin/'
   let path = configPath + 'config/'
   let pathDef = configPath + 'defSet/'
-  const files = fs.readdirSync(pathDef).filter(file => file.endsWith('.yaml'))
+  const files = fs.readdirSync(pathDef).filter(file => file.endsWith('.yaml') + file.endsWith('.js'))
   for (let file of files) {
     if (!fs.existsSync(`${path}${file}`)) {
       fs.copyFileSync(`${pathDef}${file}`, `${path}${file}`)
@@ -21,15 +21,15 @@ async function initConfig() {
   }
 }
 
-//延迟执行不然初始化文件内容会变"yesno"
-setTimeout(firstGuide, 300) 
-
 //读取初始化文件,如果报错(相当于检测文件是否存在)就创建并且写入"no"
 try {
   fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide`,'utf8')
 } catch {
   fs.appendFile(`./plugins/WeLM-plugin/config/system/Guide`, 'no', () => {})
 }
+
+//延迟执行不然初始化文件内容会变"yesno"
+setTimeout(firstGuide, 300) 
 
 //如果初始化文件不是yes就发送消息到主人那
 async function firstGuide() {
