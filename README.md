@@ -23,7 +23,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
 ---
 
-<a href="#安装插件">安装教程</a>
+<a href="#前置安装提醒">安装教程</a>
 |
 <a href="#可能遇到的问题">大概率会遇到的问题</a>
 |
@@ -47,8 +47,20 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
 </div>
 
-## 简介
-WeLM-plugin是一款在 QQ 内快速调用[WeLM](https://welm.weixin.qq.com/docs/tutorial/)提供的 API 接口进行多参数便捷 AI 对话的 [Yunzai-Bot](../../../../Le-niao/Yunzai-Bot) 插件, 此插件功能不断扩展中如有意见或新功能思想可在issues提出, 更多功能敬请期待......
+### 前置安装提醒
+
+本插件有较多需要使用API的功能，建议拥有以下技能：
+
+<!-- 谢谢你🌸🌸 -->
+* **<font color='#ef4517'>知道看完本文与其他文档再前往交流群提问</font>**
+* 学会正常使用搜索引擎([baidu.com](baidu.com) [bing.com](bing.com)(如果你有New Bing资格最好使用此搜索引擎) [google.com](google.com))
+* 知道如何利用工具修改文件(推荐[Visual Studio Code](https://code.visualstudio.com/))
+* 拥有义务教育阶段要求的知识水平
+* 对于Yunzai有一定的了解，有基础的代码辨识能力
+
+如果没有以上技能，请立刻停止插件安装并关闭浏览器。
+
+如果你有以上技能，浏览以下内容后，不应再出现疑问。否则， 请咨询当地医院是否患有潜在脑疾。
 
 ## 安装插件
 
