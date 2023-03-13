@@ -32,6 +32,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 [![Node.js](https://img.shields.io/badge/NodeJS-16.x+-6BA552.svg)](https://nodejs.org/en/download/)
 [![Yunzai-Bot](https://img.shields.io/badge/Yunzai_Bot-v3-red.svg)](../../../../Le-niao/Yunzai-Bot)
 <br>
+[![QQ群1](https://img.shields.io/badge/QQ群-纳西妲%20🤤🤤🤤²%20-green?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=uZ4HhhRY)
 [![QQ群2](https://img.shields.io/badge/QQ群-雷神%20🤤🤤🤤%20-purple?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm)
 <br>
 <a href="https://github.com/JD1433223/WeLM-plugin/">
@@ -215,7 +216,11 @@ Token不可用：403
 # 其他
 
 ### 宣个群(如果有未知的bug可以来这里反馈,也可以把他当成交♂流群来用)
-群1(500人群): 
+群1, 之前有sb举报了(500人群):
+```
+494148520
+```
+群2(500人群): 
 ```
 712074725
 ```
