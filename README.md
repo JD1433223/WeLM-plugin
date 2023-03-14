@@ -47,10 +47,25 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
 </div>
 
-### new
+### 公告
+#### new
 新群1.1新老人员，老婆们速回
 ```
 494148520
+```
+
+### 宣个群
+#### 群规
+* [快速链接](/resources/README/document/群规.md)
+#### 群号
+_PS: (如果有未知的bug可以来这里反馈,也可以把他当成交♂流群来用)_
+群1(3)(500人群):
+```
+494148520
+```
+群2(500人群): 
+```
+712074725
 ```
 
 ### 前置安装提醒
@@ -59,7 +74,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
 <!-- 谢谢你🌸🌸 -->
 * **<font color='#ef4517'>知道看完本文与其他文档再前往交流群提问</font>**
-* 学会正常使用搜索引擎([baidu.com](baidu.com) [bing.com](bing.com)(如果你有New Bing资格最好使用此搜索引擎) [google.com](google.com))
+* 学会正常使用搜索引擎([baidu.com](https://www.baidu.com/) [bing.com](https://www.bing.com)(如果你有New Bing资格最好使用此搜索引擎) [google.com](https://google.com))
 * 知道如何利用工具修改文件(推荐[Visual Studio Code](https://code.visualstudio.com/))
 * 拥有义务教育阶段要求的知识水平
 * 对于Yunzai有一定的了解，有基础的代码辨识能力
@@ -221,15 +236,6 @@ Token不可用：403
 
 # 其他
 
-### 宣个群(如果有未知的bug可以来这里反馈,也可以把他当成交♂流群来用)
-群1, 之前有sb举报了(500人群):
-```
-494148520
-```
-群2(500人群): 
-```
-712074725
-```
 ### 前往其他代码托管平台内本仓库
 <!-- 抄的渔火 -->
 * [☞GitHub](https://github.com/JD1433223/WeLM-plugin)/[☞Gitee](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
