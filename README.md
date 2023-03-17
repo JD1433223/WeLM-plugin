@@ -46,13 +46,17 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 </a>
 <br>
 <a href="https://github.com/JD1433223/WeLM-plugin/">
-    <img src="https://img.shields.io/github/repo-size/JD1433223/WeLM-plugin.svg" alt="仓库大小">
+    <img src="https://img.shields.io/github/downloads/JD1433223/WeLM-plugin/total?color=blue&label=下载" alt="下载量">
 </a>
 <a href="https://github.com/JD1433223/WeLM-plugin/">
-    <img src="https://img.shields.io/github/languages/code-size/JD1433223/WeLM-plugin.svg" alt="代码大小">
+    <img src="https://visitor-badge.glitch.me/badge?page_id=JD1433223.WeLM-plugin&right_color=darkblue&left_text=访%20问%20量" alt="访问量">
 </a>
+<a href="../../stargazers">
+    <img src="https://img.shields.io/github/stars/JD1433223/WeLM-plugin?color=yellow&label=收藏" alt="收藏">
+</a>
+<a href="">
 <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/license-MulanPSL%202.0-green" alt="License" />
+    <img src="https://img.shields.io/badge/许可证-MulanPSL%202.0-green" alt="License" />
 </a>
 
 </div>
