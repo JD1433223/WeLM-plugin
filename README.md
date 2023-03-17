@@ -49,6 +49,12 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
 </div>
 
+# New
+新群1.1新老人员，老婆们速回
+```
+494148520
+```
+
 ### 前置安装提醒
 
 本插件有较多需要更改配置文件的功能，建议拥有以下技能：
@@ -186,10 +192,23 @@ Token不可用：403
 | 写汤面 | 写入海龟汤的汤面(提示) | `#写汤面 xxxxxx`
 | 写汤底 | 写入海龟汤的汤底(答案) | `#写汤底 xxxxxx`
 
-* 全部指令介绍详细可看: [☞点我前往查看](/resources/README/document/详细使用说明.md)
-
 # 配置项介绍
-[☞点我前往查看](/resources/README/document/配置项介绍.md)
+| 配置项 | 备注 | 是否必填 | 类别 |
+| --- | --- | --- | --- |
+| APIToken | 你的API,可使用指令`#填写token`更改 | 是 | 字符串 |
+| BotName | 你的机器人在预设内的名字,可使用指令`#更改name`更改 | 是 | 字符串 |
+| probability | 对话指令在群内触发的概率 | 是 | 数字 |
+| xxreplystart | 对应指令的回复开头,replystart前面的`xx`可更改为: `dh`、`tw`、`lxdh`与`ydlj` | 否 | 字符串 |
+| xxcmdstart | 与replystart一致但作用为指令开头, 如`welm` | 是 | 字符串 |
+| model | 使用的模型, 当前支持的模型有`medium`、`large`与`xl` | 是 | 字符串 |
+| max_tokens | 模型最多生成的Token个数 | 是 | 数字 |
+| temperature | 模型的创造性,如需要更明确的答案可以尝试argmax采样(将其设置为0),切勿与top_p一起改变 | 是 | 数字 |
+| top_p | 与temperature作用一致但采用的是累计概率的方式,切勿与temperature一起改变 | 是 | 数字 |
+| top_k | 模型根据概率分布的概率中最大选择的k个词汇, 建议不要过小否则模型能选择的词汇少 | 是 | 数字 |
+| n | 返回的序列个数,大于0,小于等于12 | 是 | 数字 |
+| stop | 当模型当前生成的字符为stop的任何一个字符时停止生成 | 否 | 字符串 |
+| twstop | 与stop功能一致但是专用与`提问`指令 | 否 | 字符串 |
+| keep | 供bug填充的变量,更改后过一段时间会恢复原样 | 否 | 字符串 |
 
 # 贡献者名单
 <!-- 抄的土块 -->
@@ -218,8 +237,18 @@ Token不可用：403
 # 其他
 
 ### 群
-[☞点我前往查看](/resources/README/document/群.md)
-
+#### 群规
+![](/resources/README/img/群规.png)
+#### 群号
+_PS: (如果有未知的bug可以来这里反馈,也可以把他当成交♂流群来用)_
+1. (500人群):
+```
+494148520
+```
+2. (500人群): 
+```
+712074725
+```
 ### 前往其他代码托管平台内本仓库
 <!-- 抄的渔火 -->
 * [☞GitHub](https://github.com/JD1433223/WeLM-plugin)/[☞Gitee](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
