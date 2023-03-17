@@ -10,7 +10,9 @@ See the Mulan PSL v2 for more details.
 
 <div align="center">
 
-<img src="/resources/README/img/README顶部.bmp" alt="WeLM-plugin" width="350">
+<a href="https://github.com/JD1433223/WeLM-plugin/">
+    <img src="resources/README/img/README顶部.png" width="350" alt="Logo">
+</a>
 
 <!-- 此图来源于Pixiv.net的105473760(PID)作品 -->
 
