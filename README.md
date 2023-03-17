@@ -31,11 +31,19 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 |
 <a href="#使用说明">使用说明</a>
 
-[![Node.js](https://img.shields.io/badge/NodeJS-16.x+-6BA552.svg)](https://nodejs.org/en/download/)
-[![Yunzai-Bot](https://img.shields.io/badge/Yunzai_Bot-v3-red.svg)](../../../../Le-niao/Yunzai-Bot)
+<a href="https://nodejs.org/en/download">
+    <img src="https://img.shields.io/badge/NodeJS-16.x+-6BA552.svg" alt="NodeJS">
+</a>
+<a href="../../../../Le-niao/Yunzai-Bot">
+    <img src="https://img.shields.io/badge/Yunzai_Bot-v3-red.svg" alt="2群">
+</a>
 <br>
-[![QQ群1](https://img.shields.io/badge/QQ群-纳西妲%20🤤🤤🤤²%20-green?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=uZ4HhhRY)
-[![QQ群2](https://img.shields.io/badge/QQ群-雷神%20🤤🤤🤤%20-purple?style=flat-squar)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm)
+<a href="https://jq.qq.com/?_wv=1027&k=OdSxLZj9">
+    <img src="https://img.shields.io/badge/QQ群-纳西妲%20🤤🤤🤤%20-green?style=flat-squar" alt="新1群">
+</a>
+<a href="https://jq.qq.com/?_wv=1027&k=oK3MF0lm">
+    <img src="https://img.shields.io/badge/QQ群-雷神%20🤤🤤🤤%20-purple?style=flat-squar" alt="2群">
+</a>
 <br>
 <a href="https://github.com/JD1433223/WeLM-plugin/">
     <img src="https://img.shields.io/github/repo-size/JD1433223/WeLM-plugin.svg" alt="仓库大小">
