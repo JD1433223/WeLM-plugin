@@ -59,7 +59,7 @@ export class RGznbot extends plugin {
 	        url: 'https://welm.weixin.qq.com/v1/completions',
 	        headers: {
 		        "Content-Type": "application/json",
-		        "Authorization": APIToken
+		        "Authorization": settings.APIToken
 	        },
 	        data: {
 		        "prompt": e.msg,
