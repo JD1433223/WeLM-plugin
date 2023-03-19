@@ -46,19 +46,19 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 </a>
 <br>
 <a href="../../releases">
-    <img src="https://img.shields.io/github/downloads/JD1433223/WeLM-plugin/total" alt="downloads">
+    <img src="https://img.shields.io/github/downloads/JD1433223/WeLM-plugin/total?label=下载量&color=4CC690" alt="downloads">
 </a>
 <a href="../../stargazers">
-    <img src="https://img.shields.io/github/stars/JD1433223/WeLM-plugin" alt="stars">
+    <img src="https://img.shields.io/github/stars/JD1433223/WeLM-plugin?label=收藏&color=yellow" alt="stars">
 </a>
 <a href="../../forks">
-    <img src="https://img.shields.io/github/forks/JD1433223/WeLM-plugin" alt="forks">
+    <img src="https://img.shields.io/github/forks/JD1433223/WeLM-plugin?label=复制仓库&color=red" alt="forks">
 </a>
 <a href="../../watchers">
-    <img src="https://img.shields.io/github/watchers/JD1433223/WeLM-plugin" alt="watchers">
+    <img src="https://img.shields.io/github/watchers/JD1433223/WeLM-plugin?label=观察者&color=7B2DD3" alt="watchers">
 </a>
 <a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/JD1433223/WeLM-plugin?color=green" alt="License">
+    <img src="https://img.shields.io/github/license/JD1433223/WeLM-plugin?color=3fb911&label=许可证" alt="License">
 </a>
 
 </div>
