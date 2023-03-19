@@ -32,10 +32,10 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 <a href="#使用说明">使用说明</a>
 
 <a href="https://nodejs.org/en/download">
-    <img src="https://img.shields.io/badge/NodeJS-16.x+-6BA552.svg" alt="NodeJS">
+    <img src="https://badgen.net/badge/NodeJS/16.x+?color=6BA552" alt="NodeJS">
 </a>
 <a href="../../../../Le-niao/Yunzai-Bot">
-    <img src="https://img.shields.io/badge/Yunzai-v3-red.svg" alt="2群">
+    <img src="https://badgen.net/badge/Yunzai-Bot/V3?color=orange" alt="Yunzai-Bot">
 </a>
 <br>
 <a href="https://jq.qq.com/?_wv=1027&k=OdSxLZj9">
