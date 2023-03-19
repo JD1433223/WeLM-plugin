@@ -46,7 +46,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 </a>
 <br>
 <a href="../../releases">
-    <img src="https://img.shields.io/github/downloads/JD1433223/WeLM-plugin/total?label=下载量&color=4CC690" alt="downloads">
+    <img src="https://img.shields.io/github/downloads/JD1433223/WeLM-plugin/total?label=下载量&color=green" alt="downloads">
 </a>
 <a href="../../stargazers">
     <img src="https://img.shields.io/github/stars/JD1433223/WeLM-plugin?label=收藏&color=yellow" alt="stars">
