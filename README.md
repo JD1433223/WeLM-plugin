@@ -51,10 +51,10 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 <a href="../../stargazers">
     <img src="https://img.shields.io/github/stars/JD1433223/WeLM-plugin" alt="stars">
 </a>
-<a href="./">
+<a href="../../forks">
     <img src="https://img.shields.io/github/forks/JD1433223/WeLM-plugin" alt="forks">
 </a>
-<a href="./">
+<a href="../../watchers">
     <img src="https://img.shields.io/github/watchers/JD1433223/WeLM-plugin" alt="watchers">
 </a>
 <a href="./LICENSE">
