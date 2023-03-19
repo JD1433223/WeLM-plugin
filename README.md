@@ -35,7 +35,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
     <img src="https://img.shields.io/badge/NodeJS-16.x+-6BA552.svg" alt="NodeJS">
 </a>
 <a href="../../../../Le-niao/Yunzai-Bot">
-    <img src="https://img.shields.io/badge/Yunzai_Bot-v3-red.svg" alt="2群">
+    <img src="https://img.shields.io/badge/Yunzai-v3-red.svg" alt="2群">
 </a>
 <br>
 <a href="https://jq.qq.com/?_wv=1027&k=OdSxLZj9">
@@ -45,18 +45,20 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
     <img src="https://img.shields.io/badge/QQ群-雷神%20🤤🤤🤤%20-purple?style=flat-squar" alt="2群">
 </a>
 <br>
-<a href="https://github.com/JD1433223/WeLM-plugin/">
-    <img src="https://img.shields.io/github/downloads/JD1433223/WeLM-plugin/total?color=blue&label=下载" alt="下载量">
-</a>
-<a href="https://github.com/JD1433223/WeLM-plugin/">
-    <img src="https://visitor-badge.glitch.me/badge?page_id=JD1433223.WeLM-plugin&right_color=darkblue&left_text=访%20问%20量" alt="访问量">
+<a href="../../releases">
+    <img src="https://img.shields.io/github/downloads/JD1433223/WeLM-plugin/total" alt="downloads">
 </a>
 <a href="../../stargazers">
-    <img src="https://img.shields.io/github/stars/JD1433223/WeLM-plugin?color=yellow&label=收藏" alt="收藏">
+    <img src="https://img.shields.io/github/stars/JD1433223/WeLM-plugin" alt="stars">
 </a>
-<a href="">
+<a href="./">
+    <img src="https://img.shields.io/github/forks/JD1433223/WeLM-plugin" alt="forks">
+</a>
+<a href="./">
+    <img src="https://img.shields.io/github/watchers/JD1433223/WeLM-plugin" alt="watchers">
+</a>
 <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/许可证-MulanPSL%202.0-green" alt="License" />
+    <img src="https://img.shields.io/github/license/JD1433223/WeLM-plugin?color=green" alt="License">
 </a>
 
 </div>
