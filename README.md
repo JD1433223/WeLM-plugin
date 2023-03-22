@@ -20,7 +20,7 @@ See the Mulan PSL v2 for more details.
 
 _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 
-<!-- <img src="/resources/README/img/logo.png" alt="logo" width="4000"> -->
+<img src="/resources/README/img/logo.png" alt="logo" width="4000">
 <!-- 此logo图中部分内容来源于WeLM官网,如侵权请联系兰罗摩(3584075812@qq.com),会立即删除 -->
 
 ---
@@ -45,17 +45,17 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
     <img src="https://img.shields.io/badge/QQ群-雷神%20🤤🤤🤤%20-purple?style=flat-squar" alt="2群">
 </a>
 <br>
-<a href="../../releases">
-    <img src="https://img.shields.io/github/downloads/JD1433223/WeLM-plugin/total?label=下载量&color=green" alt="downloads">
+<a href="../../watchers">
+    <img src="https://img.shields.io/github/watchers/JD1433223/WeLM-plugin?label=观察者&color=7B2DD3" alt="watchers">
+</a>
+<a href="../../forks">
+    <img src="https://img.shields.io/github/forks/JD1433223/WeLM-plugin?label=复制仓库" alt="forks">
 </a>
 <a href="../../stargazers">
     <img src="https://img.shields.io/github/stars/JD1433223/WeLM-plugin?label=收藏&color=yellow" alt="stars">
 </a>
-<a href="../../forks">
-    <img src="https://img.shields.io/github/forks/JD1433223/WeLM-plugin?label=复制仓库&color=red" alt="forks">
-</a>
-<a href="../../watchers">
-    <img src="https://img.shields.io/github/watchers/JD1433223/WeLM-plugin?label=观察者&color=7B2DD3" alt="watchers">
+<a href="../../releases">
+    <img src="https://img.shields.io/github/downloads/JD1433223/WeLM-plugin/total?label=下载&color=green" alt="downloads">
 </a>
 <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/JD1433223/WeLM-plugin?color=3fb911&label=许可证" alt="License">
@@ -226,6 +226,7 @@ Token不可用：403
 
 # 贡献者名单
 <!-- 抄的土块 -->
+## 开发者 && WeLM && Pixiv的一位用户
 | 贡献者 | 联系方式 | 主要贡献 |
 | --- | --- | --- |
 | 🎭书辞千楪Sama🌴 | QQ: `1700179844` | 提供了插件的主要功能 |
@@ -233,14 +234,17 @@ Token不可用：403
 | 兰罗摩 | QQ: `3584075812` | 将插件更改为插件包结构并支持锅巴 |
 | 鸢 | QQ: `2166683295` | 提供了写入.yaml后缀名文件的技术 |
 | 曉K | QQ: `1509293009` | 添加了`#welm版本`指令 |
-| [WeLM](https://welm.weixin.qq.com/docs/tutorial/) | 官网链接:`https://welm.weixin.qq.com/docs/tutorial/` | 提供了AI模型与logo图的一部分 |
-| [喵喵插件](https://gitee.com/yoimiya-kokomi/miao-plugin) | 仓库: `https://gitee.com/yoimiya-kokomi/miao-plugin` | 提供了图片帮助功能 |
-| [椰奶插件](https://gitee.com/yeyang52/yenai-plugin) | 仓库: `https://gitee.com/yeyang52/yenai-plugin` | 提供了更新功能 |
-| [拓展插件](https://gitee.com/SmallK111407/expand-plugin) | 仓库: `https://gitee.com/SmallK111407/expand-plugin` | 提供了锅巴配置的技术 |
-| [小叶插件](https://gitee.com/xiaoye12123/xiaoye-plugin) | 仓库: `https://gitee.com/xiaoye12123/xiaoye-plugin` | 提供了初始化的JS代码 |
-| [Ap插件](https://gitee.com/yhArcadia/ap-plugin) | 仓库: `https://gitee.com/yhArcadia/ap-plugin` | 提供了index的缺少依赖提示与README.md的Html代码 |
 | [ぶらんぶた](https://www.pixiv.net/users/14225654) | Pixiv主页: `https://www.pixiv.net/users/14225654` | 提供了README顶部的纳西妲图 |
-| **使用着本插件的你** | 你就是你自己 | **在背后默默支持着本仓库** |
+| [WeLM](https://welm.weixin.qq.com/docs/tutorial/) | 官网链接:`https://welm.weixin.qq.com/docs/tutorial/` | 提供了AI模型与logo图的一部分 |
+
+## 插件
+| 插件名称 | Gitee | GitHub | 主要贡献 |
+| --- | --- | --- | --- |
+| 喵喵插件 | [☞Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin) | [☞GitHub](https://gitee.com/yoimiya-kokomi/miao-plugin) | 提供了图片帮助功能 |
+| 椰奶插件 | [☞Gitee](https://gitee.com/yeyang52/yenai-plugin) | [☞GitHub](https://github.com/yeyang52/yenai-plugin) | 提供了更新功能 |
+| 拓展插件 | [☞Gitee](https://gitee.com/SmallK111407/expand-plugin) | [☞GitHub](https://github.com/SmallK111407/expand-plugin) | 提供了锅巴配置的技术 |
+| 小叶插件 | [☞Gitee](https://gitee.com/xiaoye12123/xiaoye-plugin) | | 提供了初始化的JS代码 |
+| Ap插件 | [☞Gitee](https://gitee.com/yhArcadia/ap-plugin) | [☞GitHub](https://github.com/ap-plugin/ap-plugin) | 提供了index的缺少依赖提示与README.md的Html代码 |
 
 # 免责声明
 <!-- 抄的锅巴 -->
@@ -264,18 +268,27 @@ _PS: (如果有未知的bug可以来这里反馈,也可以把他当成交♂流�
 712074725
 ```
 
-### 前往其他代码托管平台内本仓库
-<!-- 抄的渔火 -->
-* [☞GitHub](https://github.com/JD1433223/WeLM-plugin)/[☞Gitee](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm/)
-
 ### 前往其他仓库
-* Yunzai-Bot插件库: [☞GitHub](https://github.com/yhArcadia/Yunzai-Bot-plugins-index)/[☞Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
-* Yunzai-Bot: [☞GitHub](https://github.com/Le-niao/Yunzai-Bot)/[☞Gitee](https://gitee.com/Le-niao/Yunzai-Bot) 
+<!-- 抄的渔火 -->
+| 名称 | 作者 | GitHub | Gitee | 备注  |
+|------| ---- | ------ | ----- | ----- |
+| Yunzai-Bot 插件库 | [@渔火Arcadia](../../../../yhArcadia) | [☞GitHub](https://github.com/yhArcadia/Yunzai-Bot-plugins-index) | [☞Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index) | 插件库 |
+| Yunzai-Bot | [@Le-niao](../../../../Le-niao) | [☞GitHub](https://github.com/Le-niao/Yunzai-Bot) | [☞Gitee](https://gitee.com/Le-niao/Yunzai-Bot) | 原版 Yunzai |
+| Yunzai-Bot-lite | [@听语惊花](../../../../Nwflower) | [☞GitHub](https://github.com/Nwflower/yunzai-bot-lite) | [☞Gitee](https://gitee.com/Nwflower/yunzai-bot-lite) | 轻量版，无原神功能 |
+| Miao-Yunzai | [@喵喵](../../../../yoimiya-kokomi) | [☞GitHub](https://github.com/yoimiya-kokomi/Miao-Yunzai) | [☞Gitee](https://gitee.com/yoimiya-kokomi/Miao-Yunzai) | 喵版 Yunzai |
+| TRSS-Yunzai | [@时雨🌌星空](../../../../TimeRainStarSky) | [☞GitHub](https://github.com/TimeRainStarSky/Yunzai) | [☞Gitee](https://gitee.com/TimeRainStarSky/Yunzai) | go-cqhttp 版 Yunzai |
+### 前往其他代码托管平台内本仓库
+| 托管平台名称 | 网址 | 仓库主人 | 快速前往仓库链接 |
+| --- | --- | --- | --- |
+| GitHub | `github.com` | [@JD](https://github.com/JD1433223) | [☞点我前往](https://github.com/JD1433223/WeLM-plugin/)
+| GitHub | `github.com` | [@书辞千蝶](https://github.com/Suciqianye) | [☞点我前往](https://github.com/Suciqianye/WeLM-plugin) |
+| Gitee | `gitee.com` | [@书辞千蝶](https://gitee.com/shuciqianye) | [☞点我前往](https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm)
 
 ### 支持我们
 <!-- 渔火听我说谢谢你,因为有你温暖了司机,谢谢你因为有你世界更美丽 -->
 如果你喜欢这个项目, 请不妨点个 Star🌟, 这是对开发者最大的动力, 当然, 你可以对我们进行赞助~
 
-* [兰罗摩](https://afdian.net/a/Arama)
-
-* [书辞千楪](https://afdian.net/a/0906-12)  [微信](https://img1.imgtp.com/2023/02/16/MdDza14P.png)/[支付宝](https://img1.imgtp.com/2023/02/16/luH0pKxj.jpg)
+| 开发者 | 赞助平台 | 爱发电主页链接 | 爱发电 | 微信 | 支付宝 |
+| --- | --- | --- | --- | --- | --- |
+| 兰罗摩 | 爱发电 | `https://afdian.net/a/Arama` | [点我快速前往](https://afdian.net/a/Arama) | | |
+| 书辞千楪 | 爱发电 & 微信 & 支付宝 | `https://afdian.net/a/0906-12` | [点我快速前往](https://afdian.net/a/0906-12) | ![](https://img1.imgtp.com/2023/02/16/MdDza14P.png) | ![](https://img1.imgtp.com/2023/02/16/luH0pKxj.jpg)
