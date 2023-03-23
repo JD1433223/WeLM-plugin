@@ -32,7 +32,7 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
 <a href="#使用说明">使用说明</a>
 
 <a href="https://nodejs.org/en/download">
-    <img src="https://badgen.net/badge/Node.js/16.x+?color=6BA552" alt="Node.js">
+    <img src="https://badgen.net/badge/Node.js/16.0+?color=6BA552" alt="Node.js">
 </a>
 <a href="../../../../Le-niao/Yunzai-Bot">
     <img src="https://badgen.net/badge/Yunzai-Bot/V3?color=orange" alt="Yunzai-Bot">
