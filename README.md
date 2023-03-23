@@ -238,13 +238,13 @@ Token不可用：403
 | [WeLM](https://welm.weixin.qq.com/docs/tutorial/) | 官网链接:`https://welm.weixin.qq.com/docs/tutorial/` | 提供了AI模型与logo图的一部分 |
 
 ## 插件
-| 插件名称 | Gitee | GitHub | 主要贡献 |
-| --- | --- | --- | --- |
-| 喵喵插件 | [☞Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin) | [☞GitHub](https://gitee.com/yoimiya-kokomi/miao-plugin) | 提供了图片帮助功能 |
-| 椰奶插件 | [☞Gitee](https://gitee.com/yeyang52/yenai-plugin) | [☞GitHub](https://github.com/yeyang52/yenai-plugin) | 提供了更新功能 |
-| 拓展插件 | [☞Gitee](https://gitee.com/SmallK111407/expand-plugin) | [☞GitHub](https://github.com/SmallK111407/expand-plugin) | 提供了锅巴配置的技术 |
-| 小叶插件 | [☞Gitee](https://gitee.com/xiaoye12123/xiaoye-plugin) | | 提供了初始化的JS代码 |
-| Ap插件 | [☞Gitee](https://gitee.com/yhArcadia/ap-plugin) | [☞GitHub](https://github.com/ap-plugin/ap-plugin) | 提供了index的缺少依赖提示与README.md的Html代码 |
+| 插件名称 | 作者 | 支持V2 | 支持V3 | Gitee | GitHub | 插件索引备注 | 主要贡献 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 喵喵插件 | [@喵喵](../../../../yoimiya-kokomi) | √ | √ | [☞Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin) | [☞GitHub](https://gitee.com/yoimiya-kokomi/miao-plugin) | Miao-Plugin是一个Yunzai-Bot的升级插件，提供包括角色面板查询等升级功能 | 提供了图片帮助功能 |
+| 椰奶插件 | [@椰羊](../../../../yeyang52) | × | √ | [☞Gitee](https://gitee.com/yeyang52/yenai-plugin) | [☞GitHub](https://github.com/yeyang52/yenai-plugin) | 提供Bot事件通知、搜图搜番、群管、Pixiv等功能 | 提供了更新功能 |
+| 拓展插件 | [@SunRyK曉K](../../../../SmallK111407) | × | √ | [☞Gitee](https://gitee.com/SmallK111407/expand-plugin) | [☞GitHub](https://github.com/SmallK111407/expand-plugin) | 提供#刻晴攻略5、#艾尔海森攻略6、#明日素材 等在云崽基础上拓展的功能 | 提供了锅巴配置的技术 |
+| 小叶插件 | [@小叶](https://gitee.com/xiaoye12123) | × | √ |[☞Gitee](https://gitee.com/xiaoye12123/xiaoye-plugin) | 无Github仓库 | 模拟刷圣遗物和强化,可自定义概率 | 提供了初始化的JS代码 |
+| Ap插件 | [@渔火](../../../../yhArcadia) | × | √ | [☞Gitee](https://gitee.com/yhArcadia/ap-plugin) | [☞GitHub](https://github.com/ap-plugin/ap-plugin) | 提供AI绘图及其衍生功能：#以文生图、#以图生图、图片清晰术、生成“二次元的我”形象等 | 提供了index的缺少依赖提示与README.md的Html代码 |
 
 # 免责声明
 <!-- 抄的锅巴 -->
@@ -259,11 +259,11 @@ Token不可用：403
 ![](/resources/README/img/群规.png)
 #### 群号
 _PS: (如果有未知的bug可以来这里反馈,也可以把他当成交♂流群来用)_
-1. (500人群):
+新1群(最大500人):
 ```
 494148520
 ```
-2. (500人群): 
+2群(500人群): 
 ```
 712074725
 ```
