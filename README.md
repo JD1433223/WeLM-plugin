@@ -101,22 +101,22 @@ git clone -b master --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plu
 
 ### 2. 安装必要依赖(axios)
 _PS: 请在**Yunzai-Bot根目录**执行_
-- 使用pnpm
+#### 使用pnpm
+- 指令：
 ```
 pnpm i
 ```
 
-- 使用cnpm
-
+#### 使用cnpm
 <details><summary>如未安装cnpm需执行指令进行安装（点我）</summary>
 
-指令：
+- 指令：
 ```
 pnpm install -g cnpm -registry=https://registry.npm.taobao.org
 ```
 </details>
 
-安装依赖指令
+- 安装依赖指令：
 ```
 cnpm i
 ```
