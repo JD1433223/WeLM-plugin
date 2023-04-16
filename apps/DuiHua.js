@@ -81,7 +81,7 @@ export class RGznbot extends plugin {
 	        },
 	        data: {
 		        "prompt": sc_cs,
-		        "model": settings.stop,
+		        "model": settings.model,
 		        "max_tokens": settings.max_tokens,
 		        "temperature": settings.temperature,
 		        "top_p": settings.top_p ,
