@@ -30,7 +30,7 @@ export class RGznbot extends plugin {
         super({
             name: 'WeLM对话',
             event: 'message',
-            priority: 50010,
+            priority: 60010,
             rule: [
                  {
                     reg: '#清除对话',
