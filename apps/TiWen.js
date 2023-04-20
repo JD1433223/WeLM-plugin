@@ -19,7 +19,7 @@ import YAML from 'yaml'
 //分割线_____________________________
 const command = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
 
-export class RGznbot extends plugin {
+export class tiwen extends plugin {
     constructor() {
         super({
             name: 'WeLM提问',

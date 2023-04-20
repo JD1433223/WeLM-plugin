@@ -4,6 +4,7 @@ import lodash from 'lodash'
 import fs from 'node:fs'
 import { Cfg, Version, Common, Data } from '../components/index.js'
 import Theme from './Help/Theme.js'
+import plugin from '../../../lib/plugins/plugin.js'
 
 const _path = process.cwd()
 const helpPath = `${_path}/plugins/WeLM-plugin/resources/help`

@@ -25,7 +25,7 @@ const command = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/c
 
 
 
-export class RGznbot extends plugin {
+export class duihua extends plugin {
     constructor() {
         super({
             name: 'WeLM对话',

@@ -122,6 +122,10 @@ export class RGznbot extends plugin {
 			return false;
 		}
 		let tm = fs.readFileSync('./plugins/WeLM-plugin/data/hgttm.txt', { encoding: 'utf-8' })
+		if (tm === "") {
+			e.reply("未写入汤面，请先使用#写汤面+汤面内容")
+			return false
+		}
         e.reply(tm)
 	}
 
@@ -130,6 +134,9 @@ export class RGznbot extends plugin {
 			return false;
 		}
 		let td = fs.readFileSync('./plugins/WeLM-plugin/data/hgttd.txt', { encoding: 'utf-8' })
+		if (td === "") {
+			e.reply("未写入汤底，请先使用#写汤底+汤底内容")
+		}
         e.reply(td)
 		await common.sleep(500)
 		fs.writeFileSync('./plugins/WeLM-plugin/data/hgttm.txt', "", 'utf8')

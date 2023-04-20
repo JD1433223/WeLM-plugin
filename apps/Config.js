@@ -21,7 +21,7 @@ import axios from 'axios'
 const _path = process.cwd()
 
 
-export class RGznbot extends plugin {
+export class config extends plugin {
   constructor() {
     super({
       /** 功能名称 */

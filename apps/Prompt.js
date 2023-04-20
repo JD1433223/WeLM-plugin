@@ -15,7 +15,7 @@ import common from'../../../lib/common/common.js'
 
 const _path = process.cwd()
 
-export class RGznbot extends plugin {
+export class prompts extends plugin {
     constructor() {
         super({
             name: 'WeLM切换预设',
