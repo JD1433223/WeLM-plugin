@@ -69,7 +69,7 @@ export class tiwen extends plugin {
 		        "top_p": settings.top_p,
 		        "top_k": settings.top_k,
 		        "n": settings.n,
-		        "stop": settings.stop,
+		        "stop": settings.twstop,
 	        }
         })
         .then(function (response) {
