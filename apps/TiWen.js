@@ -53,7 +53,7 @@ export class tiwen extends plugin {
         const settings = await YAML.parse(fs.readFileSync(`./plugins/WeLM-plugin/config/config.yaml`,'utf8'));
         //如需配置插件请到本插件文件夹内config的config.yaml进行编辑
         e.msg = e.msg.replace(settings.twcmdstart, "")
-		let sc_cs = "根据你所学知识回答" + "\n问题:" + e.msg + "\n" + "回答" + ":"
+		let sc_cs = "下面我们做个问答任务\n\n问题：百年孤独的作者是？\n回答：加西亚·马尔克斯\n问题：" + e.msg + "\n" + "回答" + ":"
         axios({
 	        method: 'post',
 	        url: 'https://welm.weixin.qq.com/v1/completions',
@@ -65,10 +65,10 @@ export class tiwen extends plugin {
 		        "prompt": sc_cs,
 		        "model": settings.model,
 		        "max_tokens": settings.max_tokens,
-		        "temperature": settings.temperature,
-		        "top_p": settings.top_p,
-		        "top_k": settings.top_k,
-		        "n": settings.n,
+		        "temperature": 0.0,
+		        "top_p": 0.0,
+		        "top_k": 0,
+		        "n": 1,
 		        "stop": settings.twstop,
 	        }
         })
