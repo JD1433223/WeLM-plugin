@@ -1,7 +1,8 @@
 # 你的配置文件
 /config/*
-!/config/**/
+!/config/system/
 !/config/help_default.js
+# 初始化提醒文件
 /config/system/Guide
 
 # 你的Prompt(预设)
