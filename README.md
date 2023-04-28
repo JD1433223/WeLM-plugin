@@ -45,20 +45,17 @@ _🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
     <img src="https://img.shields.io/badge/QQ群-雷神%20🤤🤤🤤%20-purple?style=flat-squar" alt="2群">
 </a>
 <br>
-<a href="../../watchers">
-    <img src="https://img.shields.io/github/watchers/JD1433223/WeLM-plugin?label=观察者&color=7B2DD3" alt="watchers">
-</a>
-<a href="../../forks">
-    <img src="https://img.shields.io/github/forks/JD1433223/WeLM-plugin?label=复制仓库" alt="forks">
-</a>
-<a href="../../stargazers">
-    <img src="https://img.shields.io/github/stars/JD1433223/WeLM-plugin?label=收藏&color=yellow" alt="stars">
+<a href="../../issues">
+    <img src="https://img.shields.io/github/issues/JD1433223/WeLM-plugin?logo=github" alt="issues">
 </a>
 <a href="../../releases">
-    <img src="https://img.shields.io/github/downloads/JD1433223/WeLM-plugin/total?label=下载&color=green" alt="downloads">
+    <img src="https://img.shields.io/github/v/tag/JD1433223/WeLM-plugin?label=latest%20version&logo=github" alt="downloads">
 </a>
 <a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/JD1433223/WeLM-plugin?color=3fb911&label=许可证" alt="License">
+    <img src="https://img.shields.io/github/license/JD1433223/WeLM-plugin?logo=github" alt="License">
+</a>
+<a href=".">
+    <img src="https://img.shields.io/github/languages/top/JD1433223/WeLM-plugin?logo=github" alt="Languages">
 </a>
 
 </div>
