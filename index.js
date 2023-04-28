@@ -34,7 +34,7 @@ setTimeout(firstGuide, 300)
 //如果初始化文件不是yes就发送消息到主人那
 async function firstGuide() {
   if (fs.readFileSync(`./plugins/WeLM-plugin/config/system/Guide`,'utf8') !== "yes") {
-    sendToMaster('欢迎您使用WeLM自定义对话插件! \n本插件帮助文档: https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm \n数据无价, 请充分了解本插件功能后再使用! \n感谢您的支持!!!')
+    sendToMaster('欢迎您使用WeLM自定义对话插件! \n本插件帮助文档: https://gitee.com/shuciqianye/yunzai-custom-dialogue-welm \n第一次使用请先按照教程填写WeLM的API!!!!!\n感谢您的支持!!!')
     fs.writeFile('./plugins/WeLM-plugin/config/system/Guide', 'yes', (error) => {
       if (error) {
         logger.error('初始化状态失败')
