@@ -98,24 +98,8 @@ git clone -b master --depth=1 https://github.com/JD1433223/WeLM-plugin.git ./plu
 
 ### 2. 安装必要依赖(axios)
 _PS: 请在**Yunzai-Bot根目录**执行_
-#### 使用pnpm
-- 指令：
 ```
-pnpm i
-```
-
-#### 使用cnpm
-<details><summary>如未安装cnpm需执行指令进行安装（点我）</summary>
-
-- 指令：
-```
-pnpm install -g cnpm -registry=https://registry.npm.taobao.org
-```
-</details>
-
-- 安装依赖指令：
-```
-cnpm i
+pnpm install
 ```
 
 ### 3. 填写Token(否则大部分功能无法使用)
@@ -221,26 +205,21 @@ Token不可用：403
 | keep | 供bug填充的变量,更改后过一段时间会恢复原样 | 否 | 字符串 |
 
 # 贡献者名单
-<!-- 抄的土块 -->
-## 开发者 && WeLM && Pixiv的一位用户
-| 贡献者 | 联系方式 | 主要贡献 |
-| --- | --- | --- |
-| 🎭书辞千楪Sama🌴 | QQ: `1700179844` | 提供了插件的主要功能 |
-| JD | QQ:`1461072722` | 提供了插件的部分功能 |
-| 兰罗摩 | QQ: `3584075812` | 将插件更改为插件包结构并支持锅巴 |
-| 鸢 | QQ: `2166683295` | 提供了写入.yaml后缀名文件的技术 |
-| 曉K | QQ: `1509293009` | 添加了`#welm版本`指令 |
-| [ぶらんぶた](https://www.pixiv.net/users/14225654) | Pixiv主页: `https://www.pixiv.net/users/14225654` | 提供了README顶部的纳西妲图 |
-| [WeLM](https://welm.weixin.qq.com/docs/tutorial/) | 官网链接:`https://welm.weixin.qq.com/docs/tutorial/` | 提供了AI模型与logo图的一部分 |
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+感谢这些了不起的人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-## 插件
-| 插件名称 | 作者 | 支持V2 | 支持V3 | Gitee | GitHub | 插件索引备注 | 主要贡献 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 喵喵插件 | [@喵喵](../../../../yoimiya-kokomi) | √ | √ | [☞Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin) | [☞GitHub](https://gitee.com/yoimiya-kokomi/miao-plugin) | Miao-Plugin是一个Yunzai-Bot的升级插件，提供包括角色面板查询等升级功能 | 提供了图片帮助功能 |
-| 椰奶插件 | [@椰羊](../../../../yeyang52) | × | √ | [☞Gitee](https://gitee.com/yeyang52/yenai-plugin) | [☞GitHub](https://github.com/yeyang52/yenai-plugin) | 提供Bot事件通知、搜图搜番、群管、Pixiv等功能 | 提供了更新功能 |
-| 拓展插件 | [@SunRyK曉K](../../../../SmallK111407) | × | √ | [☞Gitee](https://gitee.com/SmallK111407/expand-plugin) | [☞GitHub](https://github.com/SmallK111407/expand-plugin) | 提供#刻晴攻略5、#艾尔海森攻略6、#明日素材 等在云崽基础上拓展的功能 | 提供了锅巴配置的技术 |
-| 小叶插件 | [@小叶](https://gitee.com/xiaoye12123) | × | √ |[☞Gitee](https://gitee.com/xiaoye12123/xiaoye-plugin) | 无Github仓库 | 模拟刷圣遗物和强化,可自定义概率 | 提供了初始化的JS代码 |
-| Ap插件 | [@渔火](../../../../yhArcadia) | × | √ | [☞Gitee](https://gitee.com/yhArcadia/ap-plugin) | [☞GitHub](https://github.com/ap-plugin/ap-plugin) | 提供AI绘图及其衍生功能：#以文生图、#以图生图、图片清晰术、生成“二次元的我”形象等 | 提供了index的缺少依赖提示与README.md的Html代码 |
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+本段遵循 [all-contributors](https://github.com/all-contributors/all-contributors) 规范，欢迎任何形式的贡献！
 
 # 免责声明
 <!-- 抄的锅巴 -->
