@@ -206,7 +206,7 @@ Token不可用：403
 
 # 贡献者名单
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/github/all-contributors/JD1433223/WeLM-plugin?color=ee8449&style=flat-square)](#contributors)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 感谢这些了不起的人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
