@@ -21,9 +21,9 @@ See the Mulan PSL v2 for more details.
 ![Nodejs](https://img.shields.io/badge/-Node.js-3C873A?style=flat&logo=Node.js&logoColor=white) 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-eed718?style=flat&logo=javascript&logoColor=ffffff)
 [![license](https://img.shields.io/github/license/JD1433223/WeLM-plugin.svg?style=flat&logo=gnu)](https://github.comJD1433223/WeLM-plugin/blob/master/LICENSE) 
-[![YunzaiBot](https://img.shields.io/badge/Yunzai-V3.0.0-black?style=flat&logo=dependabot)](https://gitee.com/Le-niao/Yunzai-Bot) 
-[![Group](https://img.shields.io/badge/Group-494148520-red?style=flat&logo=GroupMe&logoColor=white)](https://jq.qq.com/?_wv=1027&k=OdSxLZj9) 
-[![Group2](https://img.shields.io/badge/Group2-712074725-bule?style=flat&logo=GroupMe&logoColor=white)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm) 
+[![YunzaiBot](https://img.shields.io/badge/Yunzai-V3.0.0-red?style=flat&logo=dependabot)](https://gitee.com/Le-niao/Yunzai-Bot) 
+[![Group](https://img.shields.io/badge/Group-494148520-green?style=flat&logo=GroupMe&logoColor=white)](https://jq.qq.com/?_wv=1027&k=OdSxLZj9) 
+[![Group2](https://img.shields.io/badge/Group2-712074725-purple?style=flat&logo=GroupMe&logoColor=white)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm) 
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/JD1433223/WeLM-plugin)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/JD1433223/WeLM-plugin)
