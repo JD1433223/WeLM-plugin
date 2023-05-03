@@ -8,57 +8,38 @@ THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, E
 See the Mulan PSL v2 for more details.  
  -->
 
+<img src="resources/README/img/logo.gif" alt="看板娘" width = "200" align="right">
+
+<div align="left">
+
+# WeLM-Plugin
+
+🐑 **_WeLM-Plugin是一个基于WeLM提供的API所制作的AI对话插件(chatgpt下下下位替代)。_**<img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50">
+
+<br><img src="https://count.getloli.com/get/@:WeLM-plugin?theme=rule34" /><br>
+
+![Nodejs](https://img.shields.io/badge/-Node.js-3C873A?style=flat&logo=Node.js&logoColor=white) 
+![JavaScript](https://img.shields.io/badge/-JavaScript-eed718?style=flat&logo=javascript&logoColor=ffffff)
+[![license](https://img.shields.io/github/license/JD1433223/WeLM-plugin.svg?style=flat&logo=gnu)](https://github.comJD1433223/WeLM-plugin/blob/master/LICENSE) 
+[![YunzaiBot](https://img.shields.io/badge/Yunzai-V3.0.0-black?style=flat&logo=dependabot)](https://gitee.com/Le-niao/Yunzai-Bot) 
+[![Group](https://img.shields.io/badge/Group-494148520-red?style=flat&logo=GroupMe&logoColor=white)](https://jq.qq.com/?_wv=1027&k=OdSxLZj9) 
+[![Group2](https://img.shields.io/badge/Group2-712074725-bule?style=flat&logo=GroupMe&logoColor=white)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm) 
+
+![GitHub last commit](https://img.shields.io/github/last-commit/JD1433223/WeLM-plugin)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/JD1433223/WeLM-plugin)
+![Lines of code](https://img.shields.io/tokei/lines/github/JD1433223/WeLM-plugin)
+[![GitHub stars](https://img.shields.io/github/stars/JD1433223/WeLM-plugin)](https://github.com/JD1433223/WeLM-plugin/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/JD1433223/WeLM-plugin)](https://github.com/JD1433223/WeLM-plugin/network)
+[![GitHub issues](https://img.shields.io/github/issues/JD1433223/WeLM-plugin)](https://github.com/JD1433223/WeLM-plugin/issues)
+</div>
+
 <div align="center">
 
-<a href="https://github.com/JD1433223/WeLM-plugin/">
-    <img src="resources/README/img/README顶部.png" width="350" alt="Logo">
-</a>
-
-<!-- 此图来源于Pixiv.net的105473760(PID)作品 -->
-
-# WeLM Plugin
-
-_🎉 基于 Yunzai-Bot 的 AI 对话插件 🎉_
-
-<img src="/resources/README/img/logo.png" alt="logo" width="4000">
-<!-- 此logo图中部分内容来源于WeLM官网,如侵权请联系兰罗摩(3584075812@qq.com),会立即删除 -->
-
----
-
-<a href="#前置安装提醒">安装教程</a>
-|
-<a href="#可能遇到的问题">大概率会遇到的问题</a>
-|
-<a href="#使用说明">使用说明</a>
-
-<a href="https://nodejs.org/en/download">
-    <img src="https://badgen.net/badge/Node.js/16.0+?color=6BA552" alt="Node.js">
-</a>
-<a href="../../../../Le-niao/Yunzai-Bot">
-    <img src="https://badgen.net/badge/Yunzai-Bot/V3?color=orange" alt="Yunzai-Bot">
-</a>
-<br>
-<a href="https://jq.qq.com/?_wv=1027&k=OdSxLZj9">
-    <img src="https://img.shields.io/badge/QQ群-纳西妲%20🤤🤤🤤%20-green?style=flat-squar" alt="新1群">
-</a>
-<a href="https://jq.qq.com/?_wv=1027&k=oK3MF0lm">
-    <img src="https://img.shields.io/badge/QQ群-雷神%20🤤🤤🤤%20-purple?style=flat-squar" alt="2群">
-</a>
-<br>
-<a href="../../issues">
-    <img src="https://img.shields.io/github/issues/JD1433223/WeLM-plugin?logo=github" alt="issues">
-</a>
-<a href="../../releases">
-    <img src="https://img.shields.io/github/v/tag/JD1433223/WeLM-plugin?label=latest%20version&logo=github" alt="downloads">
-</a>
-<a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/JD1433223/WeLM-plugin?logo=github" alt="License">
-</a>
-<a href=".">
-    <img src="https://img.shields.io/github/languages/top/JD1433223/WeLM-plugin?logo=github" alt="Languages">
-</a>
+[![Star Trend](https://api.star-history.com/svg?repos=JD1433223/WeLM-plugin&type=Timeline)](https://seladb.github.io/StarTrack-js/#/preload?r=JD1433223,WeLM-plugin)
 
 </div>
+
+---
 
 # New
 新群1.1新老人员，老婆们速回
