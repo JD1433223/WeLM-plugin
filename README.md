@@ -8,6 +8,8 @@ THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, E
 See the Mulan PSL v2 for more details.  
  -->
 
+<!-- cv的椰奶,侵权就找兰罗摩删了 -->
+
 <img src="resources/README/img/logo.gif" alt="看板娘" width = "200" align="right">
 
 <div align="left">
@@ -202,10 +204,10 @@ Token不可用：403
 | 插件名称 | 作者 | 支持V2 | 支持V3 | Gitee | GitHub | 插件索引备注 | 主要贡献 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 喵喵插件 | [@喵喵](../../../../yoimiya-kokomi) | √ | √ | [☞Gitee](https://gitee.com/yoimiya-kokomi/miao-plugin) | [☞GitHub](https://gitee.com/yoimiya-kokomi/miao-plugin) | Miao-Plugin是一个Yunzai-Bot的升级插件，提供包括角色面板查询等升级功能 | 提供了图片帮助功能 |
-| 椰奶插件 | [@椰羊](../../../../yeyang52) | × | √ | [☞Gitee](https://gitee.com/yeyang52/yenai-plugin) | [☞GitHub](https://github.com/yeyang52/yenai-plugin) | 提供Bot事件通知、搜图搜番、群管、Pixiv等功能 | 提供了更新功能 |
+| 椰奶插件 | [@椰羊](../../../../yeyang52) | × | √ | [☞Gitee](https://gitee.com/yeyang52/yenai-plugin) | [☞GitHub](https://github.com/yeyang52/yenai-plugin) | 提供Bot事件通知、搜图搜番、群管、Pixiv等功能 | 提供了更新功能与README.md的Html代码 |
 | 拓展插件 | [@SunRyK曉K](../../../../SmallK111407) | × | √ | [☞Gitee](https://gitee.com/SmallK111407/expand-plugin) | [☞GitHub](https://github.com/SmallK111407/expand-plugin) | 提供#刻晴攻略5、#艾尔海森攻略6、#明日素材 等在云崽基础上拓展的功能 | 提供了锅巴配置的技术 |
 | 小叶插件 | [@小叶](https://gitee.com/xiaoye12123) | × | √ |[☞Gitee](https://gitee.com/xiaoye12123/xiaoye-plugin) | 无Github仓库 | 模拟刷圣遗物和强化,可自定义概率 | 提供了初始化的JS代码 |
-| Ap插件 | [@渔火](../../../../yhArcadia) | × | √ | [☞Gitee](https://gitee.com/yhArcadia/ap-plugin) | [☞GitHub](https://github.com/ap-plugin/ap-plugin) | 提供AI绘图及其衍生功能：#以文生图、#以图生图、图片清晰术、生成“二次元的我”形象等 | 提供了index的缺少依赖提示与README.md的Html代码 |
+| Ap插件 | [@渔火](../../../../yhArcadia) | × | √ | [☞Gitee](https://gitee.com/yhArcadia/ap-plugin) | [☞GitHub](https://github.com/ap-plugin/ap-plugin) | 提供AI绘图及其衍生功能：#以文生图、#以图生图、图片清晰术、生成“二次元的我”形象等 | 提供了index的缺少依赖提示 |
 
 
 本段遵循 [all-contributors](https://github.com/all-contributors/all-contributors) 规范，欢迎任何形式的贡献！
