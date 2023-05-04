@@ -18,16 +18,16 @@ See the Mulan PSL v2 for more details.
 
 <br><img src="https://count.getloli.com/get/@:WeLM-plugin?theme=rule34" /><br>
 
-![Nodejs](https://img.shields.io/badge/-Node.js-3C873A?style=flat&logo=Node.js&logoColor=white) 
-![JavaScript](https://img.shields.io/badge/-JavaScript-eed718?style=flat&logo=javascript&logoColor=ffffff)
+[![Nodejs](https://img.shields.io/badge/-Node.js-3C873A?style=flat&logo=Node.js&logoColor=white)](https://nodejs.org/en/download)
+[![JavaScript](https://img.shields.io/badge/-JavaScript-eed718?style=flat&logo=javascript&logoColor=ffffff)](https://zh.wikipedia.org/wiki/JavaScript)
 [![license](https://img.shields.io/github/license/JD1433223/WeLM-plugin.svg?style=flat&logo=gnu)](https://github.comJD1433223/WeLM-plugin/blob/master/LICENSE) 
 [![YunzaiBot](https://img.shields.io/badge/Yunzai-V3.0.0-red?style=flat&logo=dependabot)](https://gitee.com/Le-niao/Yunzai-Bot) 
 [![Group](https://img.shields.io/badge/Group-494148520-green?style=flat&logo=GroupMe&logoColor=white)](https://jq.qq.com/?_wv=1027&k=OdSxLZj9) 
 [![Group2](https://img.shields.io/badge/Group2-712074725-purple?style=flat&logo=GroupMe&logoColor=white)](https://jq.qq.com/?_wv=1027&k=oK3MF0lm) 
 
-![GitHub last commit](https://img.shields.io/github/last-commit/JD1433223/WeLM-plugin)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/JD1433223/WeLM-plugin)
-![Lines of code](https://img.shields.io/tokei/lines/github/JD1433223/WeLM-plugin)
+[![GitHub last commit](https://img.shields.io/github/last-commit/JD1433223/WeLM-plugin)](https://github.com/JD1433223/WeLM-plugin)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/JD1433223/WeLM-plugin)](https://github.com/JD1433223/WeLM-plugin)
+[![Lines of code](https://img.shields.io/tokei/lines/github/JD1433223/WeLM-plugin)](https://github.com/JD1433223/WeLM-plugin)
 [![GitHub stars](https://img.shields.io/github/stars/JD1433223/WeLM-plugin)](https://github.com/JD1433223/WeLM-plugin/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/JD1433223/WeLM-plugin)](https://github.com/JD1433223/WeLM-plugin/network)
 [![GitHub issues](https://img.shields.io/github/issues/JD1433223/WeLM-plugin)](https://github.com/JD1433223/WeLM-plugin/issues)
