@@ -256,6 +256,6 @@ _PS: (如果有未知的bug可以来这里反馈,也可以把他当成交♂流�
 
 | 开发者 | 赞助平台 | 爱发电主页链接 | 爱发电二维码 | 爱发电 | 微信 | 支付宝 |
 | --- | --- | --- | --- | --- | --- | --- |
-| 兰罗摩 | 爱发电 | `https://afdian.net/a/Arama` | | [点我快速前往](https://afdian.net/a/Arama) | | |
-| 书辞千楪 | 爱发电 & 微信 & 支付宝 | `https://afdian.net/a/0906-12` | | [点我快速前往](https://afdian.net/a/0906-12) | ![](https://img1.imgtp.com/2023/02/16/MdDza14P.png) | ![](https://img1.imgtp.com/2023/02/16/luH0pKxj.jpg)
-| JD | 爱发电 | `https://afdian.net/a/JD1433223` | ![](resources/README/img/JD爱发电.jpg) | [点我快速前往](https://afdian.net/a/JD1433223) | | |
+| 兰罗摩 | 爱发电 | `https://afdian.net/a/Arama` | ![兰罗摩](resources/README/img/兰罗摩爱发电.jpg) | [点我快速前往](https://afdian.net/a/Arama) | | |
+| 书辞千楪 | 爱发电 & 微信 & 支付宝 | `https://afdian.net/a/0906-12` | ![书佬](resources/README/img/书佬爱发电.jpg) | [点我快速前往](https://afdian.net/a/0906-12) | ![](https://img1.imgtp.com/2023/02/16/MdDza14P.png) | ![](https://img1.imgtp.com/2023/02/16/luH0pKxj.jpg)
+| JD | 爱发电 | `https://afdian.net/a/JD1433223` | ![JD](resources/README/img/JD爱发电.jpg) | [点我快速前往](https://afdian.net/a/JD1433223) | | |
