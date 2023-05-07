@@ -30,7 +30,7 @@ export class duihua extends plugin {
         super({
             name: 'WeLM对话',
             event: 'message',
-            priority: 60010,
+            priority: 10000,
             rule: [
                  {
                     reg: '#清除对话',
