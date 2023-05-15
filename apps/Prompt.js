@@ -1,4 +1,4 @@
-/*
+/*a
    Copyright (c) 2023 书辞千楪
    WeLM-plugin is licensed under Mulan PSL v2.
    You can use this software according to the terms and conditions of the Mulan PSL v2. 
@@ -34,6 +34,30 @@ export class prompts extends plugin {
             ]
         })
     }
+
+    //cv的虚空
+    async getforwardMsg(message, e) {
+        //制作转发消息
+        let forwardMsg = []
+        for (let i of message) {
+            forwardMsg.push(
+                {
+                    message: i,
+                    nickname: Bot.nickname,
+                    user_id: Bot.uin
+                }
+            )
+        }
+        //发送
+        if (e.isGroup) {
+            forwardMsg = await e.group.makeForwardMsg(forwardMsg)
+        } else {
+            forwardMsg = await e.friend.makeForwardMsg(forwardMsg)
+        }
+        //发送消息
+        e.reply(forwardMsg)
+     }
+
     async QieHuan(e) {
         //备份原本预设
 
@@ -61,13 +85,19 @@ export class prompts extends plugin {
     }
 
     async Read(e) {
+        let msg = []
+        msg.push("以下为当前本地已有预设：")
         fs.readdir('./plugins/WeLM-plugin/data/prompts', function (err, files) {
             if (err) {
-                return console.error(err);
+                e.reply("读取时出现错误，请查看日志");
+                logger.error(err);
+                return false
             }
             files.forEach(function (file) {
-                e.reply(file);
+                msg.push(String(file).replace(/dhdata.txt/g, ""));
             });
-        }
-    )}
+        })
+        await common.sleep(300)
+        this.getforwardMsg(msg,e)
+    }
 }
