@@ -86,7 +86,7 @@ export class prompts extends plugin {
 
     async Read(e) {
         let msg = []
-        msg.push("以下为当前本地已有预设：")
+        msg.push("以下为当前可切换预设：")
         fs.readdir('./plugins/WeLM-plugin/data/prompts', function (err, files) {
             if (err) {
                 e.reply("读取时出现错误，请查看日志");
