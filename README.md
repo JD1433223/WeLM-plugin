@@ -198,7 +198,7 @@ Token不可用：403
 | 鸢 | QQ: `2166683295` | 提供了写入.yaml后缀名文件的技术 |
 | 曉K | QQ: `1509293009` | 添加了`#welm版本`指令 |
 | [ぶらんぶた](https://www.pixiv.net/users/14225654) | Pixiv主页: `https://www.pixiv.net/users/14225654` | 提供了README顶部的纳西妲图 |
-| [WeLM](https://welm.weixin.qq.com/docs/tutorial/) | 官网链接:`https://welm.weixin.qq.com/docs/tutorial/` | 提供了AI模型与logo图的一部分 |
+| [WeLM](https://welm.weixin.qq.com/docs/tutorial/) | 官网链接:`https://welm.weixin.qq.com/docs/tutorial/` | 提供了AI模型 |
 
 ## 插件
 | 插件名称 | 作者 | 支持V2 | 支持V3 | Gitee | GitHub | 插件索引备注 | 主要贡献 |
